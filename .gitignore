@@ -11,6 +11,9 @@
 *.bbl
 *.blg
 
+*.fdb_latexmk
+*.gz
+
 ## OSX:
 .DS_Store
 .AppleDouble
