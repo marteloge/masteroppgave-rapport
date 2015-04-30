@@ -1,0 +1,97 @@
+\documentclass[10pt, b5paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{lscape}   % Make a page in landscape format \begin{landscape}
+\usepackage{colortbl} % To color table cells
+\usepackage{color} % Able to change textcolor
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\usepackage{graphicx} % Able to add pictures
+\usepackage{parskip}  % Separate paragraphs with a blank line
+                      % rather than using indentation
+\usepackage{hyperref} % Support for hyperlinks
+\usepackage[protrusion=true,expansion=true]{microtype} % Improve justification
+\usepackage{subfigure}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{afterpage}
+\usepackage{lipsum}
+\usepackage{wrapfig}
+\usepackage{enumerate}
+\usepackage{natbib}
+\usepackage{todonotes}
+\usepackage{mdwlist}
+\usepackage{array}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{listings}
+\usepackage[toc,page]{appendix}
+
+%-------- Chapter Styling -----------
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+%------ DIV -------------------------
+\renewcommand*\contentsname{Table of Contents}
+\hypersetup{%
+	pdfborder = {0 0 0}
+}
+
+\begin{document}
+	\pagenumbering{gobble}
+	\thispagestyle{empty}
+	\include{frontpage} \thispagestyle{empty}
+	\include{abstract} \thispagestyle{empty}
+	\tableofcontents \thispagestyle{empty}
+	\listoffigures \thispagestyle{empty}
+	\listoftables \thispagestyle{empty}
+	
+	\pagenumbering{arabic}
+	\setcounter{page}{0}	
+
+	\include{part1/introduction}
+	\include{part1/method}
+	\include{part1/backgroundTheory}
+
+	\include{part2/part2}
+	\include{part2/history}
+	\include{part2/evaluation}
+	\include{part2/psychology}
+	\include{part2/mobile}
+	\include{part2/android}
+	\include{part2/summary}
+
+	\include{part3/part3}
+	\include{part3/hypothesis}
+	\include{part3/dataCollection}
+	\include{part3/survey}
+	\include{part3/usability}
+	%\include{part3/technical} added to survey
+
+	\include{part4/part4}
+	\include{part4/basicStats}
+	\include{part4/association}
+	\include{part4/strength}
+	\include{part4/attack}
+	\include{part4/controlGroup}
+
+	\include{part5/discussion}
+	\include{part5/conclusion}
+	\include{part5/futurework}
+	
+	\begin{appendices}
+		\include{appendix/wireframes}
+	\end{appendices}
+
+
+	%Bibtex
+	\bibliographystyle{plain}
+	\bibliography{myBib}
+	
+\end{document}
