@@ -1,0 +1,17 @@
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.pdf
+
+*.bbl
+*.blg
+
+## OSX:
+.DS_Store
+.AppleDouble
+.LSOverride
