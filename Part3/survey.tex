@@ -1,21 +1,24 @@
 % !TEX root = ../main.tex
-\section{The Survey}\label{sec:survey}
+\section{A Detailed Description of the Survey}\label{sec:survey}
   
-  The problem with analyzing passwords is that you need to actually have passwords to analyze. The majority of published research on passwords are often using passwords for leakage or getting passwords distributed from legal sources. Looking at the Android lock pattern there exists no distributed sources, and all lock patterns are only stored locally on each device. 
+  The challenge of analyzing passwords; you actually need to have passwords to analyze. The majority of published research on passwords are often conducted using passwords from leakages or passwords distributed from legal sources. Looking at the Android lock pattern lock there exists no distributed sources, and all patterns locks that people use are stored locally on each device. To be able to analyze user selected patterns I need to do the dirty job of collecting them all myself. 
 
   People working with security are striving to teach people about security, and one of the rules everyone probably know about is that you should never share a password because it is a secret you should keep to yourself. In this research I have to be a hypocrite and do the opposite; I need to ask people to share their secrets in the name of science. 
 
-  This section will include a detailed description of how the custom made survey was created and how it works. The survey is created for collecting Android Pattern Locks and other background data from the users on mobile devices. 
+  This section will include a description of the tool used for collecting patterns, the survey. The survey are custom designed and implemented specifically for this research. The survey will be describes in detail throughout this section starting with a elaboration of the requirements and ending up with a detailed description of how the survey works. 
 
-  \subsection{Requirements}
+  \subsection{Requirements}\label{sec:requirementstosurvey}
 
-    When coping with the difficulties with collecting data it is important to define requirements for the survey application. This section will not go through a predefines list of requirements, rather elaborate and discuss the requirements in general to be able to explain its importance.
+    When coping with the difficulties with collecting patterns it is important to define requirements for the survey application. This section will not go through a predefines list of requirements, rather elaborate and discuss the requirements in general to be able to explain their importance. The list of requirements are used as a foundation for the survey.
 
     \subsubsection*{One way Communication}
-      The survey will be a online application, meaning that this is the only way I as a researcher will be able to communicate with the respondents. It is therefore important how the application are communicating with the respondents.
+      The survey will be a online application, meaning that the user interface of the survey application is the only way that I as a researcher will be able to communicate with the respondents. The respondents will not be able to directly talk to me during the survey, so it is therefore important how the application are communicating with the respondents.
+
       The survey will contain a number of questions to be answered by the respondents. The hard part is to adapt the suitable amount of questions. If the survey takes too long time to answer I will probably loose respondents.
-      When sending out the survey I have no control over who will participate, so people might come from different cultures and countries. The survey will be written in english, but there is a chance that there persons entering the survey not speaking english very well. Instead of using too much words it is preferable to use icons and illustrations. This is not just beneficial for respondents not talking english. 
-      The words used in the questions have to be carefully selected considering that all respondents have a different background. It should be avoided using academic and technical words that I cannot ensure that everyone can understand. It should also be considered that some respondents do not know what Android, locking mechanism, or pattern lock is. It should be visualized, explained and support practice for the respondents needing it. It is not disired that any respondents are feeling stupid nor insecure when participating. 
+
+      When sending out the survey I have no control over who will participate, so people might come from different cultures and countries. The survey will be written in English, but there is a chance that there persons entering the survey not speaking English very well. Instead of using too much words it is preferable to use icons and illustrations. This is not just beneficial for respondents not talking English.
+
+      The words used in the questions have to be carefully selected considering that all respondents have a different background. It should be avoided using academic and technical words that I cannot ensure that everyone can understand. It should also be considered that some respondents do not know what Android, locking mechanism, or pattern lock is. It should be visualized, explained and support practice for the respondents needing it. It is not desired that any respondents are feeling stupid nor insecure when participating. I want the respondents to leave the survey with a positive experience. 
 
       % - ordbruk: korte setninger for at folk skal gidde å lese.
       % - ordbruk: spørsmålene må være formulert på en måte slik at alle forstår (unngå tekniske uttrykk)
@@ -26,10 +29,10 @@
       % - Kan ikke anta at alle vet hva låsemønster og android er
 
     \subsubsection*{Trustworthiness}
-      When respondents opens the survey they should be able to see who are asking them to participate. Is is reasonable to provide contact information and information about myself so the participants can read and see who I am. The survey should be a subdomain on my personal domain marteloge.no to gain trustworthiness. Linking to my personal page and contact information should be required.
-      The contact information are also important in terms of ownership of data. Who are reading the data and how is it handled? It should be clearly stated that the information collected are only available to the research group containing myself, my supervisor, and my co-supervisor.
+      When respondents opens the survey they should be able to see who are asking them to participate. It is reasonable to provide contact information and information about myself so the participants can read and see who I am. The survey should be a sub domain on my personal domain (marteloge.no) to gain trust. Linking to my personal page and contact information should be required.
+      The contact information are also important in terms of ownership of data. Who are reading the data and how is it handled? It should be clearly stated that the information collected are only available to the research group containing myself, my supervisor, and my co-supervisor. It should also be clearly stated that the data collected will only be used for research purposes.
 
-      The visual appearance is an important part of the thrustwortiness of the survey. If you put a pink webpage that is visual appealing next to a webpage using only dark colors. Colors tell more than you probably would think in the first place.
+      The visual appearance is an important part of the trustworthiness of the survey. If you put a pink webpage that is visual appealing next to a webpage using only dark colors. Colors tell more than you probably would think in the first place.
 
       % - OBS: må her ref til forskning!
       % - Tilgjengeliggjøre meg selv via nettside og kontaktinformasjon. Det er virktig å vise at det kommer fra en seriøs kilde og det er viktig å vise hvem som spør om hjelp. Må fremstå som pålitelig og lite skummel. 
@@ -38,7 +41,7 @@
       % - Vise til hvem som mottar og behandler data
 
     \subsubsection*{Technical device and environment of use}
-      When collecting data the environment should be considered because it can impact the data or introduce bias. Looking at the Android Unlock Pattern it is often used on mobile devices, both tablet and smartphones. When looking at different human properties and characteristics of mobile devices, tablets should be divided into two different environments of use. {\it First}, the tablet are often used in different settings than a smartphone that a user often carry and use every day. {\it Second}, the physical interaction are often diffrent. A smartphoene are small and can be intereacted with using one hand. When collecing data I want to capture specific characteristics that will be different on a smartphone and a tablet. It is therefore desirable to only collect data on a smartphone where it is most rapidly used. It does not mean that patterns on tablets are not interesting, but to ensure what environment the survey are used for analysis purposes. 
+      When collecting data the environment should be considered because it can impact the data in terms of introducing bias. Looking at the Android Unlock Pattern it is often used on mobile devices, both tablet and smartphones. When looking at different human properties and characteristics of mobile devices, tablets should be divided into two different environments of use. {\it First}, the tablet are often used in different settings than a smartphone that a user often carry and use every day. {\it Second}, the physical interaction are often different. A smartphone are small and can be interacted with using one hand. When collecting data I want to capture specific characteristics that will be different on a smartphone and a tablet. It is therefore desirable to only collect data on a smartphone where it is most rapidly used. It does not mean that patterns on tablets are not interesting, but to ensure what environment the survey are used for analysis purposes. 
 
       A decision to only deploying the survey on smartphoens sets high requirements to the usability. It is not a easy job to design a survey that will work on small devices, but there is also an technical part of this to fit the design to all various screen sizes. 
 
@@ -93,14 +96,14 @@
 
 	\subsection{Layout and Structure}
 
-    The layout and design was first drafted in my specialization project in 2014. The wireframes can be found in Appendix \ref{ap:wireframes}. Since the first drafts was made, the technical implementation and redesign have been carried out. 
+    The layout and design was first drafted in my specialization project in 2014 and the first wireframes can be found in Appendix \ref{ap:wireframes}. Since the first drafts was made, the technical implementation and redesign have been carried out. Last section included a elaboration of the requirements of the survey, while this section will go a step further and describe the survey and its functionality in use. The implemented survey will be illustrated and explained in detail. 
 
-    \subsubsection{Introduction}
-      When entering the survey application on a smartphone, all users will see an introduction with information about the survey, the research, and the author. The survey starts will not start collecting any data before a visitor decides to start the survey. When the visitor clicks on the green button, "start survey", the visitor becomes a participant in the study and will be sent to the rules of the pattern lock. It is important to give a brief explanation to users not familiar with the pattern lock, but it is not desirable to give too detailed information that can cause bias in the data. Figure \ref{fig:startscreen} and Figure \ref{fig:ALPintroduction} are showing the introduction to the survey and the introduction to the Android Pattern Lock respectively. In Figure \ref{fig:ALPintroduction} the participant have two choices; either enter the training mode or skip the training mode. If the respondent have never used the Android Pattern Lock before, there is added a training mode to avoid an uncomfortable situation where the user gets the feeling that they are tested in something they do not know how work. The training mode is an opportunity for the participant to play with the pattern without feeling any pressure to perform. This is also an opportunity for me to collect data from this.
+    \subsubsection*{Introduction}
+      When entering the survey application on a smartphone, all users will see an introduction with information about the survey, the research, and the author. The survey will not start collecting any data before a visitor decides to start the survey. When the visitor clicks on the green button, "start survey" (Figure \ref{fig:startscreen}), the visitor becomes a participant in the study and will next be sent to the rules of the pattern lock as shown in Figure \ref{fig:ALPintroduction}. It is important to give a brief explanation to users not familiar with the pattern lock, but it is not desirable to give too detailed information that can cause bias in the data. Figure \ref{fig:ALPintroduction} shows the next path in the survey; either enter the training mode or skip the training mode. If the respondent never have used the Android Pattern Lock before, there is added a training mode to avoid an uncomfortable situation where the user are getting the feeling of being tested in something they do not know. The training mode is an opportunity for the participant to play with the pattern without feeling any pressure to perform. This is also an opportunity for me to collect extra data in an another context than the three patterns collected later in the survey.
 
-      I as researcher believe that the patterns created in the training mode will be as real and valid as the other main pattern types collected. The reason for this is that people might tend to create the first patterns that pops into their mind without thinking too much about what they actually are creating. As far as this research know about there are not published any research on how people think when they are asked to create a password or asked by someone to give away a password. Think about the situation where you ask a person "Are you stupid?". By testing this question on some of my friends they just looked at me with a weird face and answered "NO?!". I believe that asking people to "give away" a password or pattern will give the same effect; people tend to overachieve when giving away a password or pattern just to prove that they are not stupid. When people are under pressure to perform, and when the outcome are related to how people might be judging you, you would probably do anything to put yourself into a position where you look good. When someone are asking about their password, and they know it is bad, they actually realize that they might are under the category stupid because they do know it is a bad choice but they do not want to do anything about it for many reasons. In the related work it was stated that the reason for using a bad password, or not using a password at all, was because the overhead in time used to type that complex long password and the hard work of actually remembering the password. 
+      I believe that the patterns created in the training mode will be as real and valid as the other pattern types collected later in the survey. The reason for this is that people might tend to create the first patterns that pops into their mind without thinking too much about what they actually are creating. As far as this research know about there are not published any research on how people think when they are asked to create a password or asked by someone to give away a password. Think about the situation where you ask a person "Are you stupid?". By testing this question on some of my friends they just looked at me with a weird face and answered "NO?!". I believe that asking people to "give away" a password or pattern will give the same effect; people tend to overachieve when giving away a password or pattern just to prove that they are not stupid. When people are under pressure to perform, and when the outcome are related to how people might be judging you, you would probably do anything to put yourself into a position where you look good. When someone are asking about their password, and they know it is bad, they actually realize that they might are under the category stupid because they do know it is a bad choice but they do not want to do anything about it for many reasons. In the related work it was stated that the reason for using a bad password, or not using a password at all, was because the overhead in time used to type that complex long password and the hard work of actually remembering the password. 
 
-      In the training mode I try to give a relaxed situation where people get the feeling of not being tested. Later when people are asked to create 3 different patterns for three different security levels, I believe that people might get the feeling of being tested and would might create a pattern that normally not would appear "in the wild". Figure \ref{fig:trainingmode} shows the training mode. This view has a feedback mode showing if a pattern is valid or not and the participant can try to create as many patterns as they like. To continue the survey they just clicks the "continue" button and they will be asked the same questions as the participants not entering the training mode. The participant selecting the "skip training" in Figure \ref{fig:ALPintroduction} will only skip the \ref{fig:trainingmode} and continue to the next view in Figure \ref{fig:introductiontopatterns}.
+      In the training mode I try to give a relaxed situation where people get the feeling of not being tested. Later when people are asked to create 3 different patterns for three different security levels, I believe that people might get the feeling of being tested, and some respondents would might create a pattern that normally not would appear "in the wild". Figure \ref{fig:trainingmode} shows the training mode. This view has a feedback mode showing if a pattern is valid or not and the participant can try to create as many patterns as they like. To continue the survey they just clicks the "continue" button and they will be asked the same questions as the participants not entering the training mode. The participant selecting the "skip training" in Figure \ref{fig:ALPintroduction} will only skip the \ref{fig:trainingmode} and continue to the next view in Figure \ref{fig:introductiontopatterns}.
 
       \begin{figure}[H]
         \centering
@@ -120,7 +123,8 @@
         \label{fig:introductionviews}
       \end{figure}
 
-    \subsubsection{Pattern creation}
+    \clearpage
+    \subsubsection*{Pattern creation}
       After introducing the research and the android pattern lock it is time to start collect the three main patterns for shopping account, smartphone, and banking account.
       The reason for dividing the pattern collection in three parts instead of just asking participants about a creating a pattern for smartphone is to put the patterns into context. 
 
@@ -129,7 +133,9 @@
       It might be a situation that some people just create the same pattern for all pattern types, but that situation is hard to avoid. The decision to add three patterns instead of two is a preventive measure for avoiding data submitted by respondents just trying to finish the survey as soon as possible without thinking about what they are submitting, but will give more data giving a solid foundation for the analysis. 
 
       In this survey I chose to ask the participants to create a pattern for a shopping account, a smartphone and a banking account. The three types are selected after my subjective opinion of how people would categorize different situations in a security perspective. A known security situation, that is not related to computer security, is the problem of selected whether to drive a car or take an airplane. Statistically th airplane are safer, but many people would still take the car. I believe this situation can be transferred to computer security. The question is not the probability of being hurt, but rather the actual outcome of the situation when it occurs. A airplane crashing sound more dramatic than an car crashing. The outcome of being robbed from a banking account sound more dramatic than your shopping account being hacked. The problem with this is that the shopping account site might be insecure or should not be trusted, and as a predictable person you might use that password somewhere else. Looking at the bank, security is probably highly prioritized, so the probability of you being robbed would actually be very small. 
-      %Folk har en rar måte å tenke på sikkerhet. Vi vil helst kjøre bil enn å ta fly feks. 
+      %Folk har en rar måte å tenke på sikkerhet. Vi vil helst kjøre bil enn å ta fly feks.
+
+      When collecting the patterns it is desirable to copy the pattern creation process used by Android. The process consists of 2 steps: typing a pattern and retyping a pattern. Figure Figure \ref{fig:androidpatterncreationprocess} shows the pattern creation process from the an Android smartphone. The screens in Figure \ref{fig:createandretypepatterns} shows the pattern creation process from the survey application used for collecting data. Figure \ref{fig:shoppingpattern}, \ref{fig:smartphonepattern}, and \ref{fig:bankpattern} are showing the view for creating the pattern for shopping account, smartphone, and banking account. Each of these will follow the same workflow as illustrated in Figure \ref{fig:patterncreationworkflow} and explained below. 
 
     \begin{figure}[H]
       \centering
@@ -153,11 +159,32 @@
       \label{fig:androidpatterncreationprocess}
     \end{figure}
 
-    When collecting the patterns it is desirable to copy the pattern creation process used by Android. The process consists of 2 steps: typing a pattern and retyping a pattern. Figure \ref{fig:drawpattern} is the first screen visualized to the user asking the user to draw a lock pattern. Figure \ref{fig:patternrecorded} shows the recorded pattern. Figure \ref{fig:redrawpattern} and Figure \ref{fig:confirmnewpattern} is the same process, but this time the user redraws the same pattern created in Figure \ref{fig:patternrecorded}.
+    \clearpage
 
-    Figure \ref{fig:shoppingpattern}, \ref{fig:smartphonepattern}, and \ref{fig:bankpattern} are showing the three patterns to be created. When the user draws a pattern the participant have to follow the rules of the Android Unlock Pattern. If the pattern is too short there pattern will turn red and a error message will be shown as in Figure \ref{fig:patternlengthtooshort}. If a valid pattern is drawn, the dots will turn red and show a message saying that pattern was recorded as in Figure \ref{fig:validpatternrecorded}.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=\textwidth]{pics/experiment/patterncreationflow.png}
+      \caption{Pattern creation workflow}
+      \label{fig:patterncreationworkflow}
+    \end{figure}
 
-    
+      \begin{enumerate}[leftmargin=0.3in]
+        \item The first step is drawing the pattern. The pattern are drawn by connecting the nodes on the grid creating lines between the nodes (Figure \ref{fig:bankpattern}). The user will not be able to proceed before a valid pattern is drawn.
+          \begin{enumerate}
+            \item If the pattern is a valid pattern, the pattern becomes green, the message "pattern recorded" are shown, and user can press the "continue" button to proceed to step 2 (Figure \ref{fig:validpatternrecorded}). 
+            \item If the pattern drawn is not a valid pattern, the pattern turns red, and the message "Connect at least 4 dots" are shown (Figure \ref{fig:patternlengthtooshort}). The user can press the button "Retry"and draw a new pattern.
+            \item If a patten drawn is a valid pattern, but the user want to create a different pattern, the user can always press the "Retry" button to reset the pattern already created. 
+          \end{enumerate}
+        \item When the user have created a valid pattern in step 1, they are proceeded to step 2 where the user are redrawing their pattern. The view are very similar to the view in step 1 beside the buttons and the text (Figure \ref{fig:retypepattern}).
+          \begin{enumerate}
+            \item If the user successfully redraws the pattern from step 1, the pattern turns green, and the massage "Correct!" appears (Figure \ref{fig:retypecorrect}). The usr can finish the pattern creation process by clicking the green button "Continue" to proceed to step 3 and finish the pattern creation process.
+            \item If the user unsuccessfully manages to redraw the pattern cerated in step 1, the pattern turns red, and the message "Not the same pattern" appears (Figure \ref{fig:retypewrong}). The user can try to remember the pattern and try to draw again. A situation like this can appear when the user do not remember the pattern or misdraws the pattern.  
+            \item If the user do not remember the pattern created at all, the "Back" button can be hit to go back to step 1 where the user are able to recreate a new pattern. 
+          \end{enumerate}
+        \item When the user successfully redraws the pattern in step 2 the pattern is successfully created.
+      \end{enumerate}
+
+    %Skrive noe om knappene....
 
     \begin{figure}[H]
       \centering
@@ -201,6 +228,27 @@
       \label{fig:createandretypepatterns}
     \end{figure}
 
+  \clearpage 
+
+  \subsubsection*{Background information}
+    After creating going through the pattern creation process three times, the respondent will now be asked several questions about their mobile and personal characteristics.
+    Figure \ref{fig:surveyquestoins} shows screenshots from the survey application and the questions asked. The views in Figure \ref{fig:surveyquestoins} is the final design used used for collecting data. The changes made during the design and implementation are described in Section \ref{sec:usabilitytestingsurvey}. 
+
+    There are some core functionality that are implemented in these questions that is important to notice. {\it First}, the traditional list of alternatives are replaced by icons and some few other components. As discussed in Section \ref{sec:requirementstosurvey}, it is important to customize the user interface for easily usage on small touchscreen, like screens used on smartphones. The images used are easy to click because of its size, and it requires less text because of the semantic meaning of the icons used. The icons used in the survey has been tested in a own usability test are found later in Section \ref{sec:usabilityicontest}. {\it Second}, to keep the user motivated, a progress bar is added to the questions. 
+    
+    The questions are listed after their appearance in the survey. The first questions to be asked is the handsize in Figure \ref{fig:handsizeview}. 
+
+    {\bf Note - Skriv om alle views:}
+    Figure \ref{fig:handednessview}
+    Figure \ref{fig:screensizeview}
+    Figure \ref{fig:handusedview}
+    Figure \ref{fig:fingerusedview}
+    Figure \ref{fig:readingandwritingview}
+    Figure \ref{fig:genderview}
+    Figure \ref{fig:ageview}
+
+  \clearpage
+
     \begin{figure}[H]
       \centering
       \subfigure[Handsize]{
@@ -239,32 +287,58 @@
       \label{fig:surveyquestoins}
     \end{figure}
 
+    \todo{Add finish screen}
+
+    There is one special question in the survey that is not yet talked about; the mobile operating system used. This question is one of the hard questions to ask because it is hard to ask without using any technical terms. Instead of listing all the possible mobile operating systems, I rather help the respondents by not showing what they do not have. In other words, I check their mobile OS and ask them if they are familiar with the OS I discovered. With this information I am able to ask "Is this your mobile operating system?" instead of showing a list and ask "Which one is your mobile OS". The alternatives are also designed in a way so whatever they answer I do know their mobile OS. 
+    This can help me in different ways:
+
+      \begin{enumerate}
+        \item People do not actually need to know their OS and I still get useful data
+        \item I can check that people actually knows their mobile OS
+        \item I can check that the system I created detects the correct OS
+      \end{enumerate}
+
+    When reaching the OS question, one of the screens in Figure \ref{fig:mobileOSquestion} will show. It is added 4 different mobile operating systems that are covering the most of the operating systems used on smartphones: iOS, Android, Windows, and BlackBerry. 
+    Each will have the three alternatives yes, no, and question mark. The value stored in the database will start with the detected OS and the alternative selected. If I used an Android phone the values could be "Andorid", "Android\_no", "Android\_unknown". If the survey detects an Android phone, but the respondent answer "No", I can still use the information.
+
+    One pitfall is the formulation of the question. I should avoid any formulations stating that I detects their information. A question like "It is detected that you have an Android phone. Is this correct?" can be frightening to some people because they can get the feeling of being monitored. The feeling of someone knowing anything about you can be scary for anyone not knowing the technical details. The mobile operating system can easily be detected on the client side with one line of javascript. 
+
     \begin{figure}[H]
       \centering
-      \subfigure[Start screen]{
+      \subfigure[iOS]{
         \includegraphics[scale=0.34]{pics/survey/ios}
       }
-      \subfigure[ALP introduction]{
+      \subfigure[Android]{
         \includegraphics[scale=0.34]{pics/survey/android}
       }
-      \subfigure[Training mode]{
+      \subfigure[Windows]{
         \includegraphics[scale=0.34]{pics/survey/windows}
       }
       \caption{Survey - Mobile OS}
+      \label{fig:mobileOSquestion}
     \end{figure}
+    \clearpage
+    
+    Figure \ref{fig:thefadingeffect} shows an example of what happens when you press an icon. When you press a icon, the icons turn green, highlighting the selected alternative like in Figure \ref{fig:selecticon}. When the icon is selected a slow fading effect starts like showing in Figure \ref{fig:iconfadingout} and \ref{fig:iconfadedout}. When the question is faded out the next question appears. 
+
+    The reason for doing it this way is closely related to the useage of icons instead of other traditional components used in surveys. When using "click on image" as a way to navigate through the survey, it is important to keep the feeling of control and presence. The fading effect is added to support the automatic navigation, and it clearly states that the user are taken out of the question and into a new one. A quick change between two questions can be confusing and too abrupt.
 
     \begin{figure}[H]
       \centering
       \subfigure[Select icon]{
         \includegraphics[scale=0.34]{pics/survey/icon-selected-1}
+        \label{fig:selecticon}
       }
       \subfigure[Icon fading out]{
         \includegraphics[scale=0.34]{pics/survey/icon-selected-3}
+        \label{fig:iconfadingout}
       }
       \subfigure[Icon faded out]{
         \includegraphics[scale=0.34]{pics/survey/icon-selected-4}
+        \label{fig:iconfadedout}
       }
       \caption{Survey - Icon selecting effect}
+      \label{fig:thefadingeffect}
     \end{figure}
 
 \subsection{Technical Description of The Survey Application}
