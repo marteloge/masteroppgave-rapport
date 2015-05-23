@@ -99,37 +99,48 @@
     This data can not be used to make any analysis on any specific county. During the data collection it was a goal to avoid a homogeneous dataset. The majority of the participants is still from Norway, but is was important to get other countries represented as well to obtain as a more heterogeneous data set. 
 
 		%Table: Country of origin (39 countires)
+
+   {\renewcommand{\arraystretch}{2}%
+
 		\begin{table}[H]
 	    \centering
 	    \begin{tabular}{ l c | c }
 	      \hline
-	      \multicolumn{2}{l|}{Country} & \# Respondents \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Norway.png}} & Norway & 517 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/USA.png}} & United States of America & 115 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Germany.png}} & Germany & 33 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/CzechRepublic.png}} & Czech Republic & 31 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/UnitedKingdom.png}} & United Kingdom & 22 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Russia.png}} & Russia & 13 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Denmark.png}} & Denmark & 7 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Sweden.png}} & Sweden & 6 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Switzerland.png}} & Switzerland & 6 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Australia.png}} & Australia & 5 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Netherlands.png}} & Netherlands & 4 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Chile.png}} & Chile & 4 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Finland.png}} & Finland & 3 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Austria.png}} & Austria & 3 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/Ukraine.png}} & Ukraine & 3 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics{pics/flags/China.png}} & China & 3 \\ \hline
-	      \multicolumn{2}{p{9cm}|}{Afghanistan, Mexico, North Korea, Pakistan, Vietnam, Luxembourg, Ireland, Tunisia} & 2 \\ \hline
-	      \multicolumn{2}{p{9cm} |}{Italy, Greece, Belgium, Indonesia, Malaysia, Bahrain, Botswana, Argentina, Singapore, japan, Canada, South Korea, Hungary, Turkey, Brazil} & 1 \\ \hline
+	      \multicolumn{2}{c|}{\bf Country} & {\bf \# Respondents} \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Norway.png}} & Norway & 517 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/USA.png}} & United States of America & 115 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Germany.png}} & Germany & 33 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/CzechRepublic.png}} & Czech Republic & 31 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/UnitedKingdom.png}} & United Kingdom & 22 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Russia.png}} & Russia & 13 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Denmark.png}} & Denmark & 7 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Sweden.png}} & Sweden & 6 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Switzerland.png}} & Switzerland & 6 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Australia.png}} & Australia & 5 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Netherlands.png}} & Netherlands & 4 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Chile.png}} & Chile & 4 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Finland.png}} & Finland & 3 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Austria.png}} & Austria & 3 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Ukraine.png}} & Ukraine & 3 \\ \hline
+	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/China.png}} & China & 3 \\ \hline
+	      \multicolumn{2}{p{8cm}|}{Afghanistan, Mexico, North Korea, Pakistan, Vietnam, Luxembourg, Ireland, Tunisia} & 2 \\ \hline
+	      \multicolumn{2}{p{8cm} |}{Italy, Greece, Belgium, Indonesia, Malaysia, Bahrain, Botswana, Argentina, Singapore, japan, Canada, South Korea, Hungary, Turkey, Brazil} & 1 \\ \hline
 	    \end{tabular}
 	    \caption{Respondents country of origin}
 	    \label{tab:country}
 	  \end{table}
+
+  {\renewcommand{\arraystretch}{1}%
+    
   
   \clearpage
-	\subsection{Classification of Handsize} \label{sec:classificationhandsize}
-    
+	\subsection{Classification of Handsize and Screensize} \label{sec:classificationhandsizescreensize}
+
+    \subsubsection*{Classification of handsize}
+    To be able to analyses if there is a correlation between handsize, screensize, and finger used on the patterns created it is important to validate the subjective parameters handsize and screensize. There is no easy way to ask a person these questions over a survey, so based on the answers I have to validate the answers and decides if they are reliable enough to be further used in a analysis. 
+
+    Handsize should be measured correctly in cm to be able to correctly classify the handsize, but it should not be a requirement that respondents have any tools available to measure their handsize, nor can I ensure that actually measure their handsize correctly. 
+
 
 		%Figure: Handsize
 		\begin{figure}[H]
@@ -152,31 +163,83 @@
       \label{tab:HandsizeGender}
     \end{table}
 
-  \clearpage
-	\subsection{Classification of Screensize} \label{sec:classificationscreensize}
-
-		%Figure: Iphone screensize distribution
-		\begin{figure}[H]
+    %Table: Classification of handsize
+    \begin{table}[H]
       \centering
-      \includegraphics[scale=0.4]{pics/analysis/IphoneScreenDist.png}
+      \begin{tabular}{ c || c | c | c | c | c }
+        \hline
+         & {\bf XL} & {\bf L} & {\bf M} & {\bf S} & {\bf XS} \\ \hline\hline
+        {\bf Male}   & XL & L  & M & S &   \\
+        {\bf Female} &    & XL & L & M & S \\ \hline
+      \end{tabular}
+      \caption{Classification of handsize for both male and female participants}
+      \label{tab:classificationhandsize}
+    \end{table}
+
+    \clearpage
+    \subsubsection{Classification of screensize}
+
+    \todo[inline, color=blue!60]{Må legge til noe oppsummerende tall som beviser at Android phones ikke kan bli klassifisert}
+
+    Classification of screensizes are a hard job due to the problem of various screen sizes and resoulutions across mobile brands. Smartphones operating on Android operation system are known to have a high variation in screen resolutions. The data collected from the mobile survey application are collected from the client, making it impossible to obtain the correct sceeensize of the respondent because it is only possible to obtain the screensize in pixels. The physical size of a mobile screen is not correlated with the pixel size. Apple have standardized the screensizes, making it possible to obtain the physical size of the respondents using a iPhone. The standarized screensizes are shown in Figure \ref{fig:iphonescreenresolutions} and Table \ref{tab:iphonescreen}.
+
+    %Figure: Iphone screen resolutions
+    \begin{figure}[H]
+      \centering
+      \subfigure[iPhone 3.5"]{
+        \includegraphics[scale=0.45]{pics/analysis/iphone35.png}
+        \label{fig:iphone35}
+      }
+      \subfigure[iPhone 4"]{
+        \includegraphics[scale=0.45]{pics/analysis/iphone4.png}
+        \label{fig:iphone4}
+      }
+      \subfigure[iPhone 4.7'']{
+        \includegraphics[scale=0.45]{pics/analysis/iphone47.png}
+        \label{fig:iphone47}
+      }
+      \subfigure[iPhone 5.5'']{
+        \includegraphics[scale=0.45]{pics/analysis/iphone55.png}
+        \label{fig:iphone55}
+      }
+
+      \caption{iPhone screen resolutions}
+      \label{fig:iphonescreenresolutions}
+    \end{figure}
+
+    There are only 4 physical screensizes used on iPhones illustrated in Figure \ref{fig:iphonescreenresolutions}. In my dataset there are only obtained the pixel sizes of the screen where 4 different types were obtained. The subjective answer and the corresponding pixel size are illustrated in Figure \ref{fig:iphoneScreenDist}. Looking at Table \ref{tab:iphonescreen} we can see that there are two resolutions that have a unique correspondence to a physical size, 320$\times$480px  and 414$\times$736px. There are two sizes that correspond to two different physical sizes because iPhone 5 and 6 can both have the screen resolutions 320$\times$568px while iPhone 6 and 6+ can both have the screen resolution 375$\times$667px. Table \ref{tab:iphonescreen} contains a purposed size for each model. There do not exist any scale defining mobile screens from S-L, so this is my own subjective classification of the screensized based on the most popular screensizes on the market. Because of the two overlaps, the 320$\times$480px can be both small or medium, and 414$\times$736px can be both medium and large.
+
+    Comparing my own subjective meaning in Table \ref{tab:iphonescreen} and the subjective classification of the respondents in Figure \ref{fig:iphoneScreenDist}, I will try to make an conclusion if the data are valid for further use. 
+
+    The smallest screen resolution, 320$\times$480px, do have very different subjective meaning of the screensize. Comparing the different models with that size with the other models, the screen can be classified to have a small screensize. It looks promising that none of the respondents classified 320$\times$480px as a large screen. The next screen resolution is the 320$\times$568px. The most of the participants have classified the smartphone as small, while the majority have classified the screen as medium. The only possible iPhones that can have that size is the iPhone 5 and 6 that have a medium screensize compared to other models. There are also none of the respondents classifying the screen resolution 320$\times$568px as a large screen. The next is rather hard to precisely classify because the 375$\times$667px can be both an iPhone 6 or 6+. iPhone 6 are compared to other models a medium screen while iPhone 6+ are one of the biggest screens in the market, making iPhone 6 a medium screen and iPhone 6+ as a large screen. The 3 respondents classifying the 375$\times$667px screen as small screen can be moved up to a medium screen. The last screen resolution, 414$\times$736px, can we just define as a large screensize because the only iPhone having this size is the iPhone 6+. 
+
+    %Figure: Iphone screensize distribution
+    \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.85]{pics/analysis/IphoneScreenDist.png}
       \caption{Iphone screensize distribution}
       \label{fig:iphoneScreenDist}
     \end{figure}
-    
+
     %Table: Iphone Screen classification
     \begin{table}[H]
       \centering
-      \begin{tabular}{ l | l | l }
+      \begin{tabular}{ l | l | l | l }
         \hline
-        {\bf Iphone Model}  & {\bf Resolution (px)} & {\bf Inches} \\ \hline
-        iPhone 2G, 3G, 3GS, 4, 4s  &  320 $\times$ 480  &  3.5'' \\
-        iPhone 5, 5s        &  320 $\times$ 568  &  4''   \\
-        iPhone 6            &  320 $\times$ 568, 375 $\times$ 667  &  4.7'' \\
-        iPhone 6 Plus       &  375 $\times$ 667, 414 $\times$ 736  &  5.5'' \\ \hline        
+        {\bf Iphone Model}  & {\bf Resolution (px)} & {\bf Inches} & {\bf Size} \\ \hline
+        iPhone 2G, 3G, 3GS, 4, 4s  &  320 $\times$ 480  &  3.5'' & S\\
+        iPhone 5, 5s        &  320 $\times$ 568  &  4'' & M \\
+        iPhone 6            &  320 $\times$ 568, 375 $\times$ 667  &  4.7'' & M/L \\
+        iPhone 6 Plus       &  375 $\times$ 667, 414 $\times$ 736  &  5.5'' & L \\ \hline        
       \end{tabular}
-      \caption{Iphone Screen classification}
+      \caption{Iphone screensizes}
       \label{tab:iphonescreen}
     \end{table}
+
+    
+
+    \todo[inline, color=blue!60]{Legge til en konklusjon om man kan stole på resultatene (bare iphones) og om de kan brukes videre i en analyse.}
+    
 
   \clearpage
 	\subsection{Created Patterns} \label{sec:createdpatterns}
@@ -238,7 +301,7 @@
         \centering
         \begin{tabular}{ l | l | l }
           \hline
-          {\bf Mobile held in} & {\bf Finger used} & {\bf \#} \\ \hline
+          {\bf Hand used} & {\bf Finger used} & {\bf \#} \\ \hline
           \multirow{3}{*}{Right hand} & Thumb & 366 \\
           & Forefinger & 41 \\
           & Other & 8 \\ \hline
@@ -254,7 +317,7 @@
         \centering
         \begin{tabular}{ l | l | l }
           \hline
-          {\bf Mobile held in} & {\bf Finger used} & {\bf \#} \\ \hline
+          {\bf Hand used} & {\bf Finger used} & {\bf \#} \\ \hline
           \multirow{3}{*}{Right hand} & Thumb & 22 \\ 
           & Forefinger & 26 \\
           & Other & 6 \\ \hline
@@ -401,6 +464,8 @@
 
 	\clearpage
 	\subsection{The Impact of Using Latin Square} \label{sec:latinsquareimpact}
+
+    \todo[inline, color=orange!80]{Flytte denne til diskusjon? Kanskje sette den sammen med kontrolldataene?}
 
 		%Figure: Percentage of times the pattern orders occurred
 		\begin{figure}[H]
