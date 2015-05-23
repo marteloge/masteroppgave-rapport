@@ -11,7 +11,6 @@
 \usepackage{hyperref} % Support for hyperlinks
 \usepackage[protrusion=true,expansion=true]{microtype} % Improve justification
 \usepackage{subfigure}
-\usepackage{hyperref}
 \usepackage{caption}
 \usepackage{float}
 \usepackage{afterpage}
@@ -19,7 +18,7 @@
 \usepackage{wrapfig}
 \usepackage{enumerate}
 \usepackage{natbib}
-\usepackage{todonotes}
+\usepackage[colorinlistoftodos]{todonotes}
 \usepackage{mdwlist}
 \usepackage{array}
 \usepackage{listings}
@@ -30,6 +29,7 @@
 \usepackage{listings}
 \usepackage[toc,page]{appendix}
 \usepackage{enumitem}
+\usepackage{tocbibind}
 
 %-------- Chapter Styling -----------
 \usepackage[T1]{fontenc}
@@ -51,10 +51,22 @@
 	\include{abstract} \thispagestyle{empty}
 	\tableofcontents \thispagestyle{empty}
 	\listoffigures \thispagestyle{empty}
-	\listoftables \thispagestyle{empty}
 	
-	\pagenumbering{arabic}
-	\setcounter{page}{0}	
+	\cleardoublepage
+	\begingroup
+	\makeatletter
+	\let\ps@plain\ps@empty
+	\makeatother
+
+	\pagestyle{empty}
+	\listoftables
+	\cleardoublepage
+	\endgroup
+
+	\listoftodos
+	\include{todos}
+
+	\pagenumbering{arabic}		
 
 	\include{part1/introduction}
 	\include{part1/method}
@@ -80,19 +92,20 @@
 	\include{part4/association}
 	\include{part4/strength}
 	\include{part4/attack}
+	\include{part4/PINvsAndroid}
 	\include{part4/controlGroup}
 
 	\include{part5/discussion}
 	\include{part5/conclusion}
 	\include{part5/futurework}
+
+	%Bibtex
+
+	\bibliographystyle{plain}
+	\bibliography{myBib}
 	
 	\begin{appendices}
 		\include{appendix/wireframes}
-	\end{appendices}
-
-
-	%Bibtex
-	\bibliographystyle{plain}
-	\bibliography{myBib}
+	\end{appendices}	
 	
 \end{document}

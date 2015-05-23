@@ -1,0 +1,39 @@
+EXPERIENCE NOTES
+
+--------- HYPOTHEIS --------
+	* What can this study be used for?
+
+
+
+--------- SURVEY ----------
+	* Hvorfor brukte jeg ikke pen&paper survey?
+	* The hard work of collecting passwords
+	* Hvorfor valgte jeg å ha 3 pattern types?
+		- Fordeler og ulemper
+		- Få satt passordtypene i kontekst (lav-høy risikofaktor)
+		- Samle mer data
+		- Spør man om bare mobil er det lett å bare lage noe random uten å tenke seg om.
+	* Latin square
+	* Gi klare tilbakemeldinger
+	* Gjenskape samme prosess som Android bruker
+		- Dette var endret etter tilbakemelding fra test.
+		- Retype --> fører kanskje til at man lager noen man kan huske som er tilfellet i virkeligheten. 
+	* Progressbar
+	* Skal BARE brukes på mobil
+	* 
+	* Det er vanskelig å spørre noen om mobil OS
+		- Personer har forskjellig kunnskapsnivå
+		- Legge til autodetect av OS
+		- Få samlet inn riktig uavhengig av hva man trykker på
+		- Vise bilde + tekst
+		- Unngå "Jeg observer at du har OS y." --> Lage det som et generisk spørsmål som alle får. 
+	* Fading effect
+	* Hvordan fikk jeg deltakere?
+		- Utvekslingsnettverk i USA
+		- Fullbight Minnesota
+		- Per Thorsheim
+		- Passwordscon
+		- Venner og kjente
+		- Spesificly asking people with a different backround to share
+
+
