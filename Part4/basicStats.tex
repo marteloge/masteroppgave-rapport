@@ -163,6 +163,10 @@
       \label{tab:HandsizeGender}
     \end{table}
 
+    Based on own experiences, there is a difference in how the two genders will classify their own handsize. In society, men are supposed to be masculine where big hands are often associated with masculinity. The opposite of masculine, femininity, are associated with smaller hands. It it therefore believed that men will classify their hand as medium or large, while women want to classify their hand as small or medium. The question in survey were asking the participants to select their handsize based on their own gender, but Table \ref{tab:HandsizeGender} confirms that the classification are biased. The majority of the men classified their hand as medium or higher, while women classified their handsize as medium or lower. 
+
+    To be able to cope with the differences, Table \ref{tab:classificationhandsize} are created to match female and male handsize against each other. For example, a male participant classifying their hand as small would probably have bigger hand than a female participant classifying her hand as small. 
+
     %Table: Classification of handsize
     \begin{table}[H]
       \centering
@@ -176,7 +180,6 @@
       \label{tab:classificationhandsize}
     \end{table}
 
-    \clearpage
     \subsubsection{Classification of screensize}
 
     \todo[inline, color=blue!60]{Må legge til noe oppsummerende tall som beviser at Android phones ikke kan bli klassifisert}
@@ -236,8 +239,6 @@
       \label{tab:iphonescreen}
     \end{table}
 
-    
-
     \todo[inline, color=blue!60]{Legge til en konklusjon om man kan stole på resultatene (bare iphones) og om de kan brukes videre i en analyse.}
     
 
@@ -271,6 +272,30 @@
       \caption{Staring node for all patterns}
       \label{fig:startingNode}
     \end{figure}
+
+    \clearpage
+
+    \begin{figure}[H]
+      \vspace{1.5cm}
+      \centering
+      \subfigure[Patterns created by right-handed respondents holding the smartphone in the right hand using the thumb]{
+        \includegraphics[width=0.45\textwidth]{pics/analysis/RRT.png}
+      }
+      \hspace{0.5cm}
+      \subfigure[Patterns created by right-handed respondents holding the smartphone in the left hand using the forefinger]{
+        \includegraphics[width=0.45\textwidth]{pics/analysis/RLF.png}
+      }
+      \subfigure[Patterns created by left-handed respondents holding the smartphone in the left hand using the thumb]{
+        \includegraphics[width=0.45\textwidth]{pics/analysis/LLT.png}
+      }
+      \hspace{0.5cm}
+      \subfigure[Patterns created by left-handed respondents holding the smartphone in the right hand using the forefinger]{
+        \includegraphics[width=0.45\textwidth]{pics/analysis/LRF.png}
+      }
+      \caption{Starting node based on handedness, hand used to hold smartphone, and finger used used when creating patterns}
+    \end{figure}
+
+    \clearpage
 
     %Figure: Number of unique patterns
     \begin{figure}[H]
@@ -330,35 +355,23 @@
       }
     \end{table}
 
-    %Figure: Average pattern creation time (seconds) and Pattern Length (nodes)
+    %Figure: Pattern Length distribution and creation time
     \begin{figure}[H]
       \centering
-      \subfigure[Average pattern creation time (seconds)]{
-        \includegraphics[scale=0.53]{pics/analysis/avgCreationTime.png}
-      }
+
       \subfigure[Average Pattern Length (nodes)]{
-        \includegraphics[scale=0.53]{pics/analysis/avgPatternLength.png}
+        \includegraphics[scale=0.48]{pics/analysis/avgPatternLength.png}
       }
-      \label{fig:creationTime}
-    \end{figure}
-
-    %Figure: Pattern Length distribution
-    \begin{figure}[H]
-      \centering
-      \subfigure{
-        \includegraphics[width=0.45\textwidth]{pics/analysis/patternLength.png}
+      \subfigure[Pattern length distribution]{
+        \includegraphics[width=0.48\textwidth]{pics/analysis/patternLength.png}
       }
-      \subfigure{
-        \includegraphics[width=0.45\textwidth]{pics/analysis/usedALPpatterncreationtime2.png}
+      \subfigure[Average pattern creation time (seconds)]{
+        \includegraphics[scale=0.48]{pics/analysis/avgCreationTime.png}
       }
-    \end{figure}
-
-    %Figure: Pattern creation time and experience with ALP
-    \begin{figure}[H]
-      \centering
-      \includegraphics[scale=0.65]{pics/analysis/usedALPpatterncreationtime.png}
-      \caption{Creation time based on experience with ALP}
-      \label{fig:usedALPpatterncreationtime}
+      \subfigure[Creation time and experience with ALP]{
+        \includegraphics[width=0.48\textwidth]{pics/analysis/usedALPpatterncreationtime2.png}
+      }
+      \caption{Pattern length and pattern creation time}
     \end{figure}
 
     %Figure:Pattern length and type distribution
