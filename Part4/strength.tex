@@ -33,24 +33,53 @@
 
     \begin{table}[H]
       \centering
-      \begin{tabular}{l || l | l || l | l}
+      \begin{tabular}{l || l | l || l | l || l | l }
         \hline
-         & \multicolumn{2}{c ||}{\bf Gender} & \multicolumn{2}{c}{\bf Experience} \\ \hline
-        {\bf Parameters}   & {\bf Male} & {\bf Female} & {\bf Yes} & {\bf No} \\ \hline
-        \#Patterns         & 2099       & 1102         & 1864      & 1317 \\
-        Avg. Size          & 5.673      & 5.309        & 5.667     & 5.368 \\ 
-        Avg. Length        & 5.283      & 4.761        & 5.274     & 4.853 \\
-        \#Intersections    & 668        & 123          & 572       & 213 \\
-        Avg. Intersections & 0.318      & 0.112        & 0.310     & 0.162 \\
-        \#Overlaps         & 47         & 6            & 37        & 16 \\
-        Avg. Overlaps      & 0.022      & 0.005        & 0.019     & 0.012 \\ \hline
-        Avg. Strength      & 14.215     & 12.340       & 14.174    & 12.670 \\ 
-        Min strength       & 6.339      & 6.339        & 6.340     & 6.340 \\
-        Max strength       & 44.441     & 40.0715      & 44.441    & 44.441 \\ \hline
+         & \multicolumn{2}{c ||}{\bf Gender} & \multicolumn{2}{c ||}{\bf Experience} & \multicolumn{2}{c}{\bf Used ALP}\\ \hline
+        {\bf Parameters}   & {\bf Male} & {\bf Female} & {\bf Yes} & {\bf No} & {\bf Yes} & {\bf No}\\ \hline
+        \#Patterns         & 2099    & 1102     & 1864    & 1317    & 2021   &  1167 \\
+        Avg. Size          & 5.673   & 5.309    & 5.667   & 5.368   & 5.620  &  5.410 \\ 
+        Avg. Length        & 5.283   & 4.761    & 5.274   & 4.853   & 5.237  &  4.860 \\
+        \#Intersections    & 668     & 123      & 572     & 213     & 600    &  187 \\
+        Avg. Intersections & 0.318   & 0.112    & 0.310   & 0.162   & 0.297  &  0.160 \\
+        \#Overlaps         & 47      & 6        & 37      & 16      & 36     &  17 \\
+        Avg. Overlaps      & 0.022   & 0.005    & 0.019   & 0.012   & 0.018  &  0.015 \\ \hline
+        Avg. Strength      & 14.215  & 12.340   & 14.174  & 12.670  & 13.974 &  12.816 \\ 
+        Min strength       & 6.339   & 6.339    & 6.340   & 6.340   & 6.340  &  6.340 \\
+        Max strength       & 44.441  & 40.0715  & 44.441  & 44.441  & 44.441 &  44.441 \\ \hline
       \end{tabular}
       \caption{Password strength - Gender and IT/Security experience}
-      \label{fig:hello}
+      \label{tab:genderexperienceusedALPstrength}
     \end{table}
+
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{l || l | l || l | l || l | l }
+        \hline
+         & \multicolumn{2}{c ||}{\bf Handedness} & \multicolumn{2}{c ||}{\bf Use screenlock} & \multicolumn{2}{c}{\bf }\\ \hline
+        {\bf Parameters}   & {\bf Left} & {\bf Right} & {\bf } & {\bf } & {\bf } & {\bf }\\ \hline
+        \#Patterns         &  &&&&& \\
+        Avg. Size          &  &&&&& \\ 
+        Avg. Length        &  &&&&& \\
+        \#Intersections    &  &&&&& \\
+        Avg. Intersections &  &&&&& \\
+        \#Overlaps         &  &&&&& \\
+        Avg. Overlaps      &  &&&&& \\ \hline
+        Avg. Strength      &  &&&&& \\ 
+        Min strength       &  &&&&& \\
+        Max strength       &  &&&&& \\ \hline
+      \end{tabular}
+      \caption{Password strength - Gender and IT/Security experience}
+      \label{tab:handednessstrength}
+    \end{table}
+
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{pics/analysis/strengthagedist.png}
+    \caption{Pattern strength and age distribution}
+    \label{fig:strengthagedist}
+  \end{figure}
 
 
   \begin{figure}[H]
