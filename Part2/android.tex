@@ -88,3 +88,53 @@
   When looking at user selected passwords, studies shows that many users are using graphical shapes to support memory \cite{Weiss}. Sun et al. \cite{Sun} analyzed the collected patterns and found empirical evidence that some users tended to use patterns which looked like letters or numbers. They found patterns looking like the letters and numbers C, L, N, Z, 2, and 7 that easily can be created on a 3$\times$3 grid. Such a memorability strategy are using association elements, e.g something that the user are familiar with, to increase the memorability. Same strategy are known in PIN codes and alphanumeric passwords where names, objects, dates are used to remember the password.
 
   One of the traditional password schemes on smartphones is the Android Unlock pattern. It is a graphical password scheme that have been shown to have biases when the password is user-chosen. A research group did one of the first large-scale user study on the security of the Android Unlock Patterns in order to quantify its security \cite{Uellenbeck}. They analyze the biases introduced in the pattern making process and added changes to the scheme in order to avoid the known biases in the password scheme. The researchers found that there is a high bias in the pattern selection process, e.g. the upper left corner and three-point long straight lines are very typical selection strategies. If the patterns were uniformly chosen, the probability of starting in at any point should be 11\%. The results showed that there was a strong bias to the starting point towards the corners. If the points were uniformly chosen, the probability for all four corners should be 44\%, but the results showed that the probability is close to 75\% in the pen-and-paper study. In contrast to this, the center point, the right, the upper, and the lower center points only get a probability of 14\% based on the results. Other results from the pen-and-paper study found that the average pattern length was 5.63 (with a standard deviation of 1.5). By looking further into the pattern length chosen by users, this is not a surprisingly result because this seems quite familiar with restriction of the Android Pattern Lock that requires the users to make a pattern of at least 4 connected points. As stated earlier, users tend to take the easiest way out, making users choose short patterns that are easy to remember and type. Besides the pen-and-paper study, there was also conducted a user study that also showed a high bias towards the upper-left corner that had the bias of 43\% in the user study, and 38\% in the pen-and-paper study. This is supporting the researchers claim that users tend to choose less secure patterns ``in the wild''.
+
+  \clearpage
+
+    \begin{figure}[H]
+      \centering
+      \vspace{1.5cm}
+      \subfigure[Sequence: 147852369, \newline Strength: 27.00]{
+        \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern2.png}
+        \hspace{0.6cm}
+      }
+      \subfigure[Sequence:213546879, \newline Strength: 36.655]{
+        \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern3.png}
+        \hspace{0.6cm}
+      }
+      \subfigure[Sequence: 591827346, \newline Strength: 46.807]{
+        \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern1.png}
+      }
+      \vspace{0.5cm}
+
+      \subfigure[Sequence: 968752, \newline Strength: 15.259]{
+        \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern7.png}
+        \hspace{0.6cm}
+      }
+      \subfigure[Sequence: 1269853, \newline Strength: 20.781]{
+        \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern8.png}
+        \hspace{0.6cm}
+      }
+      \subfigure[Sequence: 36578249, \newline Strength: 30.512]{
+        \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern9.png}
+      }
+      
+      \vspace{0.5cm}
+
+      \subfigure[Sequence: 1478, \newline Strength: 6.339]{
+        \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern4.png}
+        \hspace{0.6cm}
+      }
+      \subfigure[Sequence: 5968, \newline Strength: 9.086]{
+        \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern5.png}
+        \hspace{0.6cm}
+      }
+      \subfigure[Sequence: 4927, \newline Strength: 11.786]{
+        \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern6.png}
+      }
+
+      \vspace{0.5cm}
+      \caption{Examples of patterns with different length and strength}
+    \end{figure}
+
+    \todo[inline, color=blue!60]{Må her vise til disse forskjellige mønstrene som viser hvordan styrken defineres. Refereres til i tekst.}
