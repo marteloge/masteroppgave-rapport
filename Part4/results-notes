@@ -1,5 +1,11 @@
 RANDOM RESULT NODES:
 
+* Hvordan behadler jeg data? Hvordan blir de filtrert?
+* Hvordan kan man definere om noe er signifikant ? Stats?
+* Bør jeg definere hvordan treningsmønstrene kan brukes?
+* Lage en seksjon om data preprocessing and validation?
+
+
 	-------- Handedness typing habits -------
 		* Venstrehendte har mer tilfelig oppførsel
 		* Høyrehendte som holder mobilen i høyre hånd bruker mest tommel (bruker en hånd)
@@ -7,28 +13,43 @@ RANDOM RESULT NODES:
 			- Lage et bilde som viser begge situasjoner (bruke en hånd + tommel og begge hender med pekefinger)
 		* Hva er egentlig normalt? Hvordan er det egentlig personer bruker en mobil?
 		* Kan utforming av spørreundersøkelse ha påvirket hvordan de svarte på undersøkelsen? Type at man til vanlig bare bruker 1 hånd, men at de nå bruker 2 hender fordi settingen er annerledes?
+		* Hvorfor er det slik at handedness, hand used, finger ikke påvirker startpunkt i større grad? Er det fordi alle leser fra venstre til høyre? Anser vi hjørnene som et startpunkt? Spesielt opperste hjørne? Gitt at vi hadde arabiske deltakere, ville vi sette en annen tendens?
+
+	-------- Classification of hand- and screensize ----------
+		* Bør jeg flytte dette til limitations?
+		* Når det kommer til håndstørrelse vil nok menn klassifisere størrelse større enn den egentlig er basert på kjønn, mens kvinner vil gjøre det motsatte. 
+		* Kan bruke iphones til å sjekke om skjermstørrelse påvirker mønster.
+		* Selv om det er spesifisert at de skal spesifisere skjermstørrelse basert på smartphone kan det hende at mange fortsatt tar utgangspunkt i ipads.
+		* Sammenligner man skjermstørrelse basert på hva de rundt bruker eller hvilke modeller som selges? Feks har iphones tradisjonelt vært små.
+
+	-------- Starting Node --------------
+		* Alle typer har startnode 1,3 eller 7 som alle er hjørner. 
+		* node 1,3, og 7 tilsvarer 73% av startnodene for alle mønstre.
+		* Hvorfor brukes ikke det siste hjørnet??
+		* Starting point, handedness, hand used, finger
 
 	-------- Pattern creation time ----------
 		* Smartphone har lavest tid 
-			- wow, dette var en ganske rask responstid. 
-			- Betyr dette at personer kanskje bruker sitt eget låsemønster og at de bruker mindre tid fordi dette allerede er kjent?
+			- wow, dette var en ganske rask responstid. Betyr dette at personer kanskje bruker sitt eget låsemønster og at de bruker mindre tid fordi dette allerede er kjent?
 		* Bank bruker de litt lengre tid enn smartphone. Setter man dette opp mot feks lengde og sikkerhet er det noe rart. Asssoierer de PIN bank med PIN mobil og låsemønster sammen?
 		* Minne og psychology:
 			- Det å få noe fra kortidsminne over på langtidsminne er noe som krever repitisjoner. Det som skjer her er at de som har brukt et mønster før lett kan hente frem et mønster og repetere. De som ikke har brukt mønster før må starte tenkeprosessen. En person som har brukt mønster før har det nok lagret i fingrene, en automatisk prosess. Hjernen har nok laget en sterk kobling mellom 3*3 grid og møsnter de har brukt. Både mentar og fysisk rask reaksjon. Stemmer dette med psykologien?
 			- Hvordan er responstiden på de som har brukt låsemønster før?
 		* Fjernet noen som var unaturlig høye (outliners). Noen lå på flere minutter, noe man kan se bort fra vil skje. Fjernet alle som var høyere enn ****1.5 minutter******* !!
+		* Sammenligne pattern creation time and average length. 
+		* Sannsynlig at mange har et mønster de har brukt før som gjør at responstiden på mobil går raskere. 
 
+	-------- Average pattern length ---------
+		* Bank er den med høyst avg lengde. Tydelig at personer ser på bank som viktigst.
+		* Hvorfor blir ikke mønster av lengde 8 laget? Burde være en gjevnt synkende kurve?
+			- Er mønster av lengde 8 uligisk å bruke?
+			- Når jeg med det første har laget et mønster av lengde 8 kan jeg like så godt lage et mønster av lengde 9. 
 
 	------ Pattern creation time and ALP experience ---------
 		* Ser at bank og shopping er ca lik
 			- begge typer, brukt eller ikke brukt, stiller på lik linje.
 		* Mobil
 			- Her er det en forskjell! det ser ut til at de med erfaring har et mønster de har lagret i hjernen. 
-
-
-	-------- Average pattern length ---------
-		* Bank er den med høyst avg lengde. Tydelig at personer ser på bank som viktigst.
-
 
 	-------- Pattern length distribution -----
 		* Hvorfor er det så få som har valgt lengde 8 og så mange flere har valgt lengde 9? Ville antatt at det var en gjevnt synkende kurve på grunn av hukommelse; jo lengre mønster jo vanskligere er det å huske.
@@ -37,10 +58,33 @@ RANDOM RESULT NODES:
 		* There are not many patterns for bank with length 4 and 5 (mindretall), men fra lengde 6-9 er bank i flertall.
 		* Sier muligens noe om hva personer ser på som viktig og ikke. 
 
+	-------- 3-gram ---------------
+		* Veldig mange mønster som starter på 123 eller 147. (Regne i %)
+		* Vanligste linjene er rette linjer på kanten, runde svinger, eller rette kryss. Skjeve kryss er ikke godt representert. 
 
-	-------- Starting Node --------------
-		* Alle typer har startnode 1,3 eller 7 som alle er hjørner.
-		* Hvorfor brukes ikke det siste hjørnet?
+
+	-------- Association Elements -------
+		* 11.4% av dataene inneholdt et assosiasjonelement	
+		* Underveis i tester og underveis eller har personer kommet å røpet deres egne og bekjentes strategi om å bruke bokstav som mønster. 
+		* Her må jeg vise tilbake til annen forskning at det er blitt funnet samme spor.
+
+
+	-------- Pattern strength -----------
+		* Virker som om de fleste mener at banken krever høyest sikkerhetsnivå, men hvorfor ikke bruke det som er sikkert på mer?
+    * Det finnes ikke et eneste passord som oppnår maks styrke på 46.8. Høyeste er 44.3
+    * Gjennomgående er mobil og trening er lavest på alle parametere, mens bank er gjennomsnittlig høyest på alle ledd.
+    * av 3393 mønstre oppstår det bare 55 overlapp, noe som er veldig lavt.
+    * Sjekke hvordan det står til med styrken på topp 20/100 mønstre
+    * Hvordan er styrken basert på alder, kjønn, handedness, finger brukt, etc. 
+    
+	-------- Latin square -----------
+
+	--------- Limitations -----------
+
+	* Har en skjev fordeling i alder
+	* Har ikke nok forskjellige skriveretninger til å få signifikante resultater.
+	* Noen av dataene er subjektive! Kan ikke stole helt på dem.
+
 
 
 
