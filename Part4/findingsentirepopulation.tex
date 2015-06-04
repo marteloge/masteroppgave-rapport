@@ -1,42 +1,69 @@
 % !TEX root = ../main.tex
 \section{Findings for the Entire Population}
+  
+  This section will go through the results from the survey based on the entire population. 
+
+  \todo[inline, color=blue!60]{The data used in this section are preprocessed. The procedures can be found in section.}
+  \todo[inline, color=blue!60]{Skal treningsdata fjernes?}
 
 	\subsection{Pattern Creation Time}
+    When creating a pattern in the survey, both time used to create a pattern and the pattern created was recorded. The time used to create the pattern was recorded from the start when the grid appeared until the user submitted the pattern.
+
+    Figure \ref{fig:avgpatterncreationtimepopulation} shows pattern creation time in seconds for the three pattern types, including the patterns created in the training mode. Looking at the average creation time, bank have the highest creation time of 10.43 seconds while patterns created for smartphones had an average creation time of 8.24 seconds. 
+
+    Figure \ref{fig:patterncreationtimeexperience} shows the average pattern creation time in seconds for the entire population regards to participants experience with the Android Unlock Pattern. The graph shows that both patterns created for shopping account and banking account are not affected by the participants experience with the Android Unlock pattern. Both pattern types do not have any significant difference in average creation time regarding the participants experience. Looking at patterns created for smartphone and training, both have a significant difference in the average creation time regarding the participants experience with ALP. Smartphone have an average creation time of 7.62 seconds for participants experienced with ALP and an average creation time of 9.82 seconds for people not experienced with ALP. The significant difference in average creation time results in a difference of 2.2 seconds. The training patterns have a total difference in average creation time of 2.76 seconds.  
+
 		\begin{figure}[H]
       \subfigure[Average pattern creation time (seconds)]{
         \includegraphics[scale=0.48]{pics/analysis/avgCreationTime.png}
+        \label{fig:avgpatterncreationtimepopulation}
       }
       \subfigure[Creation time and experience with ALP]{
         \includegraphics[width=0.48\textwidth]{pics/analysis/usedALPpatterncreationtime2.png}
+        \label{fig:patterncreationtimeexperience}
       }
       \caption{Pattern creation time for the entire population}
+      \label{fig:patterncreationtimepopulation}
     \end{figure}
 
 	\subsection{Pattern Length}
 
-		\begin{figure}[H]
+    The pattern length are defined as the number of dots used to form a pattern. Each dot have a own sequence number and can only appear once. The minimum length of a pattern is 4 and the maximum length is 9. The number of unique patterns of all possible pattern lengths are described in table \ref{tab:combinations}. The pattern length are visualized in two different ways; the average pattern length and the distribution of pattern length.
+
+    Figure \ref{fig:avgpatternlengthpopulation} shows the average pattern length in number of nodes for the three pattern types, including the patterns from the training mode. In the graph, the shape of the graph is skewed. There are indication that patterns created for bank have a higher average pattern length. The numbers from the graph also indicates that patterns created from smartphone has the smallest average pattern length. The difference in average pattern length for patterns created for smartphone and banking are 0.52 nodes. Patterns created for shopping account are slightly longer than patterns created for smartphones, but there are no significant difference between them. When looking away from the three main patterns, the training patterns have the shortest average pattern length of with a average length of 5.35 nodes. 
+
+    \begin{figure}[H]
       \centering
       \subfigure[Average Pattern Length (nodes)]{
         \includegraphics[scale=0.48]{pics/analysis/avgPatternLength.png}
+        \label{fig:avgpatternlengthpopulation}
       }
       \subfigure[Pattern length distribution]{
         \includegraphics[width=0.48\textwidth]{pics/analysis/patternLength.png}
+        \label{fig:patterndistpopulation}
+      }
+      \subfigure[Pattern length and type distribution]{
+        \includegraphics[width=\textwidth]{pics/analysis/patterntypePatternLength.png}
+      \label{fig:patternTypePatternLength}
       }
       \caption{Pattern Length for the entire population}
+      \label{fig:patternlengthpopulation}
     \end{figure}
 
-		%Figure:Pattern length and type distribution
-    \begin{figure}[H]
-      \centering
-      \includegraphics[width=\textwidth]{pics/analysis/patterntypePatternLength.png}
-      \caption{Pattern length and type distribution}
-      \label{fig:patternTypePatternLength}
-    \end{figure}
+    \clearpage
+
+    The graph in Figure \ref{fig:patterndistpopulation} is a pattern length distribution indicating what pattern length that often are selected in the population. Figure \ref{fig:patternTypePatternLength} is a more detailed version of Figure \ref{fig:patterndistpopulation} showing the pattern distribution for all pattern types. Both graphs shows an indication that when the length increases the patterns of that length will occur less often. Both graphs also have a low frequency of pattern with length 8, where patterns of length 7 and 9 both have a higher frequency than patterns of length 8.
+
+    By looking at the pattern length of each specific pattern type in Figure \ref{fig:patternTypePatternLength}, the distribution reflects the average pattern length. Patterns created for shopping account, smartphone and training have the majority of the patterns distributed over the shortest pattern length. Bank that had the highest average pattern length still have the majority of its patterns distributed over the lower pattern lengths, but do have the highest frequency of patterns of length 9. 
 
 
 	\subsection{Pattern Complexity}
 
-		\begin{table}[H]
+    Pattern complexity, e.g. pattern strength, is calculated from a mathematical formula that take into account the different aspects of visual complexity of patterns. The formula and parameters used are described in detail in Section \ref{sec:alp}. In short, the formula uses the size (number of nodes), physical size (length) of the pattern, number of intersections and number of overlaps. The minimum strength is 6.340 and the maximum strength is 46.807.
+
+    Table \ref{tab:patternstrength} is a summary of all the parameters used in calculating the calculating the strength of the patterns in the entire population for all the different pattern types, including calculations of all the patterns collected. Since the pattern length are described in the previous subsection, this section will not comment on this again although the length of the pattern (e.g. size) are a part of calculating the strength. 
+
+    \begin{table}[H]
       \begin{tabular}{l || l | l | l | l || l}
         \hline
         {\bf Parameters} & {\bf Shopping} & {\bf Smartphone} & {\bf Bank} & {\bf Training} & {\bf All} \\ \hline
@@ -48,12 +75,23 @@
         \#Overlaps & 15 & 12 & 19 & 9 & 55 \\
         Avg. Overlaps & 0.0178 & 0.014 & 0.023 & 0.010 & 0.016\\ \hline
         Avg. Strength & 13.440 & 12.837 & 15.514 & 12.545 & 13.572 \\ 
-        Min strength & 6.339 & 6.339 & 6.339 & 6.339 & 6.339 \\
+        Min strength & 6.340 & 6.340 & 6.340 & 6.340 & 6.340 \\
         Max strength & 44.441 & 43.187 & 44.441 & 43.187 & 44.441 \\ \hline
       \end{tabular}
       \caption{Pattern strength for all patterns types in the entire population}
       \label{tab:patternstrength}
     \end{table}
+
+    The physical length, e.g. length, are increased when patterns creates lines between the nodes that are nor horizontal or vertical. A higher length are often correlated with the number of intersections and overlaps. Bank that have the highest strength do also have the highest average occurrences of intersections and overlaps, 0.433 and 0.023 respectively. 
+    As seen before, patterns cerated for banking account have had a high pattern creation time and a high average pattern length that also are reflected in the average strength patterns created for banking account. The average strength for patterns created for banking account are 15.514.
+
+    Smartphone is the pattern type with the lowest average strength excluding the patterns created for training purpose. The characteristics of patterns created for smartphones is that they have a short pattern length, the physical length are short, and the average occurrences of intersections and overlaps are low. The average number of occurrences of intersections and overlaps are 0.1769 and 0.014 respectively. The patterns created for smartphones gets an average strength score of 12.339. 
+
+    Patterns created for shopping account are similar to patterns created for smartphone. All the parameters for the shopping account are slightly higher. The average strength for the patterns created for shopping account are 13.440.
+
+    When looking at the maximum pattern strength of the all pattern strength, none of the respondents have managed to create a pattern with the highest possible pattern strength. The highest pattern strength in the data set is 44.441 where the maximum strength for patterns are 46.807. The patterns created for smartphones do not include patterns with strengths higher than 43.187 that is lower than the highest score in the dataset. 
+
+    \todo[inline, color=red!70]{Må endre på avg. length for training i Tabell \ref{tab:patternstrength}}
 
 	\subsection{Pattern Characteristics}
 
