@@ -3,14 +3,25 @@
 	
 	\section{Background and Motivation} \label{sec:backgroundandmotivation}
 
-		Shortcomings with text-based passwords and PINS 
-		--> predictability
-		--> Graphical passwords is a solution for creating both secure and usable pw mechanisms
-		..... but does it work?? Is graphical passwords better than any other password mechanism?
+		As mobile devices play a significant role in our everyday life, it makes it an interesting target device because it contains a lot of sensitive information. The use of mobile phones has changed in terms of capability, interaction and context of use and, therefore, the increased need for higher security. Mobile phones are not just capable as a tool for simple communication, but also a tool to perform our daily tasks like paying bills and keeping up with our social life. The smartphone are becoming an integrated part of our daily life and is becoming a device keeping a lot of sensitive information about your professional and private life.
+
+		Screen locks are used as a protection mechanism to prevent leakage of sensitive data from mobile devices. The history of locking mechanisms was often a solution solely to prevent accidental use while current mobile phones require protection to secure the potentially vast amount of private data that we keep on our mobile devices. The most common mechanisms for protection today is the use of locking mechanisms like PIN codes, fingerprints, and pattern locks. The screen lock mechanism is also a form of a password, e.g. a secret only you know to get access to a resource. The problem with passwords on mobile devices has three different aspects. First, people find it hard to remember long and secure password. Second, the way we interact with touch screens makes it hard to type long text-based passwords on a small mobile keyboard. Third, we interact with the phone many times a day, making the overhead in time very high when using a long and complex password.
+
+		Looking at passwords in general, passwords are often a user-selected secret that are connected to you as a person. When creating a password, people tend to create a password that is an association to something they know or recognize; passwords are more than just words and numbers. The way people choose their password cause the passwords we make to be predictable and therefore being insecure. People tend to select PIN codes forming a date, or an alphanumeric password consisting of your name or perhaps your favorite sports team. This predictability is a cause of how people cope with the problem of remembering passwords, e.g. the shortcomings with alphanumeric passwords. 
+
+		Because of the shortcomings with alphanumeric passwords \cite{UnixPasswords}, there is an increased interest in graphical passwords. Graphical passwords were fist a suggestion for motivating users to create long and memorable passwords and, therefore, more secure started by the assumption that pictures are easier to remember and more secure than words and numbers \cite{DeAngeli}. Graphical passwords look like a promising alternative to text-based passwords, as it supports users to remember and make more complex passwords, offering better usability and higher security. The way of interacting with the smartphone also seem as a well-suited platform for a graphical password because graphical passwords often use direct manipulation of graphical elements instead of typing small letters and numbers. One of the graphical passwords in rapid use is the Android Pattern Lock released on the Android platform by Google in 2008. The Android Pattern Lock is a graphical password that enables the users to connect dots from a 3$\times$3 grid forming a password. Since its release, there has been much discussion of its security, but few researchers have conducted scientific research on the Android Unlock Pattern. Compared to PIN code that are often used as a screen lock on mobile devices, PIN codes have a total of 10.000 possible combinations while the Android pattern lock have a total of 389.112 possible combinations. By the first sight, pattern lock looks like a promising mechanism for mobile devices. The problem is not just the theoretical password space, but rather the password space in practice. In 2013, a research group conducted the first large-scale user study on the Android Unlock Patterns \cite{Uellenbeck}. The outcome of the research was an analysis of 2900 user-selected patterns. They found bias in the pattern making process claiming that the scheme are less secure than its stated theoretical password space.
+
+		Taking closer look at the Android pattern lock we can notice that is is only dots and arrows forming a pattern. How can this be connected to you as a person like PIN codes and alphanumeric passwords?
+		 
+		% Shortcomings with text-based passwords and PINS 
+		% --> predictability
+		% --> Vi ser samme tendenser i flere passwordmekanismer. 
+		% --> Graphical passwords is a solution for creating both secure and usable pw mechanisms
+		% ..... but does it work?? Is graphical passwords better than any other password mechanism?
 
 	\section{Hypothesis}\label{sec:hypothesis}
 
-		This section will include hypothesis to be tested. The hypothesis has its origin from the conducted literature study in Chapter \ref{chap:relatedwork}.
+		This section will be an elaboration of the hypothesis to be tested by performing an experiment.
 
 		{\renewcommand\labelitemi{}
 			\begin{itemize}
@@ -19,12 +30,34 @@
 	  	\end{itemize}
 	  }
 
-	  The hypothesis to be tested is referred to as the null hypothesis (abbreviated $H_{0}$). We start with the assumption that the null hypothesis is true; human properties have no influence on users choice of graphical passwords. Along with $H_{0}$ it is stated an alternative hypothesis (abbreviated $H_{1}$). The alternative hypothesis states that users choice in graphical passwords is influenced by the human properties of the user. If the null hypothesis is rejected, we accept the alternative hypothesis.
+	  The hypothesis to be tested is referred to as the null hypothesis (abbreviated $H_{0}$). We start with the assumption that the null hypothesis is true; human properties have no influence on users choice of graphical passwords. Along with $H_{0}$ it is stated an alternative hypothesis (abbreviated $H_{1}$). The alternative hypothesis states that users choice in graphical passwords is influenced by the human properties of the user. If the null hypothesis is rejected, we accept the alternative hypothesis. 
 
-	  The results of this proposed research will have some limitations. {\it First}, the hypotheses do not include all potential human properties. If the results of the statistical test are accepting the alternative hypothesis, the results are not valid for proving a correlation between users choice in graphical passwords and human properties that are not selected in this research. {\it Second}, the hypothesis does neither prove that human choices based on the human properties is valid for all graphical password schemes. The selected graphical password scheme is the Android Unlock Pattern and the decision for choosing this particular scheme is described in the summary of the literature review in Section \ref{sec:resultsLiteratureStudy}. In the research strategy, there will be a description of the selected human properties (Section \todo{Check refernece!}) that this study find relevant to users choice in graphical patterns.
+	  The hypothesis will be tested by performing an experiment by collecting Android lock patterns and a set of human properties of the creators of the patterns. The Experiment are described in Chapter \ref{chap:experiment}.
 
-	  The results from this study can further be used to evaluate the security of the Android Unlock Pattern. If there is a correlation between users choice in Android Unlock Patterns and the users human properties, it can be used to make dictionary attacks by predicting user's pattern locks. An ability to predict user's choice in locking patterns is a reduction in the scheme's security. 
-	  
+	\section{Limitations}
+
+	  The results of this proposed research will have some limitations. {\it First}, the hypothesis do not include all potential human properties. If the results of the statistical test are accepting the alternative hypothesis, the results are not valid for proving a correlation between users choice in graphical passwords and human properties that are not selected in this research. {\it Second}, the hypothesis does neither prove that human choices based on the human properties is valid for all graphical password schemes. The selected graphical password scheme is the Android Unlock Pattern. Chapter \ref{chap:results} will include a detailed description of the human properties included in the experiment.
+
 	\section{Deliverables} \label{sec:deliverables}
+		% ---> Hva bidrar jeg med?
+		% The results from this study can further be used to evaluate the security of the Android Unlock Pattern. If there is a correlation between users choice in Android Unlock Patterns and the users human properties, it can be used to make dictionary attacks by predicting user's pattern locks. An ability to predict user's choice in locking patterns is a reduction in the scheme's security. 
+
 	\section{Research Methods} \label{sec:researchmethods}
+		
+			-- Kvantitativ data om personene som har lagt mønstrene
+			-- Forståelse av valg av mønstre
+			-- Analyse
+
 	\section{Thesis structure} \label{sec:structure}
+
+		{\bf Chapter 2: Related Work on Graphical Passwords}
+		An introduction to the related work that have been published on graphical passwords. 
+
+    {\bf Chapter 3: Experiment}
+
+    {\bf Chapter 4: Results}
+
+    {\bf Chapter 5: Discussion}
+
+    {\bf Chapter 6: Conclusion and Future Work}
+
