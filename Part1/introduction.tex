@@ -1,24 +1,64 @@
 % !TEX root = ../main.tex
 \chapter{Introduction}\label{chap:introduction}
 	
+	\clearpage
 	\section{Background and Motivation} \label{sec:backgroundandmotivation}
 
 		As mobile devices play a significant role in our everyday life, it makes it an interesting target device because it contains a lot of sensitive information. The use of mobile phones has changed in terms of capability, interaction and context of use and, therefore, the increased need for higher security. Mobile phones are not just capable as a tool for simple communication, but also a tool to perform our daily tasks like paying bills and keeping up with our social life. The smartphone are becoming an integrated part of our daily life and is becoming a device keeping a lot of sensitive information about your professional and private life.
 
-		Screen locks are used as a protection mechanism to prevent leakage of sensitive data from mobile devices. The history of locking mechanisms was often a solution solely to prevent accidental use while current mobile phones require protection to secure the potentially vast amount of private data that we keep on our mobile devices. The most common mechanisms for protection today is the use of locking mechanisms like PIN codes, fingerprints, and pattern locks. The screen lock mechanism is also a form of a password, e.g. a secret only you know to get access to a resource. The problem with passwords on mobile devices has three different aspects. First, people find it hard to remember long and secure password. Second, the way we interact with touch screens makes it hard to type long text-based passwords on a small mobile keyboard. Third, we interact with the phone many times a day, making the overhead in time very high when using a long and complex password.
+		Screen locks are used as a protection mechanism to prevent leakage of sensitive data from mobile devices. The history of locking mechanisms was often a solution solely to prevent accidental use while current mobile phones require protection to secure the potentially vast amount of private data that we keep on our mobile devices. The most common mechanisms for protection today is the use of locking mechanisms like PIN codes, fingerprints, and pattern locks. The screen lock mechanism is also a form of a password, e.g. a secret only you know to get access to a resource. The problem with passwords on mobile devices has three different aspects. First, people find it hard to remember long and secure password. Second, the way we interact with touch screens makes it hard to type long text-based passwords on a small mobile keyboard. Third, we interact with the phone many times a day, making the overhead in time used to unlock the smartphone very high when using a long and complex password.
 
 		Looking at passwords in general, passwords are often a user-selected secret that are connected to you as a person. When creating a password, people tend to create a password that is an association to something they know or recognize; passwords are more than just words and numbers. The way people choose their password cause the passwords we make to be predictable and therefore being insecure. People tend to select PIN codes forming a date, or an alphanumeric password consisting of your name or perhaps your favorite sports team. This predictability is a cause of how people cope with the problem of remembering passwords, e.g. the shortcomings with alphanumeric passwords. 
 
 		Because of the shortcomings with alphanumeric passwords \cite{UnixPasswords}, there is an increased interest in graphical passwords. Graphical passwords were fist a suggestion for motivating users to create long and memorable passwords and, therefore, more secure started by the assumption that pictures are easier to remember and more secure than words and numbers \cite{DeAngeli}. Graphical passwords look like a promising alternative to text-based passwords, as it supports users to remember and make more complex passwords, offering better usability and higher security. The way of interacting with the smartphone also seem as a well-suited platform for a graphical password because graphical passwords often use direct manipulation of graphical elements instead of typing small letters and numbers. One of the graphical passwords in rapid use is the Android Pattern Lock released on the Android platform by Google in 2008. The Android Pattern Lock is a graphical password that enables the users to connect dots from a 3$\times$3 grid forming a password. Since its release, there has been much discussion of its security, but few researchers have conducted scientific research on the Android Unlock Pattern. Compared to PIN code that are often used as a screen lock on mobile devices, PIN codes have a total of 10.000 possible combinations while the Android pattern lock have a total of 389.112 possible combinations. By the first sight, pattern lock looks like a promising mechanism for mobile devices. The problem is not just the theoretical password space, but rather the password space in practice. In 2013, a research group conducted the first large-scale user study on the Android Unlock Patterns \cite{Uellenbeck}. The outcome of the research was an analysis of 2900 user-selected patterns. They found bias in the pattern making process claiming that the scheme are less secure than its stated theoretical password space.
 
-		Taking closer look at the Android pattern lock we can notice that is is only dots and arrows forming a pattern. How can this be connected to you as a person like PIN codes and alphanumeric passwords?
-		 
-		% Shortcomings with text-based passwords and PINS 
-		% --> predictability
-		% --> Vi ser samme tendenser i flere passwordmekanismer. 
-		% --> Graphical passwords is a solution for creating both secure and usable pw mechanisms
-		% ..... but does it work?? Is graphical passwords better than any other password mechanism?
+		Taking a closer look at the Android pattern lock; it is only dots and arrows forming a password. How can this be connected to you as a person like PIN codes and alphanumeric passwords? Researchers have found bias and predictable behavior in creation of password cross different password scheme, but there are few researchers that have studied the human factors in the password creation process. Is predictable behavior a general observation, or is the predictable behavior conditioned by who we are? In this study it will be collected a set of user-selected patterns with a corresponding set of human properties to be able to observe if who we are influences our choice in graphical passwords. 
 
+	\clearpage
+	\section{Methodical Approach} \label{sec:researchmethods}
+
+		This section will give a brief introduction to the methodical approach. The methods is divided into four steps starting with reviewing the literature based on the background and motivation. The next step is to define a hypothesis that reflects the theory that I want to answer. To be able to answer the hypothesis, it is performed a large scale of quantitative data that finally can be analyzed to be able to accept or reject the proposed hypothesis. 
+
+		\subsection{Reviewing the Literature}\label{sec:methodliteraturereview}
+
+	    A literature review is often used for two main purposes. {\it First}, it is useful to look for a suitable research idea and discover relevant material about any possible research topics. {\it Second}, the second part often begin once a research topic is chosen, where the aim is to gather and present evidence to support that the research can produce new knowledge.
+
+	    There is a broad range of sources to be used in the literature review, for example, books, journal articles, and conference papers. Books are often based on well know facts with a broad scope. Journal articles and conference papers are more exploratory and are useful for finding information on the current thinking and research in the area. All published journals and conference proceedings needs to be reviewed carefully. It is important to use the sources that is considered to publish quality research and that they provide sufficient quality control on the published research. Some highly rated journals in information systems and computing is: ACM \cite{ACM}, IEEE \cite{IEEE}, and Springer \cite{Springer}. When using conference papers, it can often be useful to read something about their review procedures and their quality requirements. Besides the publication source, it can be helpful to look at the number of citations used. If a research paper has many citations, it may be an indication of it quality.
+
+	    When reviewing the literature, it would be too time consuming to read all the papers from the start to the end. To be able to select relevant research, it is preferable to look at the abstract first that should include information about the research motivation, the methods used, as well as the results. If the abstract were promising, the review continues by reading the results and methods chapters. If the research is very interesting, it might be valuable to read the whole publication from start to end.
+
+	    Before searching for relevant literature, it is important to define keywords that can narrow the search down to obtain information that is relevant according to the research that is being conducted. The keywords can be combined when searching in different digital libraries. When relevant literature is found, it is important to set a list of quality criteria that until now have been discussed.
+	    The selected quality criteria that are chosen is listed in Table~\ref{tab:QualityCriteria}.
+
+	      \begin{table}[H]
+	        \centering
+	        \begin{tabular}{| l | p{10cm} |}
+	          \hline
+	          {\bf \#} & {\bf Quality Criteria} \\ \hline
+	          QC 1 & The research is published in a known digital library, journal or conference\\ \hline
+	          QC 2 & There is a clear statement of the aim of the research\\ \hline
+	          QC 3 & The study is cited by other researchers\\ \hline
+	          QC 4 & There is a clear description of the method used in the study\\ \hline
+	          QC 5 & If the research includes an experiment, user study, or other research strategies, there should be a reasonable sample size used. \\ \hline
+	        \end{tabular}
+	        \caption{Quality criteria for literature review}
+	        \label{tab:QualityCriteria}
+	      \end{table}
+
+	    Sometimes, there will be resources needed that is not published in a well known journal. Example is important content only found on web pages and blog posts. The use of content from web pages should be avoided if it is possible to find published research instead. It a web page is used as a refernce it is clearly stated in the bibliography when the site was last accessed. 
+
+	 	\subsection{Defining the Hypothesis}
+
+	 		The hypothesis is a result as from a combination of my own motivation and the results from the literature review. 
+	 		........
+
+		\subsection{Collecting Quantitative Data}
+
+			
+
+		\subsection{Analyzing the Collected Data}
+
+	\clearpage
 	\section{Hypothesis}\label{sec:hypothesis}
 
 		This section will be an elaboration of the hypothesis to be tested by performing an experiment.
@@ -30,23 +70,46 @@
 	  	\end{itemize}
 	  }
 
-	  The hypothesis to be tested is referred to as the null hypothesis (abbreviated $H_{0}$). We start with the assumption that the null hypothesis is true; human properties have no influence on users choice of graphical passwords. Along with $H_{0}$ it is stated an alternative hypothesis (abbreviated $H_{1}$). The alternative hypothesis states that users choice in graphical passwords is influenced by the human properties of the user. If the null hypothesis is rejected, we accept the alternative hypothesis. 
+	  The hypothesis to be tested is referred to as the null hypothesis (abbreviated $H_{0}$). We start with the assumption that the null hypothesis is true; human properties have no influence on users choice of graphical passwords. Along with $H_{0}$ it is stated an alternative hypothesis (abbreviated $H_{1}$). The alternative hypothesis states that users choice in graphical passwords is influenced by the human properties of the user. If the null hypothesis is rejected, we accept the alternative hypothesis. The hypothesis will be tested by performing an experiment by collecting Android lock patterns and a set of human properties to the creators of the patterns. The experiment will be observing if a set of human properties will cause an effect in the patterns created.
 
-	  The hypothesis will be tested by performing an experiment by collecting Android lock patterns and a set of human properties of the creators of the patterns. The Experiment are described in Chapter \ref{chap:experiment}.
+	  If the hypotehesis is accepted, it would mean that it is very likeley that there is no correlation between human properties and the choice of graphical passwords. In other words, predictable behaviour when studying password is an general observation not caused by human properties.
+
+		The aim of the research is to answer the overall hypothesis, but there is also some further supplementary questions that is interesting to include in this research. They will require a discussion besed on the results found when answering the hypothesis combined with the results from the literature study.
+
+	  {\renewcommand\labelitemi{}
+			\begin{itemize}
+	  		\item \texttt{$Q1$: How does the result impact the security of the Android \\Lock Pattern?}
+	  		\item \texttt{$Q2$: How is observed behaviour of the Android Pattern lock scheme \\compared to other screen locks used on mobile devices?}
+	  	\end{itemize}
+	  }
+
+	  {\bf Q1:} The hyphotesis are closely related to a security evaluation. Any predictable behaviour when looking at passswords is a violation of the security. If th hypothesis is either accepted or rejected, it is intersting to see if it impacts how we evaluate the security of the scheme. 
+
+	  {\bf Q2:} As described in the background and motivation, predictable behaviour is found in a varity of password schemes. The interesting question is if the human behaviour related to Android Lock Patterns is compareable to what is observed in other password mechanims used on mobile devices. 
+
 
 	\section{Limitations}
+		When conduction research there is often a scope and corresponding limitations. This section will give an overview of the limitations that need to be red before reading this document. This first part will give a brief overview of the limitations when looking at the overall research objective; the hypothesis. The second part looks at limitations of the selected methodical approach. 
 
-	  The results of this proposed research will have some limitations. {\it First}, the hypothesis do not include all potential human properties. If the results of the statistical test are accepting the alternative hypothesis, the results are not valid for proving a correlation between users choice in graphical passwords and human properties that are not selected in this research. {\it Second}, the hypothesis does neither prove that human choices based on the human properties is valid for all graphical password schemes. The selected graphical password scheme is the Android Unlock Pattern. Chapter \ref{chap:results} will include a detailed description of the human properties included in the experiment.
+		\subsection{Hypothesis}
+	  	The proposed hypothesis will have some limitations. {\it First}, the hypothesis do not include all potential human properties. If the results of the statistical test are accepting the alternative hypothesis, the results are not valid for proving a correlation between users choice in graphical passwords and human properties that are not selected in this research. {\it Second}, the hypothesis does neither prove that human choices based on the human properties is valid for all graphical password schemes. The selected graphical password scheme is the Android Unlock Pattern. Chapter \ref{chap:results} will include a detailed description of the human properties included in the experiment.
 
-	\section{Deliverables} \label{sec:deliverables}
+	  \subsection{Methodical Approach}
+	  	When conducting the experiment, it is not possible to have control of the participants due to ethical concerns. In an experiment is is often desired to have a control group to validate the collected data. To be able to use a control group I would have to ask people about their real patterns, that is not desired for security reasons. This experiment will only be able to see the cause and effect on the patterns collected in this research.
+
+	  	The collected data is also collected over the Internet, meaning that I as a researcher have no control on who people are and if answers provided by participants are committed honestly. As mentioned in the elaboration of the methodical approach, I should not be able to track whom participating in the study due to ethical concerns. It is neither desirable to take an pen-and-paper approach due to both ethical concerns and the time available for collecting an reasonable amount of data. The data is collected to be as representative as possible to the real world without violating any privacy concerns. 
+	
+	\section{Contributions} \label{sec:contributions}
 		% ---> Hva bidrar jeg med?
 		% The results from this study can further be used to evaluate the security of the Android Unlock Pattern. If there is a correlation between users choice in Android Unlock Patterns and the users human properties, it can be used to make dictionary attacks by predicting user's pattern locks. An ability to predict user's choice in locking patterns is a reduction in the scheme's security. 
 
-	\section{Research Methods} \label{sec:researchmethods}
-		
-			-- Kvantitativ data om personene som har lagt mønstrene
-			-- Forståelse av valg av mønstre
-			-- Analyse
+		When conducting research you want to contribute with knowledge and answer questions that no other person have been answered before. This research want to test a new theory formed as a hypothesis to add to the body of knowledge as the main contribution.
+
+		In the process of formulating the hypothesis, published literature concerning graphical passwords have been reviewed. The reviewed literature is up to date and gives an summary of the latest published work on graphical passwords, in particular research concerning the Android Pattern Lock. 
+
+		To be able to collected the data, there is developed a survey for collecting data on mobile devices. The science and work behind the survey can support other researchers to see how data collection can be performed over the Internet, in particularly how to collect user-selected passwords. It is not a straight forward process to collect passwords due to ethical concerns. 
+
+		The data collected in the survey is by far one of the first large-scale collections of graphical passwords with the detailed information about the users.
 
 	\section{Thesis structure} \label{sec:structure}
 
