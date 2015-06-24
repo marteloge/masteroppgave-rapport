@@ -1,91 +1,60 @@
 % !TEX root = ../main.tex
 \section{The Population} \label{sec:basicstatistics}
-
-  \todo[inline, color=red!70]{Må nevne antall passord som ble samlet inn!!}
   
-  This chapter will be a summary of the basic statistics aggregated from the collected data. Basic statistics is defined as statistics where data are only aggregated and presented as is where no other algorithm or mathematical formulas have been used.
+  This section will be a summary of the population as well as information about the data collected. Tha results presented is only aggregated from the data collected from the survey described in Chapter \ref{chap:experiment}. 
 
-  Background information is the data representing some fundamental aspects on the collected data. This section will go though the data represented in Table \ref{tab:respondentsBasics}, Table \ref{tab:screenlockHabits}, Table \ref{tab:country}, and Figure \ref{fig:ageDistribution} summarizing the basic statistics of the collected data. 
+  \subsection{Number of Respondents}
 
-  Table \ref{tab:respondentsBasics} is a overview of the respondents summarizing the frequency of respondents, gender, handedness, their experience with IT and security, and reading/writing orientation. In total 802 respondents completed the whole survey by answering all questions. 11 participants started creating pattern and answering, but stopped before completion. 204 people started creating patterns and stopped before creating all three types of patterns. 81 persons entered the survey and left without leaving any information. 
+    Table \ref{fig:responsespopulation} is a summery of the number of respondents and level of completeness. Some respondents just opened the survey without providing any information, while other answered all questions. A total of 802 respondents completed the whole survey. A total of 11 people created patterns and started answering question before leaving the survey. 204 respondents started creating patterns, but did not answer any other question. At last, 81 respondents entered the survey and left without creating any patter or answering questions. 
 
-    %Table: Summary of the background information
     \begin{table}[H]
-      \parbox{.45\linewidth}{
-        \centering
-        \begin{tabular}{ l | l l }
-          \hline
-          \multicolumn{3}{l}{\bf Respondents} \\ \hline
-          Completed survey & 802 \\
-          Stoped during survey & 11 \\
-          Started creating patterns & 204 \\
-          Opened survey and left & 81 \\ \hline
-            
-          \multicolumn{3}{l}{\bf Gender} \\ \hline
-          Male & 529 & 66\% \\
-          Female & 278 & 34\% \\ \hline
-
-          \multicolumn{3}{l}{\bf Handedness} \\ \hline
-          Left & 97 & 12\% \\
-          Right & 690 & 88\% \\ \hline
-
-          \multicolumn{3}{l}{\bf Experience with IT/Security} \\ \hline
-          Yes & 470 & 59\% \\
-          No & 332 & 41\% \\ \hline
-
-          \multicolumn{2}{l}{\bf Reading/Writing direction} \\ \hline
-          Top-to-bottom & 7 & 1\% \\
-          Right-to-Left & 8 & 1\% \\
-          Left-to-right & 792 & 98\% \\ \hline
-        \end{tabular}
-        \caption{Summary of the respondents}
-        \label{tab:respondentsBasics}
-      }
-      \hfill
-      \parbox{.45\linewidth}{
-        \centering
-        \begin{tabular}{ l | l l }
-          \hline
-          \multicolumn{3}{l}{\bf Mobile Operating System} \\ \hline
-          Android & 464 & 58.0\% \\
-          iOS & 321 & 40.0\% \\
-          Windows & 16 & 1.9\% \\
-          Blackberry & 1 & 0.1\% \\ \hline
- 
-          \multicolumn{3}{l}{\bf Used Android Unlock Pattern} \\ \hline
-          Yes & 526 & 65\% \\ 
-          No & 278 & 35\% \\ \hline
-
-          \multicolumn{3}{l}{\bf Use screenlock} \\ \hline
-          Yes & 655 & 82\% \\
-          No & 149 & 18\% \\ \hline
-
-          \multicolumn{3}{l}{\bf Screenlock in use} \\ \hline
-          Android Pattern Lock & 202 & 31\% \\
-          4-digit PIN & 237 & 36\% \\
-          Fingerprint & 116 & 18\% \\
-          Password & 44 & 7\% \\
-          slide-to-unlock & 28 & 4\% \\
-          Other & 28 & 4\% \\ \hline
-        \end{tabular}
-        \caption{Screen lock habits}
-        \label{tab:screenlockHabits}
-      }
+      \centering
+      \begin{tabular}{l | l }
+        \hline
+        Completed the survey & 802 \\
+        Stoped during the survey & 11 \\
+        Started creating patterns & 204 \\
+        Opened the survey & 81 \\ \hline
+      \end{tabular}
+      \caption{Number of respondents}
+      \label{fig:responsespopulation}
     \end{table}
 
-    Out of the persons entering their gender, 66\% of the participants were male and 34\% were female. Looking at handedness of the participants, 88\% were right-handed and 12\% were left-handed. The percentage of left-handedness in the population is hard to estimate, but it is stated that about 10\% of the population are left-handed \cite{lefthandedness} that seems reasonable with the percentage of left-handed participants from the survey. The reason why the percentage is somehow higher is because the survey was sent to a group of left-handed people that can be the reason for getting 12\% instead of 10\% left-handed participants.
+  \subsection{Demographics and Background Infromation}
+  Figure \ref{fig:respondentsBasics} is a overview of the respondents summarizing the distribution of gender, handedness, experience with IT and security, and reading/writing orientation in the population.
+
+  The majority of the respondents was male with a total of 529, while 278 of the respondents was female. In total, 66\% of the population is male and 34\% of the population is female. Looking at handedness of the participants, 88\% were right-handed and 12\% were left-handed. The percentage of left-handedness in the population is hard to estimate, but it is stated that about 10\% of the population are left-handed \cite{lefthandedness} that seems reasonable with the percentage of left-handed participants from the survey. The reason why the percentage is somehow higher is because the survey was sent to a group of left-handed people that can be the reason for getting 12\% instead of 10\% left-handed participants.
+
+  To be able to distinguish between people with experience with IT and Security it was asked about the participants experience in the survey. The network of myself and both supervisors are heavily overrepresented by people in the field of IT and Security. People with this background will might cope with the security related questions in a different way than people without the experience with IT and security. The data shows that the majority, 59\%of the respondents, had a background within IT and Security while 41\% did not. 
+
+  It is hard to reach people outside your own network, especially to reach groups of people with a other cultures. In the dataset it was only 2\% that had an another reading and writing direction, top-to-bottom and right-to-left, than the other participants that read and writhe from left-to-right. Countries operating with a reading and writing direction are often Arabic countries or countries located in Asia. The problem is that many of these countries have during the past years been influenced from western countries. The first problem is to reach people with other reading and writing orientation than myself because all people i know read and write from left to right. I can therefore not make any further statistical analysis comparing people with different reading and writing orientation because the number of participants with that characteristics are too low to get any significant results.
+
+    \begin{figure}[H]
+      \centering
+      \subfigure{
+        \stackunder[5pt]{\stackunder[5pt]{\includegraphics[width=0.3\textwidth]{pics/infographics/gender2.png}}{{\bf Male:} 529 (66\%)}}{{\bf Female} 278 (34\%)}
+      }
+      \hspace{0.5cm}
+      \subfigure{
+        \stackunder[5pt]{\stackunder[5pt]{\includegraphics[width=0.20\textwidth]{pics/infographics/hand.png}}{{\bf Right:} 690 (88\%)}}{{\bf Left:} 97 (12\%)}
+      } 
+    \end{figure}
     
-    To be able to distinguish between people with experience with IT and Security it was asked about the participants experience in the survey. The network of myself and both supervisors are heavily overrepresented by people in the field of IT and Security. People with this background will might cope with the security related questions in a different way than people without the experience with IT and security. The data shows that the majority, 59\%of the respondents, had a background within IT and Security while 41\% did not. 
+    \begin{figure}[H]
+      \centering
+      \captionsetup{justification=centering}
+      \subfigure{
+        \stackunder[5pt]{\stackunder[5pt]{\includegraphics[width=0.27\textwidth]{pics/infographics/comp2.png}}{{\bf Experience:} 470 (59\%)}}{{\bf No experience:} 332 (41\%)}
+      }
+      \hspace{0.5cm}
+      \subfigure{
+        \stackunder[5pt]{\stackunder[5pt]{\stackunder[5pt]{\includegraphics[width=0.20\textwidth]{pics/infographics/read.png}}{{\bf Top-to-botto:} 7 (1\%)}}{{\bf Right-to-left:} 8 (1\%)}}{{\bf Left-to-right:} 792 (98\%)}
+      }
+      \caption{Gender, handedness, experience with IT and security,\\ and reading/writing orientation}
+      \label{fig:respondentsBasics}
+    \end{figure}
 
-    It is hard to reach people outside your own network, especially to reach groups of people with a other cultures. In the dataset it was only 2\% that had an another reading and writing direction, top-to-bottom and right-to-left, than the other participants that read and writhe from left-to-right. Countries operating with a reading and writing direction are often Arabic countries or countries located in Asia. The problem is that many of these countries have during the past years been influenced from western countries. The first problem is to reach people with other reading and writing orientation than myself because all people i know read and write from left to right. I can therefore not make any further statistical analysis comparing people with different reading and writing orientation because the number of participants with that characteristics are too low to get any significant results.
-
-    Table \ref{tab:screenlockHabits} summarized the respondents screenlock habits looking specifically at their experience with the Android Unlock Pattern, their use of screenlock mechanisms, and which screenlock they are currently using. This will provide as a overview of how people cope with security on their smartphones. Because different mobile operating systems provides different security mechanisms, the mobile operating system are also added to the table. It is not a surprise that the majority have answered the survey using either a mobile with a Android or iOs operating system that are the most popular in the the market at this point of time. 
-
-    A total of 65\% of the participants have used the Android Pattern Lock before. The 35\% not familiar with the Android Pattern Lock will probably have their first time using the Android Pattern Lock. There will might be many experienced people with the Android Pattern Lock but it is not given that they are still using it. There are in total 82\% of the participants not using any screenlock and 18\% not using any screenlock. Among the listed screenlocks, the majority are using 4-digit PIN, Android Pattern Lock and fingerprint. The fingerprint are only available at iPhone, while Android Pattern Lock are not allowed on iPhones.
-
-    \clearpage  
-
-    Figure \ref{fig:ageDistribution} shows a distribution of the respondents age. The respondents are divided into 8 intervals: under 20, 20-24, 25-29, 31-34, 35-39, 40-49, 50-59, and over 60. The three last intervals have a lower frequency of participants and have therefore not being divided further into smaller intervals. The distribution have a peak at the interval 20-24. Reasons for the skewed distribution can might be a cause of the network that received the survey. The majority of my own network are students in their twenties and can therefor introduce this skewed distribution. There are still other age intervals represented in the dataset. The higher the age, the lower the frequency of respondents. This can be the same cause as for the peak, but can also be slightly lower respondents over 40 because they do not own a smartphone, nor participate in the networks where the survey were published.
+    Figure \ref{fig:ageDistribution} shows a distribution of the respondents age. The respondents are divided into 8 intervals: under 20, 20-24, 25-29, 31-34, 35-39, 40-49, 50-59, and over 60. The three last intervals have a lower frequency of participants and have therefore not being grouped into smaller intervals. The distribution have a peak at the interval 20-24. Reasons for the skewed distribution can might be a cause of the network that received the survey. The majority of my own network are students in their twenties and can therefor introduce this skewed distribution. There are still other age intervals represented in the dataset. The higher the age, the lower the frequency of respondents. This can be the same cause as for the peak, but can also be slightly lower respondents over 40 because they do not own a smartphone, nor participate in the networks where the survey were published.
 
     %Figure: Age distribution
     \begin{figure}[H]
@@ -95,43 +64,196 @@
       \label{fig:ageDistribution}
     \end{figure}
 
-    The survey asked the participants about their country of origin. The data collection ended up with a 39 countries represented in the data set where the majority of the countries was Norway, United States of America as seen in Table \ref{tab:country}.
+    Figure  \ref{fig:handsizepopulation} is the overview of the handsize of the respondents. The registered hansize is an subjective answer and there are not any other data to compare the answers to. The majority of both genders classified their handsize according to their gender as medium. Male respondents have a higher frequency of large classifications. 
 
-    This data can not be used to make any analysis on any specific county. During the data collection it was a goal to avoid a homogeneous dataset. The majority of the participants is still from Norway, but is was important to get other countries represented as well to obtain as a more heterogeneous data set. 
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=\textwidth]{pics/infographics/mobilesize.png}
+      \caption{Handsize}
+      \label{fig:handsizepopulation}
+    \end{figure}
 
-		%Table: Country of origin (39 countires)
+    The survey asked the participants about their country of origin. The data collection ended up with a 39 countries represented in the data set where the majority of the countries was Norway, United States of America as seen in Table \ref{tab:country}. This data can not be used to make any analysis on any specific county. During the data collection it was a goal to avoid a homogeneous dataset. The majority of the participants is still from Norway, but is was important to get other countries represented as well to obtain as a more heterogeneous data set. 
 
    {\renewcommand{\arraystretch}{2}%
 
-		\begin{table}[H]
-	    \centering
-	    \begin{tabular}{ l c | c }
-	      \hline
-	      \multicolumn{2}{c|}{\bf Country} & {\bf \# Respondents} \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Norway.png}} & Norway & 517 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/USA.png}} & United States of America & 115 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Germany.png}} & Germany & 33 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/CzechRepublic.png}} & Czech Republic & 31 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/UnitedKingdom.png}} & United Kingdom & 22 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Russia.png}} & Russia & 13 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Denmark.png}} & Denmark & 7 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Sweden.png}} & Sweden & 6 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Switzerland.png}} & Switzerland & 6 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Australia.png}} & Australia & 5 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Netherlands.png}} & Netherlands & 4 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Chile.png}} & Chile & 4 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Finland.png}} & Finland & 3 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Austria.png}} & Austria & 3 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Ukraine.png}} & Ukraine & 3 \\ \hline
-	      \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/China.png}} & China & 3 \\ \hline
-	      \multicolumn{2}{p{8cm}|}{Afghanistan, Mexico, North Korea, Pakistan, Vietnam, Luxembourg, Ireland, Tunisia} & 2 \\ \hline
-	      \multicolumn{2}{p{8cm} |}{Italy, Greece, Belgium, Indonesia, Malaysia, Bahrain, Botswana, Argentina, Singapore, japan, Canada, South Korea, Hungary, Turkey, Brazil} & 1 \\ \hline
-	    \end{tabular}
-	    \caption{Respondents country of origin}
-	    \label{tab:country}
-	  \end{table}
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{ l c | c }
+        \hline
+        \multicolumn{2}{c|}{\bf Country} & {\bf \# Respondents} \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Norway.png}} & Norway & 517 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/USA.png}} & United States of America & 115 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Germany.png}} & Germany & 33 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/CzechRepublic.png}} & Czech Republic & 31 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/UnitedKingdom.png}} & United Kingdom & 22 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Russia.png}} & Russia & 13 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Denmark.png}} & Denmark & 7 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Sweden.png}} & Sweden & 6 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Switzerland.png}} & Switzerland & 6 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Australia.png}} & Australia & 5 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Netherlands.png}} & Netherlands & 4 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Chile.png}} & Chile & 4 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Finland.png}} & Finland & 3 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Austria.png}} & Austria & 3 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/Ukraine.png}} & Ukraine & 3 \\ \hline
+        \raisebox{-.4\height}{\includegraphics[scale=0.4]{pics/flags/China.png}} & China & 3 \\ \hline
+        \multicolumn{2}{p{8cm}|}{Afghanistan, Mexico, North Korea, Pakistan, Vietnam, Luxembourg, Ireland, Tunisia} & 2 \\ \hline
+        \multicolumn{2}{p{8cm} |}{Italy, Greece, Belgium, Indonesia, Malaysia, Bahrain, Botswana, Argentina, Singapore, japan, Canada, South Korea, Hungary, Turkey, Brazil} & 1 \\ \hline
+      \end{tabular}
+      \caption{Respondents country of origin}
+      \label{tab:country}
+    \end{table}
 
   {\renewcommand{\arraystretch}{1}%
+
+  \clearpage
+  \subsection{Screen Lock Habits and Mobile Device Used}
+    Table \ref{tab:screenlockHabits} summarizes the respondents screenlock habits looking specifically at their experience with the Android Unlock Pattern, their use of screenlock mechanisms, and which screenlock they are currently using. This will provide as a overview of how people cope with security on their smartphones. Because different mobile operating systems provides different security mechanisms, the mobile operating system are also added to the table. It is not a surprise that the majority have answered the survey using either a mobile with a Android or iOs operating system that are the most popular in the the market at this point of time. Table \ref{tab:screenlockHabits} also looks at the mobile device used to complete the survey. 
+
+    %Table: Summary of the background information
+    \begin{table}[H]
+      \parbox{.48\linewidth}{
+        \centering
+        \begin{tabular}{ l | l l }
+          \hline
+          \multicolumn{3}{l}{\bf Screenlock in use} \\ \hline
+          Android Pattern Lock & 202 & 31\% \\
+          4-digit PIN & 237 & 36\% \\
+          Fingerprint & 116 & 18\% \\
+          Password & 44 & 7\% \\
+          slide-to-unlock & 28 & 4\% \\
+          Other & 28 & 4\% \\ \hline
+            
+          \multicolumn{3}{l}{\bf Screensize} \\ \hline
+          Small & 108 & 13.3\% \\
+          Medium & 532 & 65.4\% \\ 
+          Large & 173 & 21.3\% \\ \hline
+        \end{tabular}
+      }
+      \hfill
+      \parbox{.48\linewidth}{
+        \centering
+        \begin{tabular}{ l | l l }
+          \hline
+          \multicolumn{3}{l}{\bf Mobile Operating System} \\ \hline
+          Android & 464 & 58.0\% \\
+          iOS & 321 & 40.0\% \\
+          Windows & 16 & 1.9\% \\
+          Blackberry & 1 & 0.1\% \\ \hline
+
+          \multicolumn{3}{l}{\bf Use screenlock} \\ \hline
+          Yes & 655 & 82\% \\
+          No & 149 & 18\% \\ \hline
+
+          \multicolumn{3}{l}{\bf Used Android Unlock Pattern} \\ \hline
+          Yes & 526 & 65\% \\ 
+          No & 278 & 35\% \\ \hline
+        \end{tabular}
+      }
+      \caption{Information about password habits and mobile device used}
+      \label{tab:screenlockHabits}
+    \end{table}
+
+
+    A total of 65\% of the participants have used the Android Pattern Lock before. The 35\% not familiar with the Android Pattern Lock will probably have their first time using the Android Pattern Lock in this survey. There will might be many experienced people with the Android Pattern Lock but it is not given that they are still using it. 
+
+    Looking at the the screen lock habits of the users, 82\% of the participants using screenlock on their mobile device are using a varity of diffetent screenlocks. Among the listed screenlocks, the majority are using 4-digit PIN, Android Pattern Lock and fingerprint. The fingerprint are only available at iPhone, while Android Pattern Lock are not allowed on iPhones. Beside the different screenlocks, the mobile devices do also have different screen sizes. This is a subjective statement from the respondents. Further validation of the screensize and classification of correct physicl size are found in Section \ref{sec:classificationhandsizescreensize}.
+
+  \clearpage
+  \subsection{The Created Patterns}\label{sec:thecreatedpatterns}
+    % (\#Persons used training) & 658 
+
+    This section is looking at the patterns created and how the patterns was created. Table \ref{tab:thecreatedpatterns} looks at the number of patterns created and physical inteaction with the smartphone when the patterns was created. There is about the same abount of patterns created for the different pattern types. There is a higher number of training patterns becuase the respondents were able to create as many pattern as they wanted. A total of 658, above 80\% of the respondents, created patterns in training mode. The total number of patterns collected was 3393. 
+
+    On the right side of Table \ref{tab:thecreatedpatterns}, there is a summery of how the patterns was created. By observing normal interacting with a smartphone, the majority of people fall under two main categories in how to interact with a smartphone:
+
+      \begin{enumerate}
+        \item Use one hand using the thumb for interaction, whereas the hand are defined by handedness.
+        \item Use the opposite hand defined by handedness and use the forefinger on the other hand for interacting with the screen.
+      \end{enumerate}
+
+    There are also people interacting with the screen using other fingers than the thumb and forefinger and therefore added an option to use an another finger. The majority of the respondents was either using their right hand using their thumb or using their left hand and their forefinger.
+
+    \begin{table}[H]
+      \centering
+      \parbox{.45\linewidth}{
+        \centering
+        \begin{tabular}{ p{3cm} | p{1.5cm} }
+          \hline
+          \multicolumn{2}{l}{\bf Patterns created} \\ \hline
+          Shopping & 841 \\
+          Smartphone & 842 \\
+          Bank & 838 \\
+          Training & 872 \\ \hline
+          Total & 3393 \\ \hline
+        \end{tabular}
+      }
+      \hfill
+      \parbox{.5\linewidth}{
+        \centering
+        \begin{tabular}{ l l | l l}
+          \hline
+          \multicolumn{4}{l}{\bf Hand and finger used} \\ \hline
+          Left hand & Forefinger & 233 & 28.8\% \\
+          Left hand & Thumb & 60 & 7.4\% \\
+          Right hand & Forefinger & 72 & 8.9\% \\
+          Right hand & Thumb & 398 & 49.3\% \\
+          Other & & 45 & 5.6\% \\ \hline
+        \end{tabular}
+      }
+      \caption{Information about the collected patterns}
+      \label{tab:thecreatedpatterns}
+    \end{table} 
+
+    Figure \ref{fig:numberofuniqepatterns} looks are the uniqeness of the patterns created. There are 3393 patterns in total created, wereas 1196 of the patterns are uniqe. By looking at the patterns created, the patterns created for bank have a the highest frequency of uniqe patterns while there are more occurences of the same patterns created in training mode. The venn diagram illustarte the relationships of patterns between the different types, e.g. how many patterns are uniqe for a group of types. Looking at the relationship between patterns created for shopping accounts and smartphones, there are 40 patterns that are only uniqe for patterns created for shopping accounts and smartphones. 
+
+    %Figure: Number of unique patterns
+    \begin{figure}[H]
+      \centering
+      \begin{minipage}[b]{0.40\linewidth}
+      \centering
+        \includegraphics[scale=0.4]{pics/analysis/uniquePatternsVenn.png}
+      \end{minipage}%
+      \begin{minipage}[b]{0.30\linewidth}
+        \centering
+        \begin{tabular}{ c | c c}
+          \hline
+          Shopping &  442 & 53\% \\
+          Smartphone & 419 & 50\% \\
+          Bank & 555 & 66\% \\
+          Training & 414 & 47\% \\ \hline \hline
+          All types & 1196 & 35\% \\ \hline
+        \end{tabular}
+        \vspace{1cm}
+      \end{minipage}
+      \caption{Number of unique patterns}
+      \label{fig:numberofuniqepatterns}
+    \end{figure}
+
+  \subsection{Limitations}
+
+    The previous sections have presented the population. This section will describe which properties will be used further and what data that can not be used further in an analysis. 
+
+    Training is mentioned as one pattern type, but will only be used for pattern specific analyis where it valid to use. There is no restrictions for the training patterns, making it unconsistent to use in an conclusion. 
+
+    Figure \ref{fig:respondentsBasics} are showing the number of participants with different reading and writing orientation. The numbers will not be used further because there are not enough respondents with the orientation from top-to-bottom and right-to-left to be able to get any significant results.
+
+    The handsize and screensize are two properties collected that are categorized as an subjective answer. They are further looked into in Section \ref{sec:classificationhandsizescreensize} for further validation.     
+
+    The selected properties will be analysed looking at the time used for creating the patterns, the length of the created patterns, and an analysis of the patterns visual complexity. The described approach will also be used when looking at the entire population. 
+
+
+
+    
+
+
+
+  
+
+    
+
+    
     
 
 
