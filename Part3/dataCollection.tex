@@ -38,20 +38,67 @@
         \end{figure}
 
       \subsection*{Occupation}
+      This information is valuable information due to the knowledge level of the respondents. The occupation of the a respondent is simply if a person is a student, employed, not employed or retired.
 
       \subsection*{Profession}
+      The profession of a person may say something about a persons knowledge and background. When looking at profession, a person with a profession in IT may be more certain of the security aspects than people in other professions. It may cause bias in the data if people with enough knowledge of security overcompensate their choice of lock pattern because they want to prove their knowledge.  
 
       \subsection*{Handedness}
+      An interesting property of humans is the fact that people write with either left or right hand (and sometimes both). This property can influence the way a person are holding a mobile phone, and may impact the way that a person is choosing their pattern. In the literature review, it was not found any studies that reported results of people choices in patterns based on the hand used. Published research \cite{Uellenbeck} found that over 40\% of the participants in their study started their Android pattern by beginning in the top left corner, but did not record the hand used when making the pattern. My hypothesis is that a left handed person may be using the left hand while interacting with the phone, making the probability for starting in the right upper corner bigger. This property has never been used before in analyzing Unlock Patterns. In Figure~\ref{fig:handedness} it is illustrated handedness and likely starting point. The numbers are collected from the research by Uellenbeck \cite{Uellenbeck}, where they measured likely initial points. Since it is more likely that people are right-handed, are we able to mirror the results to left-handed people? My hypothesis as stated earlier is that people that are left-handed are more likely to start in the upper right corner, while people that are right-handed are more likely to start in the upper left corner. The percent attached to the node are indicating the probability for starting the pattern at that node. 
+
+        \begin{figure}[H]
+          \centering
+          \subfigure{
+            \includegraphics[scale=0.2]{pics/review/handednessLeft.png}
+          }
+          \subfigure{
+            \includegraphics[scale=0.2]{pics/review/handednessRight.png}
+          }
+          \caption[Likely chosen initial starting point and handedness]{Likely chosen initial starting point \cite{Uellenbeck} and handedness}
+          \label{fig:handedness}
+        \end{figure}
 
       \subsection*{Reading and writing orientation}
+      In different cultures, there is a difference in the reading and writing orientation. Cultures of Europe and America are usually writing and reading horizontally from left to right, but there are other cultures that do otherwise (Figure~\ref{fig:orientation}). Traditionally, Chinese, Japanese, and Korean are writing text vertically in columns from top to bottom, from right to left. Another writing orientation is horizontal from right to left that are used in Arabic cultures. Today, the vertical orientation from top to bottom is often in a horizontal way due to the influence of English and the increased computerized typesetting, but both ways are still in use. There are research that have reported that the writing orientation are affecting the visual attention and memory \cite{Chan}. They found that the reading orientation affected the way a person would memorize objects. They reported that English and Chinese speakers tended to remember an image that appeared in the top, left-hand side of the screen and the Taiwanese speakers tended to remember the images in the upper right-hand side of the screen. An interesting aspect of the reading and writing orientation is to see if people from different cultures are choosing different patterns due to their writing orientation. 
+
+        \begin{figure}[H]
+          \centering
+          \subfigure[Left-to-right]{
+            \includegraphics[scale=0.25]{pics/review/leftright.png}
+          }
+          \subfigure[Right-to-left]{
+            \includegraphics[scale=0.25]{pics/review/rightleft.png}
+          }
+          \subfigure[Top-to-bottom, left-to-right]{
+            \includegraphics[scale=0.27]{pics/review/topbottom.png}
+          }
+          \caption{Reading and writing orientation}
+          \label{fig:orientation}
+        \end{figure}
 
       \subsection*{Handsize}
+      Smartphones today tends to get bigger and bigger in size. An interesting analysis could be done by looking at user's choice in patterns based on size of their hands and size of mobile phone where a pattern is made. By looking at a situation where a person with a small hand is interacting with a big screen, it may be hard to reach certain areas of the screen when holding the smartphone in one hand. Maybe a right-handed person with a small hand interacting with a large screen will not be able to reach the upper left corner? (Illustrated in Figure~\ref{fig:reachablePoints}).
+
+        \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.22]{pics/review/screenHand.png}
+          \caption{Reachable points on screen}
+          \label{fig:reachablePoints}
+        \end{figure}
 
       \subsection*{Finger used when creating pattern}
+      When looking at the finger used when creating the pattern, it impacts the areas on the smartphone where a person can reach. When interacting with a smartphone, the most common way is to either use the thumb or the forefinger. When combining this property with the screen size and the size of the hand, we might be able to predict selection of patterns and eliminate some possibilities. In a book called ``Designing Mobile Interfaces'' \cite{Hoober}, they is using a expression called ``The thumb zone''. The Thumb Zone is the most comfortable area for a person to touch when using one-hand. Figure~\ref{fig:thumbZone} is showing the thumb area. The green area is where the thumb can easly access. The organge and the red areas is parst of the screen that is harder to reach. The thump zone can be used when looking at users choice of patterns because it is likeley to choose a pattern that is easy to type. 
+
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.20]{pics/review/mobileScreen.jpg}
+          \caption{The thumb zone}
+          \label{fig:thumbZone}
+        \end{figure}
 
       \subsection*{Experience with IT and security}
 
-    \todo[inline, color=red!]{Need to descrive which I selected and why}
+    \todo[inline, color=red!]{Need to describe which I selected and why}
 
 	\subsection{Sampling Frame and Technique} \label{sec:sampling}
       
@@ -117,8 +164,4 @@
     When analyzing the collected data, I need to find subgroups that have responded and those who have not. This will be used to make a discussion of why it lacked responses from a particular subgroup. The reason this is important is because their non-response might be meaningful in its own right, or their lack of responses may have introduced bias in the data. This part is out of scope for this thesis, but need to be considered in the next phase of this research.
 
   \subsection{Ethical Considerations}
-
-
-
-
-	
+    

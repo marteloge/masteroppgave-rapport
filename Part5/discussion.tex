@@ -1,19 +1,93 @@
 % !TEX root = ../main.tex
 \chapter{Discussion}\label{chap:discussion}
 
-	\begin{itemize}
-		\item Personers oppfatning av sikkerhetsnivå. Er personer klare over hvor mye sensitiv data som ligger på en mobiltelefon? Hvordan kan forskningen her brukes til å vise at man må fokusere på høyere sikkerhetskrav på mobile enheter. Det nytter ikke i dag med sikre applikasjoner når mennesker er det svake leddet. Autinnlogging på applikasjoner er noe brukere krever, noe som gjør at ansvaret til en viss grad blir overført til brukeren.
-		\item Er dataene som er samlet inn reelle? 
-		\item Hvordan påvirker antall personer med bakgrunn innen it og sikkerhet dataene?
-		\item Hvordan kan dataene brukes innen forensics?
-		\item Kan man lage stereotyper av personlige karakteristikker og tilhørende mønster
-		\item Er Android Patter Lock sikkert nok å bruke?
-		\item Hvordan kan ALP sammenliges med andre låsemekanismer?
-		\item Feilrater eller bøller som svarer tull --> Hvordan påvirker dette dataene?
-		\item Hvorfor forekommer noen mønstre og sekvenser oftere enn andre?
-		\item Hvordan kan dataene her brukes til forensics?
-		\item Hvordan kan resultatene brukes til besvisstgjøring av å ha dårlige mønstre? Er ALP trygt å bruke?
-		\item Løser grapfiske passord memorability, usability og security på samme tid? Noen av de sikreste mønstrene forekommer aldri, vil det si at det fortsatt er en sterk tradeoff mellom usability og security? Hvordan kan man løse dette?
-		\item Hvordan brukes ALP ift PINs? Ser man de samme tendensene i begge mekanismene ?
-		
-	\end{itemize}
+  -- Diskutere valg av grafiske låsemønstre med hensyn på alder, kjønn, handedness, and experience. 
+
+  \clearpage
+
+  %What does the results show?
+  %What does tey imply?
+  %How do they relate to other reported research in the literature about your research topic?
+  %Do your findings agree or disagree with those of the other researcherss or people authority?
+  %What do you think is important in my results?
+  %What relevance do they have for other researchers?
+  %What relevance do they have for people in the real world beyond universities?
+
+  
+  \clearpage
+  \section{Age and choice in graphical passwords}
+
+    When testing the significance of the length and complexity for different age groups, the test was divided into two groups; under and over 25 years. The results proved that there was a significant difference between the two age groups. The respondents under 25 created longer patterns as well as patterns of higher visual complexity for banking applications and shopping accounts. There was no significant difference between the length and complexity of patterns created for smartphones. 
+
+    Before starting to analyze the results, I did not expect that the respondents under 25 years would create longer and more complex patterns than the respondents over 25. I expected the respondents over 25 years to create longer and more complex patterns because adults over 25 years might use their smartphone work where a strict security policy are required. A factor that may cause the difference is that the respondents under 25 have owned their mobile device when growing up as children, making them more prepared for creating stronger passwords. As far as this research are familiar with, there are not found published research on the selection of password particularly looking at the age.  
+
+  \section{Gender and choice in graphical passwords}
+
+    By comparing the patterns created by male and female participants, there was found a significant statistical difference in the patterns created by the two genders. The results showed that there was a significant evidence that male participants creates patterns are longer as well as having a higher level of visual complexity.
+
+    By studying the choice in length, female participants had a higher frequency of patterns of length four and at the same time having a lower frequency of patterns of length nine as opposed to male participants. When looking at patterns with length five up to eight, both genders have the same frequency. There is, therefore, a difference the how frequently male and female participants select the minimum and the maximum pattern length. One factor that may be involved is that many of the male participants are experienced with IT and security while fewer of the female respondents have the same experience. 
+
+    By looking at the visual complexity of the patterns created by the two genders, it is observed that no one of the female participants managed to create a pattern with the maximum score in the dataset of 44.442.  The cause of female participants choosing less secure patterns might be biased by the number of male participants with a background in IT and Security.  As far as this research are familiar with, there are not published any research focusing on the selection of passwords based on gender. One research group was investigating the security of the PassFace scheme where they observed that users tended to choose faces that they liked or could compare themselves to \cite{Davis}. By knowing the gender, they managed to perform a dictionary attack to guess user selected passwords. If the gender of the user were known as male, then 10\% of the passwords could easily be guessed on the first or second attempt. It is, therefore, no evidence that gender does not impact the choice in passwords.
+    
+  \section{Handedness and choice in graphical passwords}
+    
+    Handedness is a biological property that relates to how people interact with physical objects. In general, the majority of the population have the property of being right-handed while only 12\% of the population are left-handed. The results do not have any statistical significant between the patterns in terms of complexity or length. The is, therefore, no statistical evidence that graphical passwords are influenced by the handedness of the creator.
+
+    When selecting handedness as a human property in this study, it was believed that handedness and the way that respondents interacted with the touch screen would impact the selection of starting node. Based on the result, there are observed two main ways of interacting with a touch screen for unlocking a smartphone. The most common way is to use one hand and the thumb or using one hand for holding the phone while using the forefinger on the other hand for interacting with the screen. 85\% and 53\% of the right and left-handed respondents, respectively, used the two described methods for interaction. The results show that left-handed respondents do not have a main way of interacting as for right-handed respondents. An explanation for the difference in the physical behavior could be a historical impact where left-handed children were forced to write with the right hand.
+
+    44\% of the respondents selected the upper left corner as well as a 73\% chance of selecting the upper left corner, upper right corner, and the bottom left corner. Because of the biased selection of starting node and the different ways of interacting with the touch screen, it was believed that there would be a difference in the selection of starting node by looking at handedness. Since the majority of respondents was right-handed, it was thought that this caused the high frequency of patterns starting in the upper left corner. I was, therefore, expecting a higher frequency of the patterns starting in the upper right corner as a cause of handedness and physical interaction. The results revealed rather the opposite, where there were very few patterns starting on the left-side of the grid and an increased frequency of patterns starting on the right side. Over 50\% of the left-handed respondents would rather start on the left side than the right side as originally assumed.  
+
+    An explanation for the unexpected behavior where right-handed and left-handed respondents prefer to start the patterns in the same nodes needs to be explored by studying how memory retrieval and storage works. Researchers have found that people tend to scan information and store information in the short memory in a better way when scanning according to preferred reading and writing direction \cite{Chan}. As a result of the way we scan information it makes us start creating the patterns in the same way we read and write to be able to remember the patterns we create. The results does not imply that handedness have any impact on the way we create out patterns, rather a stronger indication that reading and writing orientation have a stronger impact on the way we create our patterns. In this study, there was under 2\% of the population having an another reading and writing orientation than the majority, e.g. left-to-right. It is therefore not possible to use the collected data to make any conclusions about the impact on the choice in patterns based on the reading and writing orientation.
+
+  \section{Experience with IT and Security and choice in graphical passwords}
+    
+    The property looking at how experienced the population are with IT and security. The majority of the people in this study had a background in IT and security. The high frequency of respondents with a background in IT and security may have been cause by the network of the people involved in the study.
+
+    If a person acknowledges that they have experience with IT and security, it is likely that they know the risks of selecting short password with a low complexity that are easily guessed. The results indicated that the respondents with experience with IT and security are better in creating patterns, but there are still a low average complexity score and a high frequency of patterns with the minimum length. 
+
+    The was not registered a respondent creating a pattern with the highest complexity score for smartphones. Either experienced with IT and security or not, the patterns created for smartphones are the patterns with obtaining the lowest average complexity score and .....
+
+    \todo[inline, color=red!80]{Ikke ferdig}
+
+  \section{Similarities in the choice of graphical passwords in the entire population}
+
+    \subsection{Pattern Creation Time and Length}
+
+      The average pattern length for the entire population varied according to the pattern type. Patterns created for banking accounts had the highest average length of 5.92 while the patterns created for smartphones had the lowest average length of 5.40. Research have reported that the average length of patterns created for smartphones is 5.63 \cite{Uellenbeck}, which is close to the average length for smartphones observed in this study. There are a different number of combinations of patterns with different length, but patterns of length eight seem to occur less often. For all pattern types, the probability of the pattern to be of length 8 are about 4-5 \%. 
+
+      It is observed that the longer the pattern, the less often will the pattern that specific length occur. Patterns of length eight is an exception where patterns of length seven and nine, patterns with one more or one less node, occurs more often. There are 140.000 patterns of length eight, making it the probability of selecting a password of length high given a uniform selection. The cause of rarely selecting patterns of length eight it is not known. From a security perspective, this can reduce the number of combinations by nearly 140.000 combinations because of the low probability of users creating a pattern of length eight. Any reduction in the number of likely combinations is a violation of the security of the password scheme.
+
+      Pattern creation time can tell a lot about the validity of the dataset. Respondents experienced with the Android Unlock Pattern had different reaction time when creating the patterns for a smartphone. The time used for creating patterns for smartphone and bank was about the same. The difference in creation time between respondents experienced and not experienced with ALP was 1.2 seconds. The different reaction time can be a result of many respondents having shared their actual unlock pattern or a pattern known to the respondent. This result also indicates that the dataset possessed includes patterns representative for patterns used in "the wild". 
+
+      As the result indicates, people creates on average short patterns, especially short patterns are observed created for smartphones. From a security perspective, a smartphone could cause a loss of huge amounts of sensitive information as opposed to a shopping account. As reported by researchers, getting access to a smartphone automatically logged into an email account can give access to sensitive information like SSN, Bank Account Number, Email Password and Home Address \cite{Egelman}. Selecting short patterns can be seen as a form of bad risk assessment because you can risk the possibility of losing sensitive information. The cause low priority of a secure password mechanism on mobile devices may be influenced by the trade-off between security and usability. Many users do not want to spend more time than needed for typing a password. Because of the rapid use of our mobile device, it makes users spend a lot of the when interacting with the phone to unlocking the screen. Research have reported that an average user will use about 2.9\% of the spend on interacting with their mobile phone to getting access by unlocking the screen \cite{habits3}.
+
+      The average pattern length, regardless of pattern type,  seems to be low. One factor might be that the respondents had to retype the pattern they selected, indicating that people are not capable of remembering longer and more complex patterns. To be able to remember a password, regular use are required for permanently store the password in long-term memory. A pattern created for one-time use are stored in short-term memory, making it hard to recall a complex pattern just created due to how our short-term memory works. \todo{referanse!!}
+
+    \subsection{Visual Complexity}
+
+      On average, the patterns collected for all pattern types were given a low complexity score. In the entire population, none of the participants managed to create a pattern receiving the maximum complexity score of 46.8. The patterns receiving the highest average complexity score was patterns created for banking applications while patterns created for smartphones received the lowest complexity score. Graphical passwords, especially the Android Pattern Lock, needs to have its security evaluated on an extra dimension because of its graphical characteristics. Pattern locks can, for example, more easily be captured by someone, accidentally or intentionally, by looking over someone's shoulder. When typing a long pattern will not help when the visual complexity is low. The length will help in terms of possible combinations, but will not necessarily avoid the possibility of someone capturing the pattern if the visual complexity are low.  For avoiding such capturing attacks, there is a variety of new schemes purposed for avoiding such capturing attacks \cite{Wiedenbeck, IPAS}. 
+
+      Overlaps and intersections are some of the parameters used when evaluating the visual complexity of a pattern. Only 46 overlaps was registered in the dataset while the total number of patterns including overlaps may be lower because one pattern can contain more than one overlap. The average number of intersections used are low compared to the number of possible intersections in a pattern. The pattern with the highest number of intersections had a total of 19 intersections while on average there are registered on average 0.27 intersections for all patterns collected. The observation of the low frequency of intersections can be an indication of people finding it hard to remember visually complex patterns. This result can be used to reduce the likely password space because there is a low probability that people would create a pattern containing many intersections or any overlaps at all. This observation can be seen as a violation of the security of the password scheme because the number of possible combinations can be reduced. 
+
+      The possibility of creating patterns containing overlaps might not be very intuitive because the smartphones providing the Android Unlock pattern states that a node only can be selected once. The supported feature for creating overlaps should be communicated to the users in a better way. The use of overlaps can help users using the Android Pattern Scheme to create patterns with better visual complexity that can be considered to be more secure.
+    
+    \clearpage
+    \subsection{Association Elements}
+      A unique aspect of graphical patterns is that they are visual and not just text or numbers with a semantic representation as in PIN codes and alphanumeric passwords. When creating a password, it is common to create a password that are in association with something you know to be able to remember and recall the password. In the dataset, 11.4\% of the collected patterns corresponded to a letter. The behavior of selecting Android Pattern Locks that corresponds to elements known to the user was also recognized in another user study \cite{Sun}. When looking at user-selected passwords, studies show that many users are using graphical shapes to support memory \cite{Weiss}.
+
+    \subsection{Selection of Starting Node}
+
+      One restriction of the Android Pattern Lock is that one can only visit a node once, making the selection of starting node crucial in terms of guessability. The results show an indication of bias in the selection of starting node whereas 44\% of the respondents started creating their patterns in the upper left corner. The second and third most common starting point was the upper-right corner and the bottom-left corner that was selected 15\% and 14\% of the time, respectively. The top three starting nodes then constitutes of a total of 73\% of all patterns in the data set. Given a uniform distribution, the probability of starting in any node should be 11\%, and the total probability of starting in the top three starting nodes would then be 44\%.
+
+      The predictable behavior in selecting some nodes with a higher probability corresponds to the results from another user study having the same amount of patterns starting in the upper-left corner \cite{Uellenbeck}. When having 73\% of all patterns starting in either the upper-left corner, upper-right corner or bottom-left corner makes it possible to reduce the number of potential combinations further.
+
+  \section{Choice in graphical passwords and context of use}
+    
+    When looking at the selection of pattern it seems like the participants have performed a type of risk assessment. The patterns created have are not created randomly because there is a difference in both average pattern length, creation time, and visual complexity for the different pattern types.
+
+    Sun et al. \cite{Sun} investigated the effect of using password meters for Android Lock Patterns to observe if it would change the behavior in terms of creating stronger patterns. The result showed that the strength of patterns when using pattern meters resulted in higher complexity and strength, but also introduced a higher error rate when retyping the pattern. As seen in the result, the patterns created for smartphones have a lower length and complexity. Engelman et al. \cite{Egelman} reported that 33\% of the smartphone users were thinking about the locking mechanisms as too much of a hassle. Since higher complexity often can introduce a higher overhead in time used for unlocking the smartphone, it might be easier for users to select a pattern that are less complex to retype and remember.   
+
+    Money is something all respondents are familiar with and understand the consequence of losing money. When looking at looking behavior for smartphones, users are might not that aware of the need for security on mobile devices. The respondents in this study selected on average short patterns with low visual complexity for mobile devices, that can indicate a lack of understanding of the consequence of losing sensitive information stored on mobile devices. A study reported that 26\% of the users did not think that someone would care about the information stored on their phone \cite{Egelman}. 
+
+    When setting up the survey with the different pattern types, it requires the respondents make a risk assessment and prioritize what the most important; usability or security. Users might select to use a more complex pattern for a banking account because losing money is a concrete risk they might be familiar with. A study reported that users are typically more security conscious when they are aware of the need for such behavior \cite{Sasse}. At the same time, a study reviled that 48\% of the respondents thought that locking mechanisms were annoying. In the same study, 95\% of them agreed or fully agreed that they liked the idea of their smartphone being secured \cite{habits3}. 
+

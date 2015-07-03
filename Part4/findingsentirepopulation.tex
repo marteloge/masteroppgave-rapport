@@ -9,11 +9,11 @@
   \todo[inline, color=blue!60]{Skal treningsdata fjernes?}
 
 	\subsection{Pattern Creation Time}
-    When creating a pattern in the survey, both time used to create a pattern and the pattern created was recorded. The time used to create the pattern was recorded from the start when the grid appeared until the user submitted the pattern.
+    When creating a pattern in the survey, both time used to create a pattern and the actual pattern created was recorded. The time used to create the pattern was recorded from the start when the grid appeared until the user submitted the pattern.
 
-    Figure \ref{fig:avgpatterncreationtimepopulation} shows pattern creation time in seconds for the three pattern types, including the patterns created in the training mode. Looking at the average creation time, bank have the highest creation time of 10.43 seconds while patterns created for smartphones had an average creation time of 8.24 seconds. 
+    Figure \ref{fig:avgpatterncreationtimepopulation} shows pattern creation time in seconds for the three pattern types. Looking at the average creation time, bank have the highest creation time of 9.42 seconds while patterns created for smartphones had an average creation time of 8.24 seconds. 
 
-    Figure \ref{fig:patterncreationtimeexperience} shows the average pattern creation time in seconds for the entire population regards to participants experience with the Android Unlock Pattern. The graph shows that both patterns created for shopping account and banking account are not affected by the participants experience with the Android Unlock pattern. Both pattern types do not have any significant difference in average creation time regarding the participants experience. Looking at patterns created for smartphone and training, both have a significant difference in the average creation time regarding the participants experience with ALP. Smartphone have an average creation time of 7.62 seconds for participants experienced with ALP and an average creation time of 9.82 seconds for people not experienced with ALP. The significant difference in average creation time results in a difference of 2.2 seconds. The training patterns have a total difference in average creation time of 2.76 seconds.  
+    Figure \ref{fig:patterncreationtimeexperience} shows the average pattern creation time in seconds for respondents experienced with the Android Unlock Pattern. The graph shows that both patterns created for shopping account and banking account are not affected by the participants experience with the Android Unlock pattern. Looking at patterns created for smartphone there is a lower response time for patterns created by respondents experienced with the Android Lock Pattern. Patterns created for smartphones have an average creation time of 7.20 seconds for participants experienced with ALP and an average creation time of 8.40 seconds for people not experienced with ALP. The difference in average creation time results in a difference of 1.2 seconds. 
 
 		\begin{figure}[H]
       \subfigure[Average pattern creation time (seconds)]{
@@ -32,7 +32,7 @@
 
     The pattern length are defined as the number of dots used to form a pattern. Each dot have a own sequence number and can only appear once. The minimum length of a pattern is 4 and the maximum length is 9. The number of unique patterns of all possible pattern lengths are described in table \ref{tab:combinations}. The pattern length are visualized in two different ways; the average pattern length and the distribution of pattern length.
 
-    Figure \ref{fig:avgpatternlengthpopulation} shows the average pattern length in number of nodes for the three pattern types, including the patterns from the training mode. In the graph, the shape of the graph is skewed. There are indication that patterns created for bank have a higher average pattern length. The numbers from the graph also indicates that patterns created from smartphone has the smallest average pattern length. The difference in average pattern length for patterns created for smartphone and banking are 0.52 nodes. Patterns created for shopping account are slightly longer than patterns created for smartphones, but there are no significant difference between them. When looking away from the three main patterns, the training patterns have the shortest average pattern length of with a average length of 5.35 nodes. 
+    Figure \ref{fig:avgpatternlengthpopulation} shows the average nodes selected to form a pattern for the three pattern types. In the graph, the shape of the graph is skewed. There are indication that patterns created for bank have a higher average pattern length. The numbers from the graph also indicates that patterns created from smartphone has the smallest average pattern length. The difference in average pattern length for patterns created for smartphone and banking are on average 0.52 nodes. Patterns created for shopping account are slightly longer than patterns created for smartphones.
 
     \begin{figure}[H]
       \centering
@@ -56,7 +56,7 @@
 
     The graph in Figure \ref{fig:patterndistpopulation} is a pattern length distribution indicating what pattern length that often are selected in the population. Figure \ref{fig:patternTypePatternLength} is a more detailed version of Figure \ref{fig:patterndistpopulation} showing the pattern distribution for all pattern types. Both graphs shows an indication that when the length increases the patterns of that length will occur less often. Both graphs also have a low frequency of pattern with length 8, where patterns of length 7 and 9 both have a higher frequency than patterns of length 8.
 
-    By looking at the pattern length of each specific pattern type in Figure \ref{fig:patternTypePatternLength}, the distribution reflects the average pattern length. Patterns created for shopping account, smartphone and training have the majority of the patterns distributed over the shortest pattern length. Bank that had the highest average pattern length still have the majority of its patterns distributed over the lower pattern lengths, but do have the highest frequency of patterns of length 9. 
+    By looking at the pattern length of each specific pattern type in Figure \ref{fig:patternTypePatternLength}, the distribution reflects the average pattern length. Patterns created for shopping account and smartphones have the majority of the patterns distributed over the shortest pattern lengths. Patterns created for banking accounts had the highest average pattern length, but it still have the majority of its patterns distributed over the lower pattern lengths.
 
 	\subsection{Pattern Complexity}
 
@@ -84,18 +84,16 @@
       \label{tab:patternstrength}
     \end{table}
 
-    The physical length, e.g. length, are increased when patterns creates lines between the nodes that are nor horizontal or vertical. A higher length are often correlated with the number of intersections and overlaps. Bank that have the highest strength do also have the highest average occurrences of intersections and overlaps, 0.433 and 0.023 respectively. 
-    As seen before, patterns cerated for banking account have had a high pattern creation time and a high average pattern length that also are reflected in the average strength patterns created for banking account. The average strength for patterns created for banking account are 15.514.
+    The physical length, e.g. length, are increased when patterns creates lines between the nodes that are nor horizontal or vertical. A higher length are often correlated with the number of intersections and overlaps. Bank that have the highest strength and do also have the highest average occurrences of intersections and overlaps, 0.433 and 0.023 respectively. Patterns cerated for banking account have had a high pattern creation time and a high average pattern length that also are reflected in the average strength patterns created for banking account. The average strength for patterns created for banking account are 15.514.
 
-    Smartphone is the pattern type with the lowest average strength excluding the patterns created for training purpose. The characteristics of patterns created for smartphones is that they have a short pattern length, the physical length are short, and the average occurrences of intersections and overlaps are low. The average number of occurrences of intersections and overlaps are 0.1769 and 0.014 respectively. The patterns created for smartphones gets an average strength score of 12.339. 
+    Smartphone is the pattern type with the lowest average strength. The characteristics of patterns created for smartphones is that they have a short pattern length, the physical length are short, and that the average occurrences of intersections and overlaps are low. The average number of occurrences of intersections and overlaps are 0.1769 and 0.014 respectively. The patterns created for smartphones gets an average strength score of 12.339. 
 
     Patterns created for shopping account are similar to patterns created for smartphone. All the parameters for the shopping account are slightly higher. The average strength for the patterns created for shopping account are 13.440.
 
-    When looking at the maximum pattern strength of the all pattern strength, none of the respondents have managed to create a pattern with the highest possible pattern strength. The highest pattern strength in the data set is 44.441 where the maximum strength for patterns are 46.807. The patterns created for smartphones do not include patterns with strengths higher than 43.187 that is lower than the highest score in the dataset. 
+    When looking at the maximum pattern strength of the all patterns collected, none of the respondents have managed to create a pattern with the highest possible pattern strength. The highest pattern strength in the data set is 44.441 whereas the maximum strength for patterns are 46.807. The patterns created for smartphones do not include patterns with strengths higher than 43.187 that is lower than the highest score in the dataset. 
 
   \subsection{Association Elements} \label{sec:associationelements}
     An association element are something someone or something you know and can use as a element so the process of remembering can be easier. This is a known technique used in alphanumeric passwords and PIN codes. Alphanumeric passwords are often known to contain personal information like names, dates, and objects close to the user. The same with PIN codes where the the technique of using codes forming a date often occurs. 
-    \todo{Kilder} 
 
     Going through the alphabet, I was able to find 11 patterns having the same visual representation as letters from the alphabet. Out of the 12 letters, 9 patterns had a significant number of appearances in the data set. By iterating through a list of sequences forming a letter, I was able to find 385 out of 3393 patterns in the dataset matching one of the 13 letters in the alphabet. The number of patterns occurred to match a letter from the alphabet constitutes 11.4\% of all patterns in the data set. 
 
@@ -152,7 +150,9 @@
   
     The starting node of a pattern is a crucial information to have when analyzing patterns because of the properties of a legal pattern. A legal pattern can only visit the same node twice, making the starting point a help for excluding probable patterns.
 
-    Table \ref{tab:startingNode1} is a summary of the likelihood of starting in a particular node for each of the four pattern types. The numbers notation used in the table, 1-3 and T, is a shortcut for the different pattern types shopping account (1), smartphone (2), banking account (3), and training (T). On average, 44\% of all patterns starts in node 1, e.g. the upper-left corner. Summarizing the most common starting points, node 1, 2 and 7, they all together constitutes 73\% of the patterns. 
+    Table \ref{tab:startingNode1} is a summary of the likelihood of starting in a particular node for each of the four pattern types. The numbers notation used in the table, 1-3 and T, is a shortcut for the different pattern types shopping account (1), smartphone (2), banking account (3), and training (T). On average, 44\% of all patterns starts in node 1, e.g. the upper-left corner. 
+
+    The training patterns are not included in other sections because there are no control over how many times a person have entered a tarining pattern. The training pattern are still valid when looking at the starting node because it reflects where respondents starts creating patterns. 
 
     %Table: Starting node dist
     \begin{table}[H]
@@ -176,6 +176,8 @@
 
     Figure \ref{fig:startingNode3} is an illustration of the likeliehood of starting in the different nodes. Each node has a number, starting from node 1 in the upper left corner ending up with node number 9 as shown in Figure \ref{fig:startingNode2}. All nodes in Figure \ref{fig:startingNode3} are colored based on the likeliehood of being chosen as a starting point from high to low (green - blue - orange), whereas the green nodes are the most common starting points and orange nodes is the least common starting points.
 
+    Summarizing the most common starting points, node 1, 2 and 7, they all together constitutes 73\% of the patterns. The different pattern types have all over 40\% of the patterns starting in the upper left corner. There are some nodes that are not a typical starting point. The nodes with the lowest frequency as starting point is the node 5,6,8 and 9 with only a total probability of 12\% of being selected as a starting node.
+
       %Figure: Staring node for all patterns
     \begin{figure}[H]
       \centering
@@ -193,18 +195,19 @@
     \end{figure}
 
   \subsection{3-gram Movement Patterns} \label{sec:3gram}
-    
-  %Figure: Most common 3-gram to less common 3-gram
-  \begin{figure}[H]
-    \subfigure{
-      \includegraphics[width=0.31\textwidth]{pics/analysis/3gram1.png}
-    }
-    \subfigure{
-      \includegraphics[width=0.31\textwidth]{pics/analysis/3gram2.png}
-    }
-    \subfigure{
-      \includegraphics[width=0.31\textwidth]{pics/analysis/3gram3.png}
-    }
-    \caption{Most common 3-gram to less common 3-gram}
-    \label{fig:3gram}
-  \end{figure}
+  
+    \todo[inline, color=red!80]{Vise en liste med top mønstre og vise at x antall prosent velger passord som starter på samme måte.}
+    %Figure: Most common 3-gram to less common 3-gram
+    \begin{figure}[H]
+      \subfigure{
+        \includegraphics[width=0.31\textwidth]{pics/analysis/3gram1.png}
+      }
+      \subfigure{
+        \includegraphics[width=0.31\textwidth]{pics/analysis/3gram2.png}
+      }
+      \subfigure{
+        \includegraphics[width=0.31\textwidth]{pics/analysis/3gram3.png}
+      }
+      \caption{Most common 3-gram to less common 3-gram}
+      \label{fig:3gram}
+    \end{figure}
