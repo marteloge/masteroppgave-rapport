@@ -83,7 +83,9 @@
       \label{fig:patterngraph}
     \end{figure}
 
-  Sun et al. \cite{Sun} created two different visualizations of a password meter, one looking like a progress bar (Type 1) and one indicating a percent of the strength (Type 2). They recruited a total of 81 participants for a survey testing the strength of user created pattern in three different groups; no password meter (Group A), with password meter type 1 (Group B), and with password meter type 2 (Group C). The survey randomly assigned the participants into the three different groups. The result showed that the strength of patterns in group B and C had a higher complexity and strength, but had a higher error rate when retyping the pattern. As the result showed, users are typically more security conscious when they are aware of the need for such behavior \cite{Sasse}. The error rate shows the problems with passwords and security in general. A long and complex password are harder to guess, but are not likely to be used due to memorability issues. Also a problem with the Android Pattern is that the pattern is rapidly used as it is provided to grant access to the smartphone in all kind of situations. The results from the survey states that the input convince was the reason that caused the highest number of participants in the user study not selecting a pattern with a high complexity and strength. A pattern containing more dots takes longer time to type. When looking at patterns containing intersections and overlaps, there is a higher chance to accidentally hitting the wrong dot when drawing the pattern, causing the user to redraw the pattern and spending more time to passing the authentication. The conclusion is that the time used to type the pattern are as crutial as the time to remember the pattern when looking at the users choice in patterns.
+  Sun et al. \cite{Sun} created two different visualizations of a password meter, one looking like a progress bar (Type 1) and one indicating a percent of the strength (Type 2). They recruited a total of 81 participants for a survey testing the strength of user created pattern in three different groups; no password meter (Group A), with password meter type 1 (Group B), and with password meter type 2 (Group C). The survey randomly assigned the participants into the three different groups. The result showed that the strength of patterns in group B and C had a higher complexity and strength, but had a higher error rate when retyping the pattern. As the result showed, users are typically more security conscious when they are aware of the need for such behavior \cite{Sasse}. The error rate shows the problems with passwords and security in general. A long and complex password are harder to guess, but are not likely to be used due to memorability issues. Also a problem with the Android Pattern is that the pattern is rapidly used as it is provided to grant access to the smartphone in all kind of situations. The results from the survey states that the input convince was the reason that caused the highest number of participants in the user study not selecting a pattern with a high complexity and strength. A pattern containing more dots takes longer time to type. When looking at patterns containing intersections and overlaps, there is a higher chance to accidentally hitting the wrong dot when drawing the pattern, causing the user to redraw the pattern and spending more time to passing the authentication. The conclusion is that the time used to type the pattern are as crucial as the time to remember the pattern when looking at the users choice in patterns.
+
+  The pattern strength meter gives a score of the visual complexity of a pattern. The benefit of using a strength meter looking at the visual complexity instead of only looking at the length can be seen in Figure \ref{fig:patternstrengthexamples}. When looking at Figure \ref{fig:strength1}, \ref{fig:strength2}, and \ref{fig:strength3}have all have the maximum length, but at the same time having a different pattern strength, e.g. a difference in visual complexity. Figure \ref{fig:strength7}, \ref{fig:strength8}, and \ref{fig:strength9} have all the minimum length of four dots, but they still have a difference in the measured strength. This is one of the extra security dimensions to study when working with graphical passwords. The pattern itself is just a sequence of numbers, but the order of the sequence can make a big difference in the visual complexity. Visual complexity can be important when wanting to avoid known attacks like shoulder surfing. 
 
   When looking at user selected passwords, studies shows that many users are using graphical shapes to support memory \cite{Weiss}. Sun et al. \cite{Sun} analyzed the collected patterns and found empirical evidence that some users tended to use patterns which looked like letters or numbers. They found patterns looking like the letters and numbers C, L, N, Z, 2, and 7 that easily can be created on a 3$\times$3 grid. Such a memorability strategy are using association elements, e.g something that the user are familiar with, to increase the memorability. Same strategy are known in PIN codes and alphanumeric passwords where names, objects, dates are used to remember the password.
 
@@ -96,45 +98,53 @@
       \vspace{1.5cm}
       \subfigure[Sequence: 147852369, \newline Strength: 27.00]{
         \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern2.png}
+        \label{fig:strength1}
         \hspace{0.6cm}
       }
       \subfigure[Sequence:213546879, \newline Strength: 36.655]{
         \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern3.png}
+        \label{fig:strength2}
         \hspace{0.6cm}
       }
       \subfigure[Sequence: 591827346, \newline Strength: 46.807]{
         \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern1.png}
+        \label{fig:strength3}
       }
       \vspace{0.5cm}
 
       \subfigure[Sequence: 968752, \newline Strength: 15.259]{
         \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern7.png}
+        \label{fig:strength4}
         \hspace{0.6cm}
       }
       \subfigure[Sequence: 1269853, \newline Strength: 20.781]{
         \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern8.png}
+        \label{fig:strength5}
         \hspace{0.6cm}
       }
       \subfigure[Sequence: 36578249, \newline Strength: 30.512]{
         \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern9.png}
+        \label{fig:strength6}
       }
       
       \vspace{0.5cm}
 
       \subfigure[Sequence: 1478, \newline Strength: 6.339]{
         \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern4.png}
+        \label{fig:strength7}
         \hspace{0.6cm}
       }
       \subfigure[Sequence: 5968, \newline Strength: 9.086]{
         \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern5.png}
+        \label{fig:strength8}
         \hspace{0.6cm}
       }
       \subfigure[Sequence: 4927, \newline Strength: 11.786]{
         \includegraphics[width=0.27\textwidth]{pics/experiment/strengthpattern6.png}
+        \label{fig:strength9}
       }
 
       \vspace{0.5cm}
       \caption{Examples of patterns with different length and strength}
+      \label{fig:patternstrengthexamples}
     \end{figure}
-
-    \todo[inline, color=blue!60]{Må her vise til disse forskjellige mønstrene som viser hvordan styrken defineres. Refereres til i tekst.}
