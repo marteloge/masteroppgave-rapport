@@ -3,25 +3,25 @@
   
   \clearpage
   \section{Background and Motivation} \label{sec:backgroundandmotivation}
-    Mobile devices play a significant role in our everyday life. In the last decade, the mobile phones has improved in terms of capability, interaction and context of use. Mobile phones are no longer only a tool for simple communication, but also a tool for paying bills, reading email and keeping up with social media. Due to the large amount of sensitive data stored on the devices, there is an increased need for security and makes mobile authentication an important topic for research.
+    Mobile devices play a significant role in our everyday life. In the last decade, mobile phones have improved in terms of capability, interaction and context of use. Mobile phones are no longer only a tool for simple communication, but also a tool for paying bills, reading email and keeping up with social media. Due to the large amount of sensitive data stored on the devices, there is an increased need for security, which makes mobile authentication an important topic for research.
     
-    Screen locks are used as a protection mechanism to prevent sensitive information leakage from mobile devices. Historically, screen locking mechanisms were developed to avoid accidental use, for instance if the device was carried in a pocket. Today, the goal is information protection, and the locks have evolved into mechanisms like PIN codes, fingerprints, pattern locks and passwords. However, the problem with these mechanisms are threefold: First, people find it hard to remember a long and secure password. Second, long, text-based passwords can be troublesome to input on a small touch screen. Third, more complex locking mechanisms mean more time spent unlocking the device, which is especially disadvantageous if the device is used frequently.
+    Screen locks are used as a protection mechanism to prevent sensitive information leakage from mobile devices. Historically, screen locking mechanisms were developed to avoid accidental use, for instance if the device was carried in a pocket. Today, the goal is information protection, and the locks have evolved into mechanisms like PIN codes, fingerprints, pattern locks and passwords. However, the problem with these mechanisms are threefold: First, people find it hard to remember a long and secure password. Second, long, text-based passwords can be troublesome to input on a small touch screen. Third, the use of more complex locking mechanisms means more time spent unlocking the device, which is especially disadvantageous if the device is used frequently.
 
-    Passwords are often a user-selected secret which are connected to you as a person. When creating an alphanumeric password, people tend to use associations to something they know, are or recognize; passwords are more than just words and numbers. Examples of this are people using their date of birth as their PIN or their favorite sports team as their password. This predictability makes alphanumeric passwords less secure and illustrates one of the main shortcomings of using these for authentication.
+    Passwords are often user-selected secrets which are connected to that user as a person. When creating an alphanumeric password, people tend to use associations to something they know, are, or recognize; passwords are more than just arbitrary words and numbers. Examples of this are people who use their date of birth as their PIN, or their favorite sports team as their password. This kind of predictability makes alphanumeric passwords less secure and illustrates one of the main shortcomings of using these for authentication.
 
-    Because of the shortcomings with alphanumeric passwords \cite{UnixPasswords}, there is an increased interest in graphical passwords. Graphical passwords were proposed as an alternative to PINs and alphanumeric input because humans in general remember graphical elements better than letters and numbers \cite{DeAngeli}. This method is a promising alternative to alphanumeric passwords, as it offers better usability and helps the user creating complex passwords that are easy to remember. The smartphone is a well-suited platform for graphical passwords because their touch screens allows for intuitive manipulation of graphical elements. This is easier than typing letters and numbers. 
+    Because of the shortcomings with alphanumeric passwords \cite{UnixPasswords}, there is an increased interest in graphical passwords. Graphical passwords were proposed as an alternative to PINs and alphanumeric input because humans in general remember graphical elements better than letters and numbers \cite{DeAngeli}. This method is a promising alternative to alphanumeric passwords, as it offers better usability and helps the user creating complex passwords that are easy to remember. The smartphone is a well-suited platform for graphical passwords because the touch screen allows for intuitive manipulation of graphical elements. This is easier than typing letters and numbers. 
     
-    One of the commonly used graphical passwords mechanisms is the Android Pattern Lock which was introduced on the Android platform by Google in 2008. The Android Pattern Lock enables the user to connect dots in a 3$\times$3 grid forming a pattern. Compared to PIN codes, which has 10.000 different combinations, the Android authentication mechanism allows for 389.112 possible combinations. However, this number is only the theoretical password space. In 2013, a research group conducted the first large-scale user study on the Android Pattern Lock where 2900 user-selected patterns were collected and analyzed \cite{Uellenbeck}. They found bias in the pattern making process and claimed that the password space in practice is less than the theoretical.
+    One of the commonly used graphical password mechanisms is the Android Pattern Lock which was introduced on the Android platform by Google in 2008. The Android Pattern Lock enables the user to connect dots in a 3$\times$3 grid, forming a pattern. Compared to PIN codes, which have 10.000 unique combinations, the Android authentication mechanism allows for 389.112 possible combinations. However, this number is only the theoretical password space. In 2013, a research group conducted the first large-scale user study on the Android Pattern Lock where 2900 user-selected patterns were collected and analyzed \cite{Uellenbeck}. They found bias in the pattern-making process and claimed that the password space in practice is less than the theoretical.
 
-    However, few researchers have studied the correlation between human characteristics and choice of patterns. As previously told, PINs are biased towards birth dates and passwords have a higher probability of being the person's favorite sports team. Can any similar behavior be found in graphical passwords? Can your choice of pattern be connected to you as a person?
+    However, not many researchers have studied the correlation between human characteristics and choice of patterns. As previously mentioned, PINs are biased towards birth dates and passwords have a higher probability of being the person's favorite sports team. Can any similar behavior be found in graphical passwords? Can your choice of pattern be connected to you as a person?
 
   \section{Hypothesis and Research Questions}\label{sec:hypothesis}
-    Based on preliminary work \cite{prosjektoppgave}, following null($H_0$) and alternative($H_1$) hypothesis was chosen:
+    Based on preliminary work \cite{prosjektoppgave}, the following null($H_0$) and alternative($H_1$) hypothesis were chosen:
 
     {\renewcommand\labelitemi{}
       \begin{itemize}
-        \item \texttt{$H_{0}$: Human properties have no influence on users choice of \\graphical passwords}
-        \item \texttt{$H_{1}$: Users choice of graphical passwords are influenced by \\the human properties of the user}
+        \item \texttt{$H_{0}$: Human properties have no influence on a user's choice of \\graphical passwords}
+        \item \texttt{$H_{1}$: A user's choice of graphical passwords is influenced by \\the human properties of the user}
       \end{itemize}
     }
     
@@ -29,27 +29,27 @@
 
     {\renewcommand\labelitemi{}
       \begin{itemize}[leftmargin=*]
-        \item {\bf Q1:} Is there a correlation between age and choice in graphical passwords?
-        \item {\bf Q2:} Is there a correlation between gender and choice in graphical passwords?
-        \item {\bf Q3:} Is there a correlation between handedness and choice in graphical passwords?
-        \item {\bf Q4:} Is there a correlation between experience with IT and security and choice in graphical passwords?
-        \item {\bf Q5:} Is there a correlation between reading orientation and choice in graphical passwords?
-        \item {\bf Q6:} Is there a correlation between handsize and choice in graphical passwords?
-        \item {\bf Q7:} Are there any similarities in the choice of graphical passwords in the entire population?
-        \item {\bf Q8:} Is the choice in graphical passwords determined by its context of use?
+        \item {\bf RQ1:} Is there a correlation between age and choice of graphical passwords?
+        \item {\bf RQ2:} Is there a correlation between gender and choice of graphical passwords?
+        \item {\bf RQ3:} Is there a correlation between handedness and choice of graphical passwords?
+        \item {\bf RQ4:} Is there a correlation between experience with IT and security and choice of graphical passwords?
+        \item {\bf RQ5:} Is there a correlation between reading orientation and choice of graphical passwords?
+        \item {\bf RQ6:} Is there a correlation between handsize and choice of graphical passwords?
+        \item {\bf RQ7:} Are there any similarities in the choice of graphical passwords in the entire population?
+        \item {\bf RQ8:} Is the choice of graphical passwords determined by its context of use?
       \end{itemize}
     }
 
-    The selected human properties stated in research question 1 to 6 are closely related to the overall goal; answering the hypotheses. A detailed review of the human characteristics included in the six first research questions are provided in Section \ref{sec:reviewofproperties}. Research question seven and eight is as a result of the selected research design selected in the preliminary work for this dissertation \cite{prosjektoppgave}. To see be able to see general behavior in the entire population that might not be present in distinct subgroups. An overall understanding of the population can be useful to have to be able to see if an observation relates to a distinct subgroup or the entire population in general. The data collection will introduce three contexts of using a pattern, making it interesting to see if the context of use impact the choice in patterns as described in research question eight.
+    The selected human properties stated in RQ1 through RQ6 are closely related to the overall goal; answering the hypotheses. A detailed review of the human characteristics included in the six first research questions is provided in Section \ref{sec:reviewofproperties}. RQ7 and RQ8 are a result of the selected research design selected in the preliminary work for this dissertation \cite{prosjektoppgave}. It may be useful to have an overall understanding of the population to be able to see whether an observation relates to a distinct subgroup or the entire population in general. The data collection will introduce three contexts of using a pattern, making it interesting to see whether the context of use impacts the choice in patterns as described in RQ8.
 
   \clearpage
   \section{Methodology} \label{sec:researchmethods}
-    This section provides an overview of the methods used for conducting this research. The first part is the literature study, giving an overview of published research and related theory relevant to this research. The second and third part is the research design and analysis of collected data.
+    This section provides an overview of the methods used for conducting this research. The first part contains the literature study, providing an overview of published research and related theory relevant to this research. The second and third part contains the research design and analysis of collected data.
 
     \subsection{Literature Study}\label{sec:methodliteraturereview}
-      The literature study was performed to place the work in this dissertation in a context of what already published research. This study used sources that are considered to be of high quality, as well as being through sufficient reviews and quality controls by an external review board. This study considered {\it ACM} \cite{ACM}, {\it IEEE} \cite{IEEE}, and {\it Springer} \cite{Springer} as highly rated journals in information systems and computing. Besides journal articles, sources like books and conference papers have been used. Due to lack of quality control of content on web pages, the use of content from web pages was avoided if possible.
+      The literature study was performed to place the work in this dissertation in a context of research that has already been published. This study used sources that are considered to be of high quality, as well as being through sufficient reviews and quality controls by an external review board. This study considered {\it ACM} \cite{ACM}, {\it IEEE} \cite{IEEE}, and {\it Springer} \cite{Springer} as highly rated journals in information systems and computing. In addition to journal articles, sources like books and conference papers have been used. Due to lack of quality control of content on web pages, the use of content from web pages was avoided when possible.
 
-      Conducting a literature study are an challenging work due to the massive amount of literature available. Keywords listed in Table \ref{tab:keywords} was put together with operators like \texttt{OR} and \texttt{AND} to build a query for narrowing the search for literature. Whenever finding research satisfying a high level of quality, the reference list was used further used as a source for exploring new and relevant research. 
+      Conducting a literature study is challenging work due to the massive amount of literature available. Keywords listed in Table \ref{tab:keywords} were put together with logical operators operators like \texttt{OR} and \texttt{AND} to build a query for narrowing the search for literature. Whenever literature satisfying a high level of quality was found, the reference list was further utilized as a source for exploring new and relevant research. 
 
       \begin{table}[H]
           \centering
@@ -64,17 +64,17 @@
           \label{tab:keywords}
         \end{table}
 
-      When finding literature matching the keywords, it was used a specific order for reading the literature to be able to determine its relevance and quality. Firstly,  it was preferable to look at the abstract first as it often includes important information about the research objectives, the methods used, as well as the results. Secondly, if the abstract were promising, the result, discussion and methodology were studied. Lastly, if the research was very interesting, the whole publication was studied from the start to the end. Table \ref{tab:QualityCriteria} is a list of quality criterias that was created as a checklist to be used while reading published research.
+      When finding literature matching the keywords, a specific order for reading the literature was used for reading the literature to be able to determine its relevance and quality. Firstly, it was preferable to look at the abstract first as it often includes important information about the research objectives, the methods used, and the results. Secondly, if the abstract was promising, the result, discussion, and methodology were studied. Lastly, if the research was very interesting, the whole publication was studied from the start to the end. Table \ref{tab:QualityCriteria} is a list of quality criterias that was created as a checklist to be used while reading published research.
 
         \begin{table}[H]
           \centering
           \begin{tabular}{| l | p{10cm} |}
             \hline
             {\bf \#} & {\bf Quality Criteria} \\ \hline
-            QC 1 & The research is published in a known digital library, journal or conference\\ \hline
-            QC 2 & There is a clear statement of the aim of the research\\ \hline
-            QC 3 & The study is cited by other researchers\\ \hline
-            QC 4 & There is a clear description of the method used in the study\\ \hline
+            QC 1 & The research is published in a known digital library, journal or conference. \\ \hline
+            QC 2 & There is a clear statement of the aim of the research. \\ \hline
+            QC 3 & The study is cited by other researchers. \\ \hline
+            QC 4 & There is a clear description of the method used in the study. \\ \hline
             QC 5 & If the research includes an experiment, user study, or other research strategies, there should be a reasonable sample size used. \\ \hline
           \end{tabular}
           \caption{Quality criteria for literature review}
@@ -83,14 +83,15 @@
 
     \subsection{Data Collection}
 
-      For answering the hypotheses, an online survey was used for collecting patterns and information about the respondents. The need for large amounts of data do an online survey a suitable method because it simplifies the data collection process, as well as making it possible to reach people living in different geographical locations. The survey was designed to use a self-selection sampling technique \cite{empiriske}, meaning that anyone who wants to participate may answer. The self-selection sampling technique also supports the requirements of anonymity where no overview of respondents exists. 
+      In order to answer the hypotheses, an online survey was used for collecting patterns and information about the respondents. The need for large amounts of data makes an online survey a suitable method because it simplifies the data collection process, as well as making it possible to reach people living in different geographical locations. The survey was designed to use a self-selection sampling technique \cite{empiriske}, meaning that anyone who wants to participate may answer. The self-selection sampling technique also supports the requirements of anonymity where no overview of respondents exists. 
 
-      Chapter \ref{chap:experiment} will give a detailed description of the survey design, including the questions asked and the structure of the survey.
+      Chapter \ref{chap:experiment} will present a detailed description of the survey design, including the questions asked, and the structure of the survey.
 
     \subsection{Data Analysis}
-      Before starting the analysis of the collected data, the data are preprocessed and validated to obtain results of high quality that can be used be used for answering the hypotheses. The data are also preprocessed before it is used to avoid including outlines or data including noise in the data. The process of validating and preprocessing the data are further described in Section \ref{sec:preprocessvalidate}.
+    
+      Before starting the analysis of the collected data, the data set were preprocessed and validated to obtain results of high quality that can be used to answer the hypotheses. The data were also preprocessed before it were used to avoid including outlines or data including noise in the data. The process of validating and preprocessing the data is further described in Section \ref{sec:preprocessvalidate}.
 
-      When having a validated and preprocessed dataset, the data are presented as results in Chapter \ref{chap:results}. The results examine the patterns created by the different user types as listed in the list of research questions. All the patterns produced by the various user types are analyzed in terms of creation time, length and visual complexity. Besides creation time, length and visual complexity, other observations may be presented in the result chapter if interesting results are found. 
+      After obtaining a validated and preprocessed data set, the data are presented as results in Chapter \ref{chap:results}. The results examine the patterns created by the different user types as listed in the list of research questions. All the patterns produced by the various user types are analyzed in terms of creation time, length, and visual complexity. In addition to creation time, length and visual complexity, other observations may be presented in the result chapter if interesting results are found. 
 
       The validity of the results are evaluated by performing a two-tailed t-test with a significance level of 0.5. The t-test can be used to see if there is a significant difference in the patterns created by the different user types.
 
@@ -110,4 +111,4 @@
     A discussion of the results found according to the stated research questions. The discussion will further be a basis for the conclusion. 
 
     {\bf Chapter 6: Conclusion and Future Work}
-    Presents the conclusion; accept or reject the hypotheses. The section will also make a conclusion of the listed research questions. The section for future work provides suggestions for further work based on the results form this research. 
+    Presents the conclusion; acceptance or rejection of the hypotheses. This section will also provide a conclusion of the listed research questions. The section for future work provides suggestions for further work based on the results form this research. 
