@@ -1,106 +1,11 @@
 % !TEX root = ../main.tex
-\section{Data Collection}\label{sec:datacollection}
 
-	%Hvorfor valgte jeg en teknisk løsning og ikke penn og papir eller andre metoder??
-	\subsection{Review of Human Properties}\label{sec:reviewofproperties}
+%Hvorfor valgte jeg en teknisk løsning og ikke penn og papir eller andre metoder??
+\section{Research Design}\label{sec:datacollection}
 
-      % - Hvilke kan brukes?
-      % - Hvilke ble tatt med?
-      % - Hvorfor ble de tatt med? Evt ikke tatt med?
-      % Alle sier noe om hvem en person er, noen er mer fysiske egenskaper mens andre er ren bakgrunnsinformasjon. 
-      
-     	\subsection*{Age} 
-      A group of people within a particular group of age may have different risk awareness. A person with an age of 30-40 and an individual with an age below 20 may have different concerns with security. An individual in the age between 30-40 may use their phone to perform a task with requiring high security. A person with an age below 20 may not have the same security awareness because of the different use of mobile devices. Age is also interesting demographic information that can be used to group the respondents into different subgroups.
+	\subsection{Research Strategy} \label{sec:researchstrategy}
 
-      \subsection*{Gender} 
-      Psychological studies have reported that males are more likely to take risks than females \cite{Byrnes}. In the literature review, there was no reported results found in genders risk awareness in information security, nor people's choice of patterns based on gender.
-
-      \subsection*{Nationality} 
-      The nationality of users is often used in research on graphical passwords. When asking a person about their PIN code, a nationality can be used to find likely numbers to appear because some cultures associates a number with a historical or religious event. In a research on the ``PassFace'', the nationality of the participants was proven to be valuable because people tended to choose faces from the same race and nationality. In this research, it is uncertain how much this information will help to prove any connection between nationality and users choice in patterns. Properties like language preference and reading/writing orientation look more promising for this research.
-
-      \subsection*{Language preference} By asking the respondent about their language preference, this can be used to see if the way they write or the alphabet they use impacts their choice in lock pattern. For example, the Chinese words are written in a different way then people using the Latin alphabet. In the Android Unlock Patterns, people are able to create patterns looking the same as the letters ``L'', ``M'', and ``O''. The Figure~\ref{fig:letters2} there is an illustration the letters that are possible to select as a lock pattern. The same possibility could might be found in languages using a different alphabet than the Latin. When looking at PIN codes, there are certain numbers that have a different meaning than only its numeric value. In China, people are associating certain words with numbers or things based on the similarities of sound. For example, the number eight is considered as a lucky number because it is pronounced ``ba'', which sounds like the Chinese word for prosperity. When studying other numbers we can map the number 4 to ``death'', and the number 775 is decoded to ``Kiss me'' \cite{ChineseChatCodes}. Looking at selection of PIN codes based on people's language is an interesting. People tend to choose numbers in PIN codes that they can associate the number with something they now, like their date of birth. There is not known if the same observation can be found in the selection of patterns, but the language preference might give some interesting results.
-
-        \begin{figure}[H]
-          \centering
-          \subfigure[The letter L]{
-            \includegraphics[width=0.25\textwidth]{pics/letters/bokstavenL.png}
-          }
-          \vspace{0.2cm}
-          \subfigure[The letter M]{
-            \includegraphics[width=0.25\textwidth]{pics/letters/bokstavenM.png}
-          }
-          \vspace{0.2cm}
-          \subfigure[The letter O]{
-            \includegraphics[width=0.25\textwidth]{pics/letters/bokstavenO.png}
-          }
-          \caption{Patterns corresponding to letters}
-          \label{fig:letters2}
-        \end{figure}
-
-      \subsection*{Occupation}
-      This information is valuable information due to the knowledge level of the respondents. The occupation of the a respondent is simply if a person is a student, employed, not employed or retired.
-
-      \subsection*{Profession}
-      The profession of a person may say something about a persons knowledge and background. When looking at profession, a person with a profession in IT may be more certain of the security aspects than people in other professions. It may cause bias in the data if people with enough knowledge of security overcompensate their choice of lock pattern because they want to prove their knowledge.  
-
-      \subsection*{Handedness}
-      An interesting property of humans is the fact that people write with either left or right hand (and sometimes both). This property can influence the way a person are holding a mobile phone, and may impact the way that a person is choosing their pattern. In the literature review, it was not found any studies that reported results of people choices in patterns based on the hand used. Published research \cite{Uellenbeck} found that over 40\% of the participants in their study started their Android pattern by beginning in the top left corner, but did not record the hand used when making the pattern. My hypothesis is that a left handed person may be using the left hand while interacting with the phone, making the probability for starting in the right upper corner bigger. This property has never been used before in analyzing Unlock Patterns. In Figure~\ref{fig:handedness} it is illustrated handedness and likely starting point. The numbers are collected from the research by Uellenbeck \cite{Uellenbeck}, where they measured likely initial points. Since it is more likely that people are right-handed, are we able to mirror the results to left-handed people? My hypothesis as stated earlier is that people that are left-handed are more likely to start in the upper right corner, while people that are right-handed are more likely to start in the upper left corner. The percent attached to the node are indicating the probability for starting the pattern at that node. 
-
-        \begin{figure}[H]
-          \centering
-          \subfigure{
-            \includegraphics[scale=0.2]{pics/review/handednessLeft.png}
-          }
-          \subfigure{
-            \includegraphics[scale=0.2]{pics/review/handednessRight.png}
-          }
-          \caption[Likely chosen initial starting point and handedness]{Likely chosen initial starting point \cite{Uellenbeck} and handedness}
-          \label{fig:handedness}
-        \end{figure}
-
-      \subsection*{Reading and writing orientation}
-      In different cultures, there is a difference in the reading and writing orientation. Cultures of Europe and America are usually writing and reading horizontally from left to right, but there are other cultures that do otherwise (Figure~\ref{fig:orientation}). Traditionally, Chinese, Japanese, and Korean are writing text vertically in columns from top to bottom, from right to left. Another writing orientation is horizontal from right to left that are used in Arabic cultures. Today, the vertical orientation from top to bottom is often in a horizontal way due to the influence of English and the increased computerized typesetting, but both ways are still in use. There are research that have reported that the writing orientation are affecting the visual attention and memory \cite{Chan}. They found that the reading orientation affected the way a person would memorize objects. They reported that English and Chinese speakers tended to remember an image that appeared in the top, left-hand side of the screen and the Taiwanese speakers tended to remember the images in the upper right-hand side of the screen. An interesting aspect of the reading and writing orientation is to see if people from different cultures are choosing different patterns due to their writing orientation. 
-
-        \begin{figure}[H]
-          \centering
-          \subfigure[Left-to-right]{
-            \includegraphics[scale=0.25]{pics/review/leftright.png}
-          }
-          \subfigure[Right-to-left]{
-            \includegraphics[scale=0.25]{pics/review/rightleft.png}
-          }
-          \subfigure[Top-to-bottom, left-to-right]{
-            \includegraphics[scale=0.27]{pics/review/topbottom.png}
-          }
-          \caption{Reading and writing orientation}
-          \label{fig:orientation}
-        \end{figure}
-
-      \subsection*{Handsize}
-      Smartphones today tends to get bigger and bigger in size. An interesting analysis could be done by looking at user's choice in patterns based on size of their hands and size of mobile phone where a pattern is made. By looking at a situation where a person with a small hand is interacting with a big screen, it may be hard to reach certain areas of the screen when holding the smartphone in one hand. Maybe a right-handed person with a small hand interacting with a large screen will not be able to reach the upper left corner? (Illustrated in Figure~\ref{fig:reachablePoints}).
-
-        \begin{figure}[H]
-          \centering
-          \includegraphics[scale=0.22]{pics/review/screenHand.png}
-          \caption{Reachable points on screen}
-          \label{fig:reachablePoints}
-        \end{figure}
-
-      \subsection*{Finger used when creating pattern}
-      When looking at the finger used when creating the pattern, it impacts the areas on the smartphone where a person can reach. When interacting with a smartphone, the most common way is to either use the thumb or the forefinger. When combining this property with the screen size and the size of the hand, we might be able to predict selection of patterns and eliminate some possibilities. In a book called ``Designing Mobile Interfaces'' \cite{Hoober}, they is using a expression called ``The thumb zone''. The Thumb Zone is the most comfortable area for a person to touch when using one-hand. Figure~\ref{fig:thumbZone} is showing the thumb area. The green area is where the thumb can easly access. The organge and the red areas is parst of the screen that is harder to reach. The thump zone can be used when looking at users choice of patterns because it is likeley to choose a pattern that is easy to type. 
-
-      \begin{figure}[H]
-          \centering
-          \includegraphics[scale=0.20]{pics/review/mobileScreen.jpg}
-          \caption{The thumb zone}
-          \label{fig:thumbZone}
-        \end{figure}
-
-      \subsection*{Experience with IT and security}
-
-    \todo[inline, color=red!]{Need to describe which I selected and why}
-
-	\subsection{Sampling Frame and Technique} \label{sec:sampling}
+	\subsection{Sampling Technique} \label{sec:sampling}
       
     The {\it sampling frame} is a list of the whole population of people that could be included in the survey. When looking at the sample of this study, there is not possible to make a limited sampling frame that can be summered in a list. The population of the sample frame is considered as all people with a smartphone.
 
@@ -145,6 +50,104 @@
 
     In the next section, we will look at some strategies for responses from different subgroups that may be underrepresented when using non-probability sampling with a self-selection technique. 
 
+  \clearpage
+  \subsection{Review of Human Properties}\label{sec:reviewofproperties}
+
+      % - Hvilke kan brukes?
+      % - Hvilke ble tatt med?
+      % - Hvorfor ble de tatt med? Evt ikke tatt med?
+      % Alle sier noe om hvem en person er, noen er mer fysiske egenskaper mens andre er ren bakgrunnsinformasjon. 
+      
+      \subsection*{Age and Gender} 
+      A group of people within a particular group of age may have different risk awareness. A person with an age of 30-40 years and a person younger than 20 years may have different concerns with security. A person of age between 30-40 may use their phone to perform a task with requiring high security, like tasks related for work purposes. A person with an age below 20 may not have the same security awareness because of the different use of mobile devices, as well as experience. Age is also interesting demographic information that can be used to group the respondents into distinct subgroups. When looking at gender, psychological studies have reported that males are more likely to take risks than females \cite{Byrnes}. In the literature review, there were no results found releated to gender and risk awareness. However, researchers have found bias in the password selection process of {\it PassFace} when looking at gender.
+
+      \subsection*{Language preference}
+      By asking the respondent about their language preference it can be used to check wheter the alphabet a respondent use impacts their choice in lock pattern. For example, Chinese words are written in a different way then people using the Latin alphabet. In the Android Unlock Patterns, people are able to create patterns looking the same as the letters \texttt{'L'}, \texttt{'M'}, and \texttt{'O'}. The Figure~\ref{fig:letters2} there is an illustration the letters that are possible to select a lock pattern. The same possibility could be found in languages using a different alphabet than the Latin. When looking at PIN codes, there are certain numbers that have a different meaning than only its numeric value. In China, people are associating certain words with numbers or things based on the similarities of sound. For example, the number eight is considered as a lucky number because it is pronounced "ba", which sounds like the Chinese word for prosperity \cite{ChineseChatCodes}. Other numbers like 4 and 775 are pronounced in the same way as "death" and "Kiss me", respectively. Looking at the selection of PIN codes based on people's language, people tend to choose PIN codes that they can associate to a number of special meanings. Examples of this behaviour are PIN selection corresponding to date of birth. 
+
+        \begin{figure}[H]
+          \centering
+          \subfigure[The letter L]{
+            \includegraphics[width=0.25\textwidth]{pics/letters/bokstavenL.png}
+          }
+          \vspace{0.2cm}
+          \subfigure[The letter M]{
+            \includegraphics[width=0.25\textwidth]{pics/letters/bokstavenM.png}
+          }
+          \vspace{0.2cm}
+          \subfigure[The letter O]{
+            \includegraphics[width=0.25\textwidth]{pics/letters/bokstavenO.png}
+          }
+          \caption{Patterns corresponding to letters}
+          \label{fig:letters2}
+        \end{figure}
+
+      \subsection*{Handedness}
+      An interesting property of humans is the fact that people write with either left or right hand (and sometimes both). Handedness can influence the way a person are holding a mobile phone, and may impact their choice of lock pattern. In the literature review, it was not found any studies that reported results of people choices in patterns based on handedness. Published research \cite{Uellenbeck} found that over 40\% of the participants in their study started their Android pattern by beginning in the upper-left corner, but did not record the hand used when collecting the patterns. A question to be answered is whether a left-handed person using the left hand while interacting with the screen increases the probability for starting in the upper right corner. Figure \ref{fig:handedness} illustrates handedness and likely starting point as a hypothesis, where the percentages attached to the nodes are indicating the probability for starting in the node. The right part of Figure \ref{fig:handedness} are collected from the research by Uellenbeck \cite{Uellenbeck} while the numbers on left part are only hypothetical numbers. Since it is more likely that people are right-handed, are we able to mirror the results in the right figure for left-handed people? My hypothesis as stated earlier is that people that are left-handed are more likely to start in the upper right corner, while people that are right-handed are more likely to start in the upper left corner.
+
+        \begin{figure}[H]
+          \centering
+          \subfigure{
+            \includegraphics[scale=0.2]{pics/review/handednessLeft.png}
+          }
+          \subfigure{
+            \includegraphics[scale=0.2]{pics/review/handednessRight.png}
+          }
+          \caption[Likely chosen initial starting point and handedness]{Likely chosen initial starting point \cite{Uellenbeck} and handedness}
+          \label{fig:handedness}
+        \end{figure}
+
+      \subsection*{Nationality} 
+      The nationality of users is often used in research on graphical passwords. When asking a person about their PIN code, a nationality can be used to find likely numbers to appear because some cultures associates a number with a historical or religious event. In a research on the {\it PassFace}, the nationality of the participants was proven to be valuable because people tended to choose faces from the same race and nationality. In this research, it is uncertain how much this information will help to prove any connection between nationality and users choice in patterns. Properties like language preference and reading/writing orientation look more promising for this research. However, the nationality is a data property that are useful when getting an overview of the population.
+
+      \subsection*{Reading and writing orientation}
+      In different cultures, there is a difference in the reading and writing orientation. Cultures of Europe and America usually write and read horizontally from left to right, but there are other cultures that do otherwise. Figure \ref{fig:orientation} illustrates three different ways of reading and writing. Traditionally, Chinese, Japanese, and Korean are writing text vertically in columns from top to bottom, from right to left. Another writing orientation is horizontal from right to left used in Arabic speaking countries. Today, the vertical orientation from top to bottom is often in a horizontal way due to the influence of English and the increased computerized typesetting, but both ways are still in use. There is research that have reported that the writing orientation are affecting the visual attention and memory \cite{Chan}. They found that the reading orientation affected the way a person would memorize objects. They reported that English and Chinese speakers tended to remember an image that appeared in the top, left-hand side of the screen. The Taiwanese speakers in the study tended to remember images on the opposite side of the screen, the images on the upper-right side of the screen. An interesting aspect of the reading and writing orientation is to see if people from different cultures are choosing different patterns due to their writing orientation. 
+
+        \begin{figure}[H]
+          \centering
+          \subfigure[Left-to-right]{
+            \includegraphics[scale=0.25]{pics/review/leftright.png}
+          }
+          \subfigure[Right-to-left]{
+            \includegraphics[scale=0.25]{pics/review/rightleft.png}
+          }
+          \subfigure[Top-to-bottom, left-to-right]{
+            \includegraphics[scale=0.27]{pics/review/topbottom.png}
+          }
+          \caption{Reading and writing orientation}
+          \label{fig:orientation}
+        \end{figure}
+
+      \subsection*{Profession and Occupation}
+      The current profession of a person may say something about persons knowledge and background. When looking at profession, a person with a profession in IT may be more certain of the security aspects than people in other professions. It may cause bias in the data if people with enough knowledge of security overcompensate their choice of lock pattern because they want to prove their knowledge. Occupation is valuable information due to the knowledge level of the respondents. The occupation of the a respondent is simply if a person is a student, employed, not employed or retired.
+
+      \clearpage
+      \subsection*{Finger, handsize, and screensize}
+      When looking at the finger used when creating the pattern, it impacts the reachable areas on the smartphone. When interacting with a smartphone, the most common way is to either use the thumb or the forefinger. When combining this property with the screen size and the size of the hand, we might be able to predict the selection of patterns by eliminating areas that are harder to reach. In a book called {\it Designing Mobile Interfaces} \cite{Hoober}, they used an expression called the {\it thumb zone}. The Thumb Zone is the most comfortable area for a person to touch when holding a smartphone using one hand. Figure~\ref{fig:thumbZone} is showing the thumb zone where the green area is where the thumb can easly access. The orange and the red areas are part of the screen that is harder to reach. The thump zone can be used when looking at users choice of patterns a pattern that are easy to type can be more likely of being created. Smartphones today tends to get bigger and bigger in size. An interesting analysis could be done by looking at user's choice in patterns based on the size of their hands and size of the screen. By looking at a situation where a person with a small hand is interacting with a big screen, it may be hard to reach certain areas of the screen when holding the smartphone in one hand. Maybe a right-handed person with a small hand interacting with a large screen will not be able to reach the upper left corner? The situation are illustrated in Figure~\ref{fig:reachablePoints}.
+
+        \begin{figure}[H]
+          \centering
+          \subfigure[Reachable points on screen]{
+            \includegraphics[scale=0.22]{pics/review/screenHand.png}
+            \label{fig:reachablePoints}
+          }
+          \hspace{1.0cm}
+          \subfigure[The thumb zone]{
+            \includegraphics[scale=0.20]{pics/review/mobileScreen.jpg}
+            \label{fig:thumbZone}
+          }
+        \end{figure}
+
+      \subsection{Selection of Human Properties}
+        - Finger, handsize, and screensize
+        - Reading and writing orientation
+        - Profession and Occupation
+          (Experience with IT and security)
+        - Handedness
+        - Nationality
+        - Language preference
+        - Age and Gender
+  
+  \clearpage
   \subsection{Response Rate and Non-responses} \label{sec:response}
 
     When sending out the questionnaire I have no control over how many people are willing to respond to the questionnaire or how many people from different subgroups I am able to reach. When talking about subgroups, it means that it is people with different human properties. To be able to achieve the amount of data needed for an analysis, I need to look for a strategy that may increase the number of responses from the different subgroups. If I suspect that certain types of people in my sample frame are less willing to respond or harder to reach, I could deliberately include more of that subgroup in my sample so I can assure that I receive the number of respondents that I need. Maybe go face-to-face if a particular group of people may be less willing to participate.
