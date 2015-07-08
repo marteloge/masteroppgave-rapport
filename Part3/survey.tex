@@ -68,12 +68,6 @@
 
   The survey can be divided into three unique parts; introduction, pattern creation, and background information. All three parts are being described in detail throughout this section. All figures of the application in this section are pictures of the actual application used for collecting data.
 
-  {\bf Part 1 - The introduction:} 
-
-  {\bf Part 2 - The pattern creation:} shopping, smartphone, bank
-
-  {\bf Part 3 - Collecting background information:}
-
     \subsection{Introduction}
     When entering the survey on a smartphone, all users will be presented with an introduction to the survey, the research, and the author. The survey will not start collecting any data before a visitor decides to participate by pressing "Start Survey", as illustrated in Figure \ref{fig:startscreen}. When the visitor clicks on the green button, the visitor becomes a participant in the study. Figure \ref{fig:ALPintroduction} is the first screen in the survey, explaining how the Android Pattern Lock works. It is important to give a brief explanation to users not familiar with the Android Pattern Lock while at the same time avoid giving too much information causing any bias.
 
@@ -108,24 +102,24 @@
 
     In the survey, respondents are asked to create a pattern for a shopping account, a smartphone, and a banking account. The three types are being carefully selected of how people would categorize different situations from a security point of view. As mentioned, the three pattern types are introduced to set the pattern creation process into context, avoiding dishonest attempts for answering the survey. 
 
-    When collecting the patterns, it is desirable to copy the pattern creation process used by Android. The process consists of two steps: create a pattern of at least four connected dots, after that retype the same pattern for completing the process. Figure \ref{fig:androidpatterncreationprocess} shows the pattern creation process from a real Android smartphone. First, the user selects a pattern of at least four connected dots as illustrated in Figure \ref{fig:drawpattern}. Second, after creating a pattern, the user are asked to retype the same pattern as illustrated in Figure \ref{fig:confirmnewpattern}. If the redrawn pattern was correctly typed, the pattern creation process are finished.
+    When collecting the patterns, it is desirable to copy the pattern creation process used by Android. The process consists of two steps: create a pattern of at least four connected dots, after that retype the same pattern for completing the process. Figure \ref{fig:androidpatterncreationprocess} shows the pattern creation process from a real Android smartphone. First, the user selects a pattern of at least four connected dots as illustrated in Figure \ref{fig:drawpattern}. Second, after creating a pattern, the user are asked to retype the same pattern as illustrated in Figure \ref{fig:confirmnewpattern}. If the redrawn pattern was correctly typed, the pattern creation process are finished. The pattern creation process used in the survey are visualized in Figure \ref{fig:patterncreationworkflow} and \ref{fig:createandretypepatterns}.
 
     \begin{figure}[H]
       \centering
       \subfigure[Draw pattern]{
-        \includegraphics[scale=0.09]{pics/experiment/patternprocess3.png}
+        \includegraphics[scale=0.08]{pics/experiment/patternprocess3.png}
         \label{fig:drawpattern}
       }
       \subfigure[Pattern recorded]{
-        \includegraphics[scale=0.09]{pics/experiment/patternprocess4.png}
+        \includegraphics[scale=0.08]{pics/experiment/patternprocess4.png}
         \label{fig:patternrecorded}
       }\\
       \subfigure[Redraw pattern]{
-        \includegraphics[scale=0.09]{pics/experiment/patternprocess5.png}
+        \includegraphics[scale=0.08]{pics/experiment/patternprocess5.png}
         \label{fig:redrawpattern}
       }
       \subfigure[Confirm new pattern]{
-        \includegraphics[scale=0.09]{pics/experiment/patternprocess1.png}
+        \includegraphics[scale=0.08]{pics/experiment/patternprocess1.png}
         \label{fig:confirmnewpattern}
       }
       \caption{The Android pattern creation process}
@@ -142,22 +136,20 @@
     \end{figure}
 
       \begin{enumerate}[leftmargin=0.3in]
-        \item The first step is drawing the pattern. The pattern are drawn by connecting the nodes on the grid creating lines between the nodes (Figure \ref{fig:bankpattern}). The user will not be able to proceed before a valid pattern is drawn.
+        \item The first step is tp draw the pattern. The patter are drawn by connecting the nodes on the grid creating lines between the nodes (Figure \ref{fig:bankpattern}). The user will not be able to proceed before a valid pattern is drawn.
           \begin{enumerate}
-            \item If the pattern is a valid pattern, the pattern becomes green, the message "pattern recorded" are shown, and user can press the "continue" button to proceed to step 2 (Figure \ref{fig:validpatternrecorded}). 
-            \item If the pattern drawn is not a valid pattern, the pattern turns red, and the message "Connect at least 4 dots" are shown (Figure \ref{fig:patternlengthtooshort}). The user can press the button "Retry"and draw a new pattern.
-            \item If a patten drawn is a valid pattern, but the user want to create a different pattern, the user can always press the "Retry" button to reset the pattern already created. 
+            \item If the pattern is a valid pattern, the pattern turns green, and the message "pattern recorded" are shown. After, the user are able to press the {\it "Continue"} button to proceed to step 2 (Figure \ref{fig:validpatternrecorded}). 
+            \item IIf the pattern not being valid pattern, the pattern turns red, and the message {\it "Connect at least 4 dots"} are shown (Figure \ref{fig:patternlengthtooshort}). The user can press the button {\it "Retry"}  for redrawing a new pattern.
+            \item If a pattern drawn is a valid pattern, but the user want to create a different pattern, the user can always press the "Retry" button to reset the pattern already created. 
           \end{enumerate}
-        \item When the user have created a valid pattern in step 1, they are proceeded to step 2 where the user are redrawing their pattern. The view are very similar to the view in step 1 beside the buttons and the text (Figure \ref{fig:retypepattern}).
+        \item When the respondent has created a valid pattern in step 1, they are proceeded to step 2 for redrawing the created pattern. The view is very similar to the view in step 1 beside the buttons and the text (Figure \ref{fig:retypepattern}).
           \begin{enumerate}
-            \item If the user successfully redraws the pattern from step 1, the pattern turns green, and the massage "Correct!" appears (Figure \ref{fig:retypecorrect}). The usr can finish the pattern creation process by clicking the green button "Continue" to proceed to step 3 and finish the pattern creation process.
-            \item If the user unsuccessfully manages to redraw the pattern cerated in step 1, the pattern turns red, and the message "Not the same pattern" appears (Figure \ref{fig:retypewrong}). The user can try to remember the pattern and try to draw again. A situation like this can appear when the user do not remember the pattern or misdraws the pattern.  
-            \item If the user do not remember the pattern created at all, the "Back" button can be hit to go back to step 1 where the user are able to recreate a new pattern. 
+            \item If the user successfully redraws the pattern from step 1, the pattern turns green, and the message {\it "Correct!"} appears as in Figure \ref{fig:retypecorrect}. The user can complete the pattern creation process by clicking the green button {\it "Continue"} to proceed to step 3 and complete the pattern creation process.
+            \item If the user unsuccessfully manages to redraw the pattern cerated in step 1, the pattern turns red, and the message "Not the same pattern" appears (Figure \ref{fig:retypewrong}). The user can try to remember the pattern and try to draw again. A situation like this can appear when the user do not remember the pattern or incorrectly draws the pattern.    
+            \item If the user do not remember the pattern created at all, the {\it "Back"} button can be hit to go back to step 1 where the user are able to recreate a new pattern.  
           \end{enumerate}
-        \item When the user successfully redraws the pattern in step 2 the pattern is successfully created.
+        \item When the user successfully redraws the pattern in step 2, the pattern is successfully created.
       \end{enumerate}
-
-    %Skrive noe om knappene....
 
     \begin{figure}[H]
       \centering
@@ -204,21 +196,18 @@
   \clearpage 
 
   \subsection{Background information}
-    After creating going through the pattern creation process three times, the respondent will now be asked several questions about their mobile and personal characteristics.
-    Figure \ref{fig:surveyquestoins} shows screenshots from the survey application and the questions asked. The views in Figure \ref{fig:surveyquestoins} is the final design used used for collecting data. The changes made during the design and implementation are described in Section \ref{sec:usabilitytestingsurvey}. 
+    After going through the pattern creation process for the three pattern types, the respondent will now be asked several questions about their mobile and personal characteristics. Figure \ref{fig:surveyquestoins} shows screenshots from the survey application and the questions asked. The views in Figure \ref{fig:surveyquestoins} is the final design used used for collecting data. The changes made during the design and implementation are described in Section \ref{sec:usabilitytestingsurvey}. 
 
-    There are some core functionality that are implemented in these questions that is important to notice. {\it First}, the traditional list of alternatives are replaced by icons and some few other components. As discussed in Section \ref{sec:requirementstosurvey}, it is important to customize the user interface for easily usage on small touchscreen, like screens used on smartphones. The images used are easy to click because of its size, and it requires less text because of the semantic meaning of the icons used. The icons used in the survey has been tested in a own usability test are found later in Section \ref{sec:usabilityicontest}. {\it Second}, to keep the user motivated, a progress bar is added to the questions. 
+    There are some core functionality implemented in these questions that is important to notice. {\it First}, the traditional list of alternatives are replaced by icons. As discussed in Section \ref{sec:requirementstosurvey}, it is important to customize the interface for easy interaction on a mobile touchscreen. The images used are easy to interact with because of its size, and it requires less text because of the semantic meaning of the icons used. The icons used in the survey has been tested in a own usability test that are described later in Section \ref{sec:usabilityicontest}. {\it Second}, to keep the user motivated, a progress bar is added to the views. The questions are listed after their appearance in the survey. Not all the questions are visualized in figure \ref{fig:surveyquestoins}, but all will be described in in detail in this section. 
+
+    The first questions to be asked is the handsize of the respondent, ranged from small to extra large as visualized in Figure \ref{fig:handsizeview}. The question is a subjective categorization, and there is no way of doing any countermeasures for avoiding wrong classification. There is often a difference in hand size of genders, so the question is asking the respondents to categorize the size of their hand according to their gender. By specifically asking for hand size based on gender will give a more precise answer. The male respondents claiming to have a small hand will probably have a bigger hand compared to female respondents claiming to have a the same size. 
+
+    Figure \ref{fig:handednessview} and \ref{fig:screensizeview} are the handedness of the respondent and the size of the screen used, respectively. Whether a person should be straight forward, where your dominant are either left- or right-hand. Screen size has the same problem as asking for the hand size, because how a respondent categorizes the screen size depends on the subjective evaluation made by the respondent. A countermeasure for having the possibility to evaluate respondents categorization of the screen sizes is to store the size of the screen in pixels. The task of storing the pixel width and height of the screen are stored automatically when the respondent selects the screen size.
+
+    Figure \ref{fig:fingerusedview} and \ref{fig:handusedview} is questions asking for the hand and finger used for creating the patterns. Typically, a respondent will either use their left or right hand for holding the smartphone while interacting with the screen by using either the forefinger or the thumb. The option of using another finger than forefinger and thumb are also applied. Instead of using words like thumb and forefinger, a circle is applied to a hand indicating the finger used. 
+
+    Figure \ref{fig:readingandwritingview} are asking about the reading and writing direction preferred by the respondent. The three alternatives includes a small example to avoid any misinterpretation of the icons. Figure \ref{fig:genderview}, \ref{fig:ageview}, and \ref{fig:experiencewithITSecurity} are asking about the respondent's gender, age, and experience with IT and security. The alternatives for gender are visualized by using a male and female icon. The last question asks whether the respondent have any experience with IT and security. The screens missing from Figure \ref{fig:surveyquestoins} are the question asking for the screenlock the respondent use, country, and the last screen thanking the respondents for participating. 
     
-    The questions are listed after their appearance in the survey. The first questions to be asked is the handsize in Figure \ref{fig:handsizeview}. 
-
-    {\bf Note - Skriv om alle views:}
-    Figure \ref{fig:handednessview}
-    Figure \ref{fig:screensizeview}
-    Figure \ref{fig:handusedview}
-    Figure \ref{fig:fingerusedview}
-    Figure \ref{fig:readingandwritingview}
-    Figure \ref{fig:genderview}
-    Figure \ref{fig:ageview}
 
   \clearpage
 
@@ -256,25 +245,23 @@
         \includegraphics[scale=0.3]{pics/survey/age-2}
         \label{fig:ageview}
       }
+      \subfigure[Experience]{
+        \includegraphics[scale=0.3]{pics/survey/experience2}
+        \label{fig:experiencewithITSecurity}
+      }
       \caption{Survey - Questions}
       \label{fig:surveyquestoins}
     \end{figure}
 
-    \todo{Add finish screen}
+    \clearpage
 
-    There is one special question in the survey that is not yet talked about; the mobile operating system used. This question is one of the hard questions to ask because it is hard to ask without using any technical terms. Instead of listing all the possible mobile operating systems, I rather help the respondents by not showing what they do not have. In other words, I check their mobile OS and ask them if they are familiar with the OS I discovered. With this information I am able to ask "Is this your mobile operating system?" instead of showing a list and ask "Which one is your mobile OS". The alternatives are also designed in a way so whatever they answer I do know their mobile OS. 
-    This can help me in different ways:
+    There is one special question in the survey that is not being mentioned until now; the mobile operating system used. This question is one of the hard questions to ask because it is no intuitive way for asking about the operating system of a mobile without using any technical terms. 
 
-      \begin{enumerate}
-        \item People do not actually need to know their OS and I still get useful data
-        \item I can check that people actually knows their mobile OS
-        \item I can check that the system I created detects the correct OS
-      \end{enumerate}
+    Instead of listing all the possible mobile operating systems for mobile devices, the mobile operating system of the mobile is detected and visualized. In other words, the survey checks for the mobile OS and present what is being detected. With this information, a generic question like {\it "Is this your mobile operating system?"}, hence avoiding a long list asking {\it "Which one is your mobile OS?"}. The alternatives presented, \texttt{Yes}, \texttt{No}, and \texttt{Don't know}, are designed in way that the answer provided by the respondent are valuable whatever they select. For each mobile OS, each corresponding alternative are stored as \texttt{mobileOS\_yes}, \texttt{mobileOS\_no}, and \texttt{mobileOS\_unknown}.
 
-    When reaching the OS question, one of the screens in Figure \ref{fig:mobileOSquestion} will show. It is added 4 different mobile operating systems that are covering the most of the operating systems used on smartphones: iOS, Android, Windows, and BlackBerry. 
-    Each will have the three alternatives yes, no, and question mark. The value stored in the database will start with the detected OS and the alternative selected. If I used an Android phone the values could be "Andorid", "Android\_no", "Android\_unknown". If the survey detects an Android phone, but the respondent answer "No", I can still use the information.
+    When the OS have been detected, one of the screens in Figure \ref{fig:mobileOSquestion} will show. It is implemented support for four different mobile operating systems that are covering the majority of the operating systems on smartphones: iOS, Android, Windows, and BlackBerry. Each OS will have the three alternatives yes, no, and question mark. 
 
-    One pitfall is the formulation of the question. I should avoid any formulations stating that I detects their information. A question like "It is detected that you have an Android phone. Is this correct?" can be frightening to some people because they can get the feeling of being monitored. The feeling of someone knowing anything about you can be scary for anyone not knowing the technical details. The mobile operating system can easily be detected on the client side with one line of javascript. 
+    One pitfall is the formulation of the question. I should avoid any formulations stating that I detects their information. A question like {\it "It is detected that you have an Android phone. Is this correct?"} can be daunting, hence causing the respondents the feeling of being monitored. The feeling of someone knowing anything about you can be scary for anyone not knowing the technical details. The mobile operating system are easily detected on the client side with one line of code with {\it JavaScript}.
 
     \begin{figure}[H]
       \centering
@@ -291,10 +278,8 @@
       \label{fig:mobileOSquestion}
     \end{figure}
     \clearpage
-    
-    Figure \ref{fig:thefadingeffect} shows an example of what happens when you press an icon. When you press a icon, the icons turn green, highlighting the selected alternative like in Figure \ref{fig:selecticon}. When the icon is selected a slow fading effect starts like showing in Figure \ref{fig:iconfadingout} and \ref{fig:iconfadedout}. When the question is faded out the next question appears. 
 
-    The reason for doing it this way is closely related to the useage of icons instead of other traditional components used in surveys. When using "click on image" as a way to navigate through the survey, it is important to keep the feeling of control and presence. The fading effect is added to support the automatic navigation, and it clearly states that the user are taken out of the question and into a new one. A quick change between two questions can be confusing and too abrupt.
+    Figure \ref{fig:thefadingeffect} shows an example of what happens when the respondent clicks on an icon. When an icon is being press, the icons are highlighted by turning green like in Figure \ref{fig:selecticon}. When an icon is being clicked on, a slow fading effect starts for indicating the state changes to the next question. The fading effect are visualized in Figure \ref{fig:iconfadingout} and \ref{fig:iconfadedout}. When the question is faded out, the next question appears. The fading effect implemented is a cause of the described navigation requirements stated in Section \ref{sec:requirementstosurvey}. By using the automatic navigation while clicking on an image, the highlighting and the fading effect supports the respondent keeping track of the state. If a view is not utilizing icons, the fading effect is still used for indicating a change of state.
 
     \begin{figure}[H]
       \centering
@@ -313,6 +298,3 @@
       \caption{Survey - Icon selecting effect}
       \label{fig:thefadingeffect}
     \end{figure}
-
-
-  
