@@ -59,70 +59,74 @@
   Besides looking at the data, I received feedback by email from some respondents answering the survey for testing purposes. They commented that the dropdown were lagging, as well as being confused when selecting the screen lock they were currently using. 
 
   \subsection{Changes Made to the Survey}
-  Before going live with the survey there was conducted two types of tests providing useful insight of how the users experienced the application. The tests is very important due to the quality of the data collected from the survey. Any ambiguities or errors would could cause bias in the data. After the test I would go through all the feedback and the observed data to make any changes needed in the survey.
+  Before distributing the survey there were conducted two types of tests providing useful insight of how the users experienced the application. The tests were crucial because of the high need for high-quality data collected from the survey. Any ambiguities or errors causing bias in the data are not wanted. This section will provide information on all changes made to the application as a result of the observations and the feedback from the tests.
 
     \subsubsection*{1) Country dropdown}
-    In both tests there was many participants that unintentionally selected the wrong country because the dropdown component lagged. The component used had a flag attached to the country name that used a lot resources to load, and therefore some user experienced that the component was slow. The component was changed and the flag icons were removed. The changes can be seen in Figure \ref{fig:change-country}.
+    In both tests, there were many participants that unintentionally selected the wrong country because the dropdown component lagged. The component used had a flag attached to the country name that used many resources for loading, causing the users experiencing the component to be slow. The component was changed, and the flag icons were removed. Figure \ref{fig:change-country-old} and \ref{fig:change-country-new} are showing the old and the new version of the country component, respectivley.
+
+      \begin{figure}[H]
+        \centering
+        \subfigure[Old view]{
+          \includegraphics[scale=0.34]{pics/survey/country-old}
+          \label{fig:change-country-old}
+        }
+        \subfigure[Final view after changes]{
+          \includegraphics[scale=0.34]{pics/survey/country2}
+          \label{fig:change-country-new}
+        }
+        \caption{Changes in country selection view}
+        \label{fig:change-country}
+      \end{figure}
 
     \subsubsection*{2) Experience question}
     The question was rather complicated and hard to read. The question was changed from "Do you work with or study/studied IT and/or security full time?" to "Do you have a background in IT/Security?".
-      
+
     \subsubsection*{3) Reading and writing direction}
-    The first version of the survey just listed three different icons of arrows indicating the reading and writing direction, but it seemed that people misunderstood the icons in some way. This view was changed by adding a description next to the arrow in order to remove any misinterpretations of the directions. The changes are shown in Figure \ref{fig:change-readwrite}.
+    The first version of the survey just listed three different icons of arrows indicating the reading and writing direction, but it seemed that people misinterpreted the icons. This view was changed by adding a description next to the arrow to remove any misinterpretations of the icons. The old and the new presentation of the question are shown in Figure \ref{fig:change-readwrite-old} and \ref{fig:change-readwrite-new}, respectively.
 
-    \subsubsection*{4) Adding time used on the creation of patterns}
-    It was observed that some of the participants in the usability test in the controlled environment was spending more time creating the pattern for banking account. During the test it was not easy to track the time used on different tasks, but it is possible to track the time used on each pattern in the application to see the diversity between the three types. The observation from the test was that some of the participants took their eyes of the screen thinking harder about the pattern they wanted to create for the bank. In this particular test I was present and could observe such situations, but I will not be able to do this in the application and therefore I added the time used. Such time frame can also be used in the analysis. An example of use could be to pick out dishonest attempts that could cause bias in the data. 
-      
+      \begin{figure}[H]
+        \centering
+        \subfigure[Old view]{
+          \includegraphics[scale=0.34]{pics/survey/reading-old}
+          \label{fig:change-readwrite-old}
+        }
+        \subfigure[Final view after changes]{
+          \includegraphics[scale=0.34]{pics/survey/reading}
+          \label{fig:change-readwrite-new}
+        }
+        \caption{Changes in reading/writing direction view}
+        \label{fig:change-readwrite}
+      \end{figure}
+
+    \subsubsection*{4) Apply time used into creation of patterns}
+    It was observed that some of the participants in the usability test in the controlled environment was spending more time creating the pattern for banking account. During the test, it was not easy to track the time used on different tasks, but this can be implemented in the application for observing the time used for creating a pattern of a spesific type.
+    The observation from the test was that some of the participants took their eyes off the screen thinking harder about the pattern they wanted to create for the banking account. In this test, I was present and could observe such situations, but are not possible when distributing the survey. Such time frame can also be used in the analysis. An example of use could be to eliminate dishonest attempts causing bias in the data. 
+  
+
     \subsubsection*{5) Selection of screenlock}
-    The first version of the view had a list of all the screenlocks that are normally used on a smartphone. The feedback from the tests was that is was confusing to select the correct screenlock for several reasons. {\it First}, some of the participants did not understand all the icons used. {\it Second}, it was observed that some of the user did not interpreted all the alternatives and selected the first fit, but it was sometimes wrong when I stopped the user and asked what they actually used. {\it Third}, it appears that some had a screenlock that could fit into several of the icons, making it hard to pick the correct one. The new version of the view replaced all the icons to a dropdown with alternatives. When the user selects a screenlock, a image or description appears below the dropdown so they could get a extra layer of confirmation that they had selected the correct screenlock. The alternative "PIN" was also changes to "PIN (4-digits)" to be specific and eliminate any ambiguity for those who use more than four digits. The reason for specifically choose four digits is because most users are familiar with this at their bank and smartphones. The changes in this view can be seen in Figure \ref{fig:change-screenlock}.
+    The first version of the view had a list of all the screen locks that are provided on the majority of the smartphones. Based on feedback, the participants found it confusing to select the correct screen lock for several reasons.{\it First}, some of the participants did not understand all the icons used. {\it Second}, it was observed that some of the users did not interpret all the alternatives and selected the first matching alternative. {\it Third}, it seems that some had a screen lock that could be categorized as several of the presented icons, making it hard to pick the correct one. The new version of the view replaced all the icons with a drop-down listing all the alternatives. When the user selects a screen lock, an image or description appears below the dropdown, giving an extra layer of confirmation of the selected screen lock. The alternative "PIN" was also changed from "PIN" to "PIN (4-digits)" for eliminate any ambiguities for those using more than four digits. Figure \ref{fig:change-screenlock-old} and \ref{fig:change-screenlock-new} are the old view and the new view, respectively.
     
-    \subsubsection*{6) Scaling pattern selector for smaller devices}
-    The 3 times 3 pattern square was set to a specific size based on the width of the screen, but it seemed that some mobile screen lost some of the height from browser navigation bars. As a consequence, the pattern was laying over the question, making it hard to see which pattern they where creating. There was added a mathematical formula to ensure that the pattern square was scaling properly on any screensize. 
-    
-    \subsubsection*{7) Changing handsize question}
-    Based on feedback in the test in the controlled environment, the participants did not know what to compare their handsize to. They often reasoned different sizes compared to their gender and unisex. It was therefore desirable to explicitly state in the question that the user was selecting their size of their hand based on their gender. The question still remains subjective, but by explicitly stating gender as a standard it will remove some bias. 
-    
-    \subsubsection*{8) Adding pattern retype}
-    During the tests I god feedback that many of the participants expected to be asked to retype their selected patterns right after creating it or in the end of the survey. It is not desirable to ask users to retype their patterns in the end of the survey because users then would feel uncomfortable if they did not remember it. It did not want the users to leave the survey with a bad experience. By stating that the users should remember the patterns in the end of the survey could end up with many user leave the survey because they would feel uncomfortable. Some would might also leave the survey because it would require them to actually do more work than they are willing to do for a survey. I decided to ask the user to retype the pattern right after creating because this is how the process works on Android smartphones. On Android devices, the users types a pattern and are thereafter asked to retype the pattern again to create the pattern for their smartphone. \todo{Visualize process in survey and on Android. The pattern cre. proc.}
-    
-    \subsubsection*{9) Collecting screen pixels of screen used}
-    By observing the participants in the first test, I recorded my opinion of their screen size as well as their own choices. About 70\% of their choices matched my own opinion of the screen size. Since this question is a subjective meaning of the person answering, I added an extra layer of information by saving the pixels width and hight of the mobile device. One problem with pixels size of a mobile screen is that they do not match the physical size of the screen. The pixels could still provide information to actually categorize the correct size by comparing the OS and pixels.
+      \begin{figure}[H]
+        \centering
+        \subfigure[Old view]{
+          \includegraphics[scale=0.34]{pics/survey/screenlock-old}
+          \label{fig:change-screenlock-old}
+        }
+        \subfigure[Final view after changes]{
+          \includegraphics[scale=0.34]{pics/survey/screenlock2}
+        }
+        \caption{Changes in screenlock selection view}
+        \label{fig:change-screenlock-new}
+      \end{figure}
 
-    \begin{figure}[H]
-      \centering
-      \subfigure[Old view]{
-        \includegraphics[scale=0.34]{pics/survey/country-old}
-      }
-      \subfigure[Final view after changes]{
-        \includegraphics[scale=0.34]{pics/survey/country2}
-      }
-      \caption{Changes in country selection view}
-      \label{fig:change-country}
-    \end{figure}
+    \subsubsection*{6) Changing handsize question}
+    Based on feedback from the test conducted in the controlled environment, the participants did not know what to compare their hand size to. The size selected depended on whether they compared themselves to their gender or not. For being consistent, the question explicitly stated in the question that the user should select their size based on their gender. 
 
-    \begin{figure}[H]
-      \centering
-      \subfigure[Old view]{
-        \includegraphics[scale=0.34]{pics/survey/reading-old}
-      }
-      \subfigure[Final view after changes]{
-        \includegraphics[scale=0.34]{pics/survey/reading}
-      }
-      \caption{Changes in reading/writing direction view}
-      \label{fig:change-readwrite}
-    \end{figure}
+    \subsubsection*{7) Adding pattern retype}
+    During the tests, it was received feedback that many of the participants expected to be asked to retype their selected patterns. Two suggestions from the respondents were to copy the process used on Android devices or asking respondents to retype in the end of the survey. It is not desired to ask users to retype their patterns at the end of the survey because such situation can make respondents feeling if not being able to remember the pattern. As stated in the requirements, respondents should not leave the survey with a bad experience. If asking the respondents to retype the pattern at the end of the survey, this should be clearly stated before creating the patterns. By stating that the users should remember the patterns for being able to complete the survey could cause respondents feeling uncomfortable or even cause the respondents to leave the survey. The best solution was to copy the same process that Android are using.
 
-    \begin{figure}[H]
-      \centering
-      \subfigure[Old view]{
-        \includegraphics[scale=0.34]{pics/survey/screenlock-old}
-      }
-      \subfigure[Final view after changes]{
-        \includegraphics[scale=0.34]{pics/survey/screenlock2}
-      }
-      \caption{Changes in screenlock selection view}
-      \label{fig:change-screenlock}
-    \end{figure}
+    \subsubsection*{8) Collecting screen pixels of screen used}
+    By observing the participants in the first test, it was observed that the selected choice in patterns was different from person to person. Since this question is a subjective meaning of the person answering, an extra layer of information is applied to the dataset by saving the pixels width and height of the screen. One problem with pixels size of a mobile screen is that they do not match the physical size of the screen. The pixels could still provide information for being able to categorize the size correctly by comparing the OS and pixels to the respondents answer.
 
 \section{Ethical Considerations}\label{sec:ethics}
     
