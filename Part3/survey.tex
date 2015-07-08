@@ -1,108 +1,87 @@
 % !TEX root = ../main.tex
-\section{A Detailed Description of the Survey}\label{sec:survey}
+\chapter{A Detailed Description of the Survey}\label{sec:survey}
   
-  The challenge of analyzing passwords; you actually need to have passwords to analyze. The majority of published research on passwords are often conducted using passwords from leakages or passwords distributed from legal sources. Looking at the Android lock pattern lock there exists no distributed sources, and all patterns locks that people use are stored locally on each device. To be able to analyze user selected patterns I need to do the dirty job of collecting them all myself. 
+  The challenge of analyzing user-selected passwords is that you need to have any passwords to analyze. The majority of published research on passwords are often conducted using passwords from leakages or passwords distributed from legal sources. Looking at the Android lock pattern lock there exists no distributed sources, and all patterns locks that people use are stored locally on each device. To be able to analyze user-selected patterns, all patterns are being collected from the survey described in this Chapter. 
 
-  People working with security are striving to teach people about security, and one of the rules everyone probably know about is that you should never share a password because it is a secret you should keep to yourself. In this research I have to be a hypocrite and do the opposite; I need to ask people to share their secrets in the name of science. 
+  The survey is a custom designed and implemented specifically for this research. The survey will be described in detail throughout the chapter, starting with an elaboration of the requirements in Section \ref{sec:requirementstosurvey} and a detailed description of how the survey works in Section \ref{sec:layoutandstructure}. As described in Chapter \ref{chap:experiment}, when starting sending out the survey, there is no way back for changing the survey. Therefore, Section \ref{sec:usabilitytestingsurvey} contains a detailed description of how the survey was tested before being distributed. The last section of this survey is an elaboration of the ethical aspects of this research. 
 
-  This section will include a description of the tool used for collecting patterns, the survey. The survey are custom designed and implemented specifically for this research. The survey will be describes in detail throughout this section starting with a elaboration of the requirements and ending up with a detailed description of how the survey works. 
+  \clearpage
+  \section{Requirements}\label{sec:requirementstosurvey}
 
-  \subsection{Requirements}\label{sec:requirementstosurvey}
+    When coping with the difficulties of collecting patterns, it is important to define requirements for the survey application. This section will walk through a list of requirements specified for the survey. Each requirement are being described in detail. 
 
-    When coping with the difficulties with collecting patterns it is important to define requirements for the survey application. This section will not go through a predefines list of requirements, rather elaborate and discuss the requirements in general to be able to explain their importance. The list of requirements are used as a foundation for the survey.
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{ p{1cm} | p{9cm} }
+        \hline
+        {\bf RQ1:} & The survey should be able to stand for all commutation to the respondents \\ \hline
+        {\bf RQ2:} & The survey should be considered as trustworthy \\ \hline
+        {\bf RQ3:} & The survey should be implemented on a technical device reflecting the environment of the Android Lock Pattern \\ \hline
+        {\bf RQ4:} & The survey should be easy to understand and easy to complete \\ \hline
+        {\bf RQ5:} & The survey should be visual appealing \\ \hline
+        {\bf RQ6:} & The survey should be provide easy navigation between the questions \\ \hline
+        {\bf RQ7:} & The survey should provide high security \\ \hline
+      \end{tabular}
+      \caption{Survey requirements}
+      \label{tab:requirements}
+    \end{table}
 
-    \subsubsection*{One way Communication}
-      The survey will be a online application, meaning that the user interface of the survey application is the only way that I as a researcher will be able to communicate with the respondents. The respondents will not be able to directly talk to me during the survey, so it is therefore important how the application are communicating with the respondents.
+    \subsection*{RQ1 - One way communication}
+    The survey will be an online application, meaning that the user interface of the survey application is the only way being able to communicate with the respondents. The respondents will not be able to directly talk to me during the survey, hence important how designing the application for communicating with the respondents.
 
-      The survey will contain a number of questions to be answered by the respondents. The hard part is to adapt the suitable amount of questions. If the survey takes too long time to answer I will probably loose respondents.
+    When sending out the survey, there are no record of who will receive the survey.  The respondents might come from different cultures and countries, hence requiring a universal way of communicating with the respondents. The survey are being written in English, but there is a chance that there persons entering the survey not being able to understand English properly. Instead of using too much words, it is preferable to use icons and illustrations. The use of icons instead of text is not just beneficial for English-speaking respondents, rather a design choice making the whole application easier to understand for all respondents.
 
-      When sending out the survey I have no control over who will participate, so people might come from different cultures and countries. The survey will be written in English, but there is a chance that there persons entering the survey not speaking English very well. Instead of using too much words it is preferable to use icons and illustrations. This is not just beneficial for respondents not talking English.
+    Besides the language used, the words used for formulating the questions need to be carefully selected considering all respondents having a different background. The use of academic and technical words are required being avoided, hence ensuring everyone being able to understand the purpose of the question. It should also be considered that some respondents do not know what Android, locking mechanism, or pattern lock is. It should be visualized, explained, as well as provide practice for the respondents needing it. None of the respondents should leave the survey feeling stupid or insecure as a cause of a poorly designed application. The participant should leave the survey with a positive experience. 
 
-      The words used in the questions have to be carefully selected considering that all respondents have a different background. It should be avoided using academic and technical words that I cannot ensure that everyone can understand. It should also be considered that some respondents do not know what Android, locking mechanism, or pattern lock is. It should be visualized, explained and support practice for the respondents needing it. It is not desired that any respondents are feeling stupid nor insecure when participating. I want the respondents to leave the survey with a positive experience. 
+    \subsection*{RQ2 - Trustworthiness}
+    Gaining trust is important for getting people to wanting to participate. When being asked to take part in a study, respondents might ask several questions regarding the reliability of the source. For example, are the data being used for the right reasons and handled according to what are being specified in the survey? 
 
-      % - ordbruk: korte setninger for at folk skal gidde å lese.
-      % - ordbruk: spørsmålene må være formulert på en måte slik at alle forstår (unngå tekniske uttrykk)
-      % - Unngå lange setninger
-      % - Unngå at personer føler seg utrygge eller dumme fordi de ikke kan svare.  (treningsmodus og valgalernativer som fører personen ut av en ukomfertabel sone, men samtidig gi data som kan brukes. )
-      % - Naturlig valg å bruke engelsk, men ikke alle kan engelsk --> kommuniserer spørsmålet med ikoner. 
-      % - Cross-cultural requirements
-      % - Kan ikke anta at alle vet hva låsemønster og android er
+    When respondents open the survey, a description of the research and the researcher should be provided. It is reasonable to provide contact information, as well as information about myself so participants able to read about the person asking them to participate. The survey should being placed on a sub-domain on my personal domain for gaining trust from the respondents. My personal domain is {\it marteloge.no}, containing the sub-domain {\it survey.marteloge.no} for the survey.  The contact information is also important in terms of ownership of data. When linking to my web page, the respondents can see who are in the possession of the collected data. Who are reading the data and how is it handled? It should be clearly stated that the information collected are only available to the research group containing myself, my supervisor, and my co-supervisor. It should be clearly stated that the data gathered only will be used for research purposes.
 
-    \subsubsection*{Trustworthiness}
-      When respondents opens the survey they should be able to see who are asking them to participate. It is reasonable to provide contact information and information about myself so the participants can read and see who I am. The survey should be a sub domain on my personal domain (marteloge.no) to gain trust. Linking to my personal page and contact information should be required.
-      The contact information are also important in terms of ownership of data. Who are reading the data and how is it handled? It should be clearly stated that the information collected are only available to the research group containing myself, my supervisor, and my co-supervisor. It should also be clearly stated that the data collected will only be used for research purposes.
+    The visual appearance is an important part of gaining trust from the respondents. This is explained as an own requirement. 
 
-      The visual appearance is an important part of the trustworthiness of the survey. If you put a pink webpage that is visual appealing next to a webpage using only dark colors. Colors tell more than you probably would think in the first place.
+    \subsection*{RQ3 - Environment of use}
+    When collecting data, the environment should be considered because it can impact the data in terms of introducing bias. When looking at the Android Unlock Pattern, the scheme is best known for being used on mobile devices like smartphones and tablets. When looking at different characteristics of mobile devices, tablets and smartphones should be defined as two separate environments of use. {\it First}, the tablet are often used in various settings than a smartphone that a user carry and use every day. {\it Second}, the physical interaction are often different. A smartphone are smaller than a tablet and can be interacted with by using one hand. When collecting data, it is desired to capture specific characteristics of the environment a pattern were created. As a cause of different characteristics with the interaction on smartphones and tablet, it is desirable only to collect data from one the environments. The Android Lock Pattern are most commonly used on smartphones, making this study only collecting data for this particular environment.
 
-      % - OBS: må her ref til forskning!
-      % - Tilgjengeliggjøre meg selv via nettside og kontaktinformasjon. Det er virktig å vise at det kommer fra en seriøs kilde og det er viktig å vise hvem som spør om hjelp. Må fremstå som pålitelig og lite skummel. 
-      % - Fargebruk og bilder må virke lite skumle. 
-      % - Lage et eksempel på et bilde med mørke farger og et med lyse farger for å hvise at det har mye å si på hvordan man kommuniserer ut til bruker. 
-      % - Vise til hvem som mottar og behandler data
+    \subsection*{RQ4 - Complexity and length}
+    Since the only option for answering the survey are by using a smartphone, the time used for complete the survey, as well as the complexity, needs to be configured. The smartphone have a limited ability for interaction where the small touch screen are the only interaction available. 
 
-    \subsubsection*{Technical device and environment of use}
-      When collecting data the environment should be considered because it can impact the data in terms of introducing bias. Looking at the Android Unlock Pattern it is often used on mobile devices, both tablet and smartphones. When looking at different human properties and characteristics of mobile devices, tablets should be divided into two different environments of use. {\it First}, the tablet are often used in different settings than a smartphone that a user often carry and use every day. {\it Second}, the physical interaction are often different. A smartphone are small and can be interacted with using one hand. When collecting data I want to capture specific characteristics that will be different on a smartphone and a tablet. It is therefore desirable to only collect data on a smartphone where it is most rapidly used. It does not mean that patterns on tablets are not interesting, but to ensure what environment the survey are used for analysis purposes. 
+    For ensuring that people completes the survey, the questions needs to be short and concise formulated, as well as being easy to answer. As a cause of using smartphones for data collection, the number of questions might need to be reduced. The questions should also be prioritized according to their importance in case some respondents leave the survey before completion. It is better to get some data than nothing at all; each provided answer to a question should directly be stored after submission. 
 
-      A decision to only deploying the survey on smartphoens sets high requirements to the usability. It is not a easy job to design a survey that will work on small devices, but there is also an technical part of this to fit the design to all various screen sizes. 
+    \subsection*{RQ5 - Visual appearance}
+    The visual appearance of a system is not only being related to a design preference but are also related to other aspects like psychology. To be asked to create patterns can for some respondents be a daunting task as it is related to security. 
 
-      The choice to have a online survey can both give positive and negative outcomes. When only using a online survey I do not have any control of who have answered and I can not be there observing or asking questions. The other choice of only using smartphones do also impact what kind of users that will answer. By only using smartphones I will neither be able to reach people not in possession of a smartphone. One positive thunk with going online is that I do not know who will answer the survey. The survey will therefore be anonymous. Most of the people in my network that I am able to reach in person do almost have the same age and the background. Going online helps me reach people outside where I live and outside my own network.
+    To avoid respondents having a bad experience by visiting the survey, several design requirements should be used for ensuring a pleasant experience while answering the survey. {\it Firstly}, use bright colors that are calming. The use of colors is not related something friendly. {\it Secondly}, the use of icons can be welcoming. The use of icons, especially icons of a childish touch should be used for giving a good experience, hence avoid scaring off potential respondents. 
 
-      % - Andorid brukes bare på små enheter
-      % - Vil ikke samle inn data som ikke er generert fra det miljøet det vanligvis brukes. Mulig man kan få flere svar med å samle inn data på desktop, men dataen mister credability. Basert på analysen av hvilke egenskaper som skal inkluderes kan ikke de anlyseres om spørreundersøkelsen ikke blir tatt på en mobil enhet. 
-      % - Setter høye krav til kontroll
-      % - Setter høye krav til brukergrensesnitt
-      % - Utelukker muligens noen brukere som ikke eier en smarttelefon, men kan anta disse som ikke relevante for sample siden de ikke eier teknisk utstyr som er nødvendig. 
-      % - Mister kontroll på hvem som svarer, men styrker også anonymitet fordi jeg ikke har mulighet til å sjekke hvem som svarer.
+    \subsection*{RQ6 - Navigation}
+    The use of a smartphone as a platform requires navigation to be easy and intuitive to use. When evaluating the usability of a system, the number of clicks used for reaching a goal can be used. The navigation should in some way be automatic when the participant selects their answer to avoid too much of a time used for navigating. However, when sending the respondent to a new state, the transformation should be intuitive without the respondent losing track of the state. As well as being fast, the navigation should clearly visualize the selected answer before changing any content. 
 
-    \subsubsection*{Complexity and length}
-      Because of the decision of using the technical environment of the smartphone it do impact the complexity and length of the survey. The smartphone have a limited ability for interaction where the small touch screen are the only interaction available. To get people to complete the survey it need to have well picked questions with a short and concise formulation, and the questions should be easy to answer. It may be needed to shorten the number of questions because of the chosen environment. There will always be a risk of people not completing the survey; each questions should carefully be prioritized after its importance for the study. It is better to get some data than nothing at all. Each answer for each question should be stored after the submission of each question. 
+    The number of questions and the scope of a survey are essential information when deciding to participate or not. To signalize the number of questions, a progess bar of some extent should be included in the survey.
 
-      The complexity do also include how people will understand the questions. Computer security are for many people something unknown. It should therefore provide the information needed to complete the survey and it should be avoided using complex academic and technical terms that are not common to use. A situation where a person do not understand what is asked for should be avoided. The feeling of feeling stupid because you do not understand what to answer or do will probably result in the participant leaving the survey. People might having less understanding of the technical part are probably older adults that I fear are hard to reach in the first place.
+    \subsection*{RQ7 - Security}
+    Since the survey is required to be anonymous for ethical concerns, the communication should be transferred over an encrypted channel using SSL. Using SSL avoid the probability of someone monitoring the traffic. The use of SSL does also provide the requirement for anonymity, as well as a visual appearance of the implemented security mechanisms. The use of SSL provides the secure HTTP (HTTPS) flag in the navigation bar, helping to build upon the trustworthiness of the survey. Security is also a part of being trustworthy. 
 
-      % - Hvis undersøkelsen blir for lang er det fare for at mange vil avbryte undersøkelsen før den er ferdig
-      % - Selv om man kommer med prevantive tiltak mot lang undersøkelse er det viktig å prioritere spørsmålene etter prioritert rekkefølge (viktighet av spørsmål).
-      % - Det er veldig viktig at ingen føler seg dumme når de gjennomgår spørreundersøkelsen. Det kan komme tilfeller der personer som ikke har brukt løsemønster vil svare. Det er defor lagt til treningsmodus for at alle skal føle mestring og unngå frustrasjon.
-      % - Som nevnt på språk og kommunikasjon er det viktig at spørsmålene er lette og korte der man også unngår kompliserte ord og tunge faguttrykk.
-      % - Lengde og data nødvendig for å kunne analysere data
+    On the backed of the application, all logging and traces of the users should not be stored. An IP address is a piece of information that can be used to trace the position of the user, hence should not be stored in any terms. The only data stored form the survey should be the answers provided by the participants. Besides turning off any logging as well as using SSL, other security measures should be implemented to obtain a secure application. The application should be reviewed by someone with a high competence in information security before starting the data collection. It is not desired to lose any data, or a situation where someone can steal the data in any terms. If any cookies are used, it should be clearly stated in the introduction. The introduction should also include a description of any security related information concerning a respondent.
 
-    \subsubsection*{Visual appearance and psychology}
+	\section{Layout and Structure}\label{sec:layoutandstructure}
+  The layout and design were first drafted in my specialization project in 2014, and the first wireframes can be found in Appendix \ref{ap:wireframes}. Since the first drafts were made, a technical implementation and redesign have been carried out. Last section included an elaboration of the requirements of the survey while this section will go a step further and describe the survey and its functionality in use. 
 
-      % - Å li bedt om å lage mønster/password kan for mange virke som en avskrekkende ting. Det er derfor virkig å utnytte psykologien! Bruk farger som virker imøtekommende og som ikke forbindes med noe farlig. 
-      % - Ikoner kan også hjelpe å gi undersøkelsen et "barnslig" preg som også gjør at det virker mindre skummelt
-      % - Viktig å vise hvem jeg er og at jeg kan stoles på. Dette er nevnt tidligere, men vis tydelig bilde slik at personer får tiltro. Hjemmesiden min er laget rosa fordi 1) det faktisk representerer meg 2) det virker ikke skummelt.
-      % - Gjøre meg tilgjengelig.
-      % - Finnes det noe fargeteori som kan refereres til?
-      % - Finnes det noe forskning på hva man må gjøre når man lager spørreundersøkelse?
-      % - Spørsmålnr og antall spørsmål igjen. 
-      % - Tradisjonelle spørreundersøkelser på mobil blir ofte tatt dårlig imot fordi det er tungvindt å svare på. Jeg ønsker å gi et personer et overasket øyeblikk og deretter ønske å dele den videre fordi den var anderledes. Spille på sosiale aspekter for å få spredt den og bygge thrustworthyness. Det er ingen som vil dele en dårlig spørreundersøkelse med mindre det er din beste venn som spør. 
-      % - Må kommunisere at dette er sikkert. det går også innom aspektet med psykologi. Man må visuelt se at det føles sikkert. Feks å se HTTPS er et enkelt inngrep som kan gjøres.
+  The survey can be divided into three unique parts; introduction, pattern creation, and background information. All three parts are being described in detail throughout this section. All figures of the application in this section are pictures of the actual application used for collecting data.
 
-    \subsubsection*{Navigation}
-      Using a smartphone sets requirements to the navigation in the survey. It is desireable to reduce the number of clicks used to complete the survey. The navigation should in some way be automaic when the participant select their answer. The selected answer should be clearly visualised and the navigation to the next question should go automatic. To signalize the number of questions left it will be added a navigation bar to show the progress. 
+  {\bf Part 1 - The introduction:} 
 
-      % - Når man jobber på en mobil er det viktig at det går rask og smooth.
-      % - Navigasjon er vanskelig på mobil fordi det eneste man verktøyet man han er en touch skjerm for å interaksjon med mobilen. Det skal gå fort men samtidig være lett.
-      % - Det er fort å minste brukeren om det går for fort i svingene. Det bør tydelig vise brukeren hvor den er, hvor den var og brukeren bør for få en følelse av hva som skjer når man trykker eller interagerer med elementer. 
-      % - Må bygge tydelige tilbakemeldinger til bruker underveis i navigasjon
+  {\bf Part 2 - The pattern creation:} shopping, smartphone, bank
 
-    \subsubsection*{Security}
-      Since the survey are anonymous, the communication should be transfered over an encrypted channel using SSL. It provide actual security and anonymity, but it also adds to the visual part of the security. Using SSL provides the secure HTTP (HTTPS) in the navigation bar helping also to build upon the trustworthiness of the survey.
-      On the backed of the application, all logging and traces of the users should not be stored. The only data stored should be the answers provided by the participants. 
-      Other security measures should also be provided and the survey should be reviewed by someone with a high competence in computer security. It is not desired to loose any data or a situation where someone are able to steal the data in any terms.
-      If any cookies are used, it should be clearly stated in the introduction. The introduction should also include a description of any information about security of the application in interest of the participant.
-      % - Spørreundersøkelsen håndterer data som ikke bør kunne avlyttes. 
-      % - Den tekniske løsningen bør gå over krytert kommunikasjon og den bør på ingen måte logge data som kan brukes til å spore tilbake brukeren.
+  {\bf Part 3 - Collecting background information:}
 
-	\subsection{Layout and Structure}
+    \subsection{Introduction}
+    When entering the survey on a smartphone, all users will be presented with an introduction to the survey, the research, and the author. The survey will not start collecting any data before a visitor decides to participate by pressing "Start Survey", as illustrated in Figure \ref{fig:startscreen}. When the visitor clicks on the green button, the visitor becomes a participant in the study. Figure \ref{fig:ALPintroduction} is the first screen in the survey, explaining how the Android Pattern Lock works. It is important to give a brief explanation to users not familiar with the Android Pattern Lock while at the same time avoid giving too much information causing any bias.
 
-    The layout and design was first drafted in my specialization project in 2014 and the first wireframes can be found in Appendix \ref{ap:wireframes}. Since the first drafts was made, the technical implementation and redesign have been carried out. Last section included a elaboration of the requirements of the survey, while this section will go a step further and describe the survey and its functionality in use. The implemented survey will be illustrated and explained in detail. 
+    Figure \ref{fig:ALPintroduction} shows the next path in the survey; either enter the training mode or skip the training mode. If a respondent has never used the Android Pattern Lock before, there is added a training mode. Such training mode can avoid uncomfortable situations where the user is getting the feeling of being tested for something they're not managing. The training mode is an opportunity for the participant to play with the pattern without feeling any pressure to perform. The training mode is also an opportunity for collecting extra data in an another context than the three patterns types obtained later in the survey.
 
-    \subsubsection*{Introduction}
-      When entering the survey application on a smartphone, all users will see an introduction with information about the survey, the research, and the author. The survey will not start collecting any data before a visitor decides to start the survey. When the visitor clicks on the green button, "start survey" (Figure \ref{fig:startscreen}), the visitor becomes a participant in the study and will next be sent to the rules of the pattern lock as shown in Figure \ref{fig:ALPintroduction}. It is important to give a brief explanation to users not familiar with the pattern lock, but it is not desirable to give too detailed information that can cause bias in the data. Figure \ref{fig:ALPintroduction} shows the next path in the survey; either enter the training mode or skip the training mode. If the respondent never have used the Android Pattern Lock before, there is added a training mode to avoid an uncomfortable situation where the user are getting the feeling of being tested in something they do not know. The training mode is an opportunity for the participant to play with the pattern without feeling any pressure to perform. This is also an opportunity for me to collect extra data in an another context than the three patterns collected later in the survey.
+    Patterns created in the training mode can be as valid as the other pattern types collected later in the survey. The patterns created in training mode might be the first patterns that pop into the respondent's mind, hence avoiding respondents to trying to overcompensate as a cause of being under pressure. As far as this research know, there are not found any research on how people think when asked to create a password or being asked to give away a password. It is believed that asking people to "give away" a password or pattern will introduce the effect of people overcompensating by creating longer passwords than typically created.  
 
-      I believe that the patterns created in the training mode will be as real and valid as the other pattern types collected later in the survey. The reason for this is that people might tend to create the first patterns that pops into their mind without thinking too much about what they actually are creating. As far as this research know about there are not published any research on how people think when they are asked to create a password or asked by someone to give away a password. Think about the situation where you ask a person "Are you stupid?". By testing this question on some of my friends they just looked at me with a weird face and answered "NO?!". I believe that asking people to "give away" a password or pattern will give the same effect; people tend to overachieve when giving away a password or pattern just to prove that they are not stupid. When people are under pressure to perform, and when the outcome are related to how people might be judging you, you would probably do anything to put yourself into a position where you look good. When someone are asking about their password, and they know it is bad, they actually realize that they might are under the category stupid because they do know it is a bad choice but they do not want to do anything about it for many reasons. In the related work it was stated that the reason for using a bad password, or not using a password at all, was because the overhead in time used to type that complex long password and the hard work of actually remembering the password. 
-
-      In the training mode I try to give a relaxed situation where people get the feeling of not being tested. Later when people are asked to create 3 different patterns for three different security levels, I believe that people might get the feeling of being tested, and some respondents would might create a pattern that normally not would appear "in the wild". Figure \ref{fig:trainingmode} shows the training mode. This view has a feedback mode showing if a pattern is valid or not and the participant can try to create as many patterns as they like. To continue the survey they just clicks the "continue" button and they will be asked the same questions as the participants not entering the training mode. The participant selecting the "skip training" in Figure \ref{fig:ALPintroduction} will only skip the \ref{fig:trainingmode} and continue to the next view in Figure \ref{fig:introductiontopatterns}.
+    Figure \ref{fig:trainingmode} shows the training mode. When creating a pattern, the view will give feedback to the respondents according to the rules specified in Figure \ref{fig:ALPintroduction}. In the training mode, the participant can create as many patterns as they like by pressing the "Retry" button. For leaving the training mode continuing with the survey,  the respondents clicks the "continue" button. The respondents entering the training mode are asked the same questions as the participant selected the "Skip training" in Figure \ref{fig:ALPintroduction}.
 
       \begin{figure}[H]
         \centering
@@ -122,19 +101,14 @@
         \label{fig:introductionviews}
       \end{figure}
 
-    \clearpage
-    \subsubsection*{Pattern creation}
-      After introducing the research and the android pattern lock it is time to start collect the three main patterns for shopping account, smartphone, and banking account.
-      The reason for dividing the pattern collection in three parts instead of just asking participants about a creating a pattern for smartphone is to put the patterns into context. 
+    \subsection{Pattern Creation Process}
+    After introducing the research and the Android Pattern Lock,  it is time to start collecting the three main selected patterns types; shopping account, smartphone, and banking account. The reason for dividing the pattern collection process into three separate patterns is to put the pattern creation into a context. The decision to add three patterns also works as a preventive measure for avoiding data being submitted by respondents just trying to finish the survey as fast as possible. 
 
-      There will might be positive and negative effects by collecting three patterns instead of two. Looking at some of the possible negative outcomes is that people are not used to use android patterns in other contexts than the smartphone. Also asking people to create a pattern for a banking account can for someone be a scary situation and it is possible that some respondents will stop answering the survey. By asking the participants to create three instead of one pattern takes more time and it requires more attention and creativity from the participant. 
+    By introducing three separate pattern types instead of only one type, can introduce both positive and negative effects. When asking respondents to create a pattern for other types than its intended environment, some people might be confused. The choice of asking people to create a pattern for a banking account can for someone be an uncomfortable situation, might causing respondents to leave the survey. By asking the participants to create three patterns instead of one pattern takes more time and requires more attention and creativity from the participant. When asking respondents to create three patterns can introduce a situation where some respondents are creating the same pattern for all pattern types. 
 
-      It might be a situation that some people just create the same pattern for all pattern types, but that situation is hard to avoid. The decision to add three patterns instead of two is a preventive measure for avoiding data submitted by respondents just trying to finish the survey as soon as possible without thinking about what they are submitting, but will give more data giving a solid foundation for the analysis. 
+    In the survey, respondents are asked to create a pattern for a shopping account, a smartphone, and a banking account. The three types are being carefully selected of how people would categorize different situations from a security point of view. As mentioned, the three pattern types are introduced to set the pattern creation process into context, avoiding dishonest attempts for answering the survey. 
 
-      In this survey I chose to ask the participants to create a pattern for a shopping account, a smartphone and a banking account. The three types are selected after my subjective opinion of how people would categorize different situations in a security perspective. A known security situation, that is not related to computer security, is the problem of selected whether to drive a car or take an airplane. Statistically th airplane are safer, but many people would still take the car. I believe this situation can be transferred to computer security. The question is not the probability of being hurt, but rather the actual outcome of the situation when it occurs. A airplane crashing sound more dramatic than an car crashing. The outcome of being robbed from a banking account sound more dramatic than your shopping account being hacked. The problem with this is that the shopping account site might be insecure or should not be trusted, and as a predictable person you might use that password somewhere else. Looking at the bank, security is probably highly prioritized, so the probability of you being robbed would actually be very small. 
-      %Folk har en rar måte å tenke på sikkerhet. Vi vil helst kjøre bil enn å ta fly feks.
-
-      When collecting the patterns it is desirable to copy the pattern creation process used by Android. The process consists of 2 steps: typing a pattern and retyping a pattern. Figure Figure \ref{fig:androidpatterncreationprocess} shows the pattern creation process from the an Android smartphone. The screens in Figure \ref{fig:createandretypepatterns} shows the pattern creation process from the survey application used for collecting data. Figure \ref{fig:shoppingpattern}, \ref{fig:smartphonepattern}, and \ref{fig:bankpattern} are showing the view for creating the pattern for shopping account, smartphone, and banking account. Each of these will follow the same workflow as illustrated in Figure \ref{fig:patterncreationworkflow} and explained below. 
+    When collecting the patterns, it is desirable to copy the pattern creation process used by Android. The process consists of two steps: create a pattern of at least four connected dots, after that retype the same pattern for completing the process. Figure \ref{fig:androidpatterncreationprocess} shows the pattern creation process from a real Android smartphone. First, the user selects a pattern of at least four connected dots as illustrated in Figure \ref{fig:drawpattern}. Second, after creating a pattern, the user are asked to retype the same pattern as illustrated in Figure \ref{fig:confirmnewpattern}. If the redrawn pattern was correctly typed, the pattern creation process are finished.
 
     \begin{figure}[H]
       \centering
@@ -229,7 +203,7 @@
 
   \clearpage 
 
-  \subsubsection*{Background information}
+  \subsection{Background information}
     After creating going through the pattern creation process three times, the respondent will now be asked several questions about their mobile and personal characteristics.
     Figure \ref{fig:surveyquestoins} shows screenshots from the survey application and the questions asked. The views in Figure \ref{fig:surveyquestoins} is the final design used used for collecting data. The changes made during the design and implementation are described in Section \ref{sec:usabilitytestingsurvey}. 
 
@@ -340,5 +314,5 @@
       \label{fig:thefadingeffect}
     \end{figure}
 
-\subsection{Technical Description of The Survey Application}
 
+  
