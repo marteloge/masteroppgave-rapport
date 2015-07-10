@@ -136,12 +136,11 @@
     \clearpage
 
   \subsection{Bias in the Selection of Start Node}
-  
-    The starting node of a pattern is a crucial information to have when analyzing patterns because of the properties of a legal pattern. A legal pattern can only visit the same node twice, making the starting point a help for excluding probable patterns.
+    The selected starting node of a pattern is crucial information when analyzing patterns. Knowing the starting node limits the number of possible patterns because a legal pattern can only visit the same node twice. When knowing the likely starting points, patterns starting with less likely starting nodes can be excluded from the theoretical password space. 
 
-    Table \ref{tab:startingNode1} is a summary of the likelihood of starting in a particular node for each of the four pattern types. The numbers notation used in the table, 1-3 and T, is a shortcut for the different pattern types shopping account (1), smartphone (2), banking account (3), and training (T). On average, 44\% of all patterns starts in node 1, e.g. the upper-left corner. 
+    Table \ref{tab:startingNode1} summarizes the likelihood of starting in a particular node for each of the four pattern types. The numbers notation used in Table \ref{tab:startingNode1}, 1-3 and T, denotes a shortcut for shopping account, smartphone, banking account and training, respectively. On average, 44\% of all patterns starts in node 1, e.g. the upper-left corner. 
 
-    The training patterns are not included in other sections because there are no control over how many times a person have entered a tarining pattern. The training pattern are still valid when looking at the starting node because it reflects where respondents starts creating patterns. 
+    The training patterns are not included in other parts of the results  because there are no control over how many times a person have entered a tarining pattern. The training pattern are still valid when looking at the starting node because it reflects where respondents starts creating patterns. 
 
     %Table: Starting node dist
     \begin{table}[H]
@@ -163,11 +162,11 @@
       \label{tab:startingNode1}
     \end{table}
 
-    Figure \ref{fig:startingNode3} is an illustration of the likeliehood of starting in the different nodes. Each node has a number, starting from node 1 in the upper left corner ending up with node number 9 as shown in Figure \ref{fig:startingNode2}. All nodes in Figure \ref{fig:startingNode3} are colored based on the likeliehood of being chosen as a starting point from high to low (green - blue - orange), whereas the green nodes are the most common starting points and orange nodes is the least common starting points.
+    Figure \ref{fig:startingNode3} is a graphical representation of the likeliehood of starting in the different nodes. Each node has a number, starting from node 1 in the upper left corner ending up with node number 9 as shown in Figure \ref{fig:startingNode2}. All nodes in Figure \ref{fig:startingNode3} are colored based on the likelihood of being selected as a starting point from high to low (green - blue - orange), whereas the green nodes are the most common starting points and orange nodes is the least common starting points.
 
-    Summarizing the most common starting points, node 1, 2 and 7, they all together constitutes 73\% of the patterns. The different pattern types have all over 40\% of the patterns starting in the upper left corner. There are some nodes that are not a typical starting point. The nodes with the lowest frequency as starting point is the node 5,6,8 and 9 with only a total probability of 12\% of being selected as a starting node.
+    Summarizing the most common starting points, node 1, 2 and 7, they all together constitutes 73\% of the patterns. The different pattern types have all over 40\% of the patterns starting in the upper left corner. There are some nodes that are having a less probability of being selected as a starting point. The nodes with the lowest frequency, node 5, 6, 8 and 9, only have a total probability of 12\% for being selected as the starting node.
 
-      %Figure: Staring node for all patterns
+    %Figure: Staring node for all patterns
     \begin{figure}[H]
       \centering
       \subfigure[Node positions]{
@@ -183,9 +182,12 @@
       \label{fig:startingNode4}
     \end{figure}
 
+
+  \clearpage
+
   \subsection{3-gram Movement Patterns} \label{sec:3gram}
-  
-    \todo[inline, color=red!80]{Vise en liste med top mønstre og vise at x antall prosent velger passord som starter på samme måte.}
+    This section includes a visualization of 3-gram movement patterns from the collected patterns. A 3-gram is a sub-sequence of a pattern consisting of 3 nodes. The notation used uses a circle when denoting the start of a 3-gram while the arrow denotes the end of the 3-gram. A 3-gram does not indicate whether a pattern starts or end.  A 3-gram can appear at the start, at the end or in the middle of a pattern because a 3-gram is only a subsequence of a pattern.  By iterating through all patterns by counting all possible 3-grams, a list of the commonly 3-grams are visualized as seen in Figure \ref{fig:3gram}. The three figures contains top 20 common occurrences of 3-grams, ordered from the most commonly used (blue) to less commonly used (orange). 
+
     %Figure: Most common 3-gram to less common 3-gram
     \begin{figure}[H]
       \subfigure{
@@ -200,3 +202,16 @@
       \caption{Most common 3-gram to less common 3-gram}
       \label{fig:3gram}
     \end{figure}
+
+    Based on the observed bias in the selection of starting node, it is interesting to use information about the selection of starting node together with the observed 3-gram movement sequences. By looking at top 100 most commonly created patterns, the patterns top 100 patterns constitutes 42\% of the collected patterns. When looking at top 120 patterns, roughly 50\% of the patterns in the data set are covered. In general, when studying the movements sequences in Figure \ref{fig:3gram}, most of the patterns are straight lines close to the edges. Diagonal lines are not used very often, whereas straight diagonal lines are the once appearing more often. 3-grams not being a straight line or curving the corners does rarly occur. An example of such 3-gram is the sequence \texttt{189}.
+
+    The 3-gram with the highest frequency is the 3-gram \texttt{123} and \texttt{147}, appearing in 1055 of the created patterns. Besides having a subsequence of the most frequent 3-grams,  844 of the collected patterns either started with the sequence \texttt{123} or \texttt{147}.
+
+    % - Based on the bias in the selection of starting node
+    % - 1658 mønstre for topp 100. Utgjør 42\% av alle mønstre.
+    % - Sekvensene 123 og 147 er de mest brukte. (node 1 er den mest brukte noden for startpunkt)
+    % - 844 mønstre starter med sekvensen 123 og 147
+    % - 1055 mønstre inneholder sekvensen 123 og 147
+    
+
+
