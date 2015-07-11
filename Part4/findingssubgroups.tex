@@ -1,7 +1,9 @@
 % !TEX root = ../main.tex
-\section{Findings in Specific Subgroups}
+\section{Findings in Specific Subgroups}\label{sec:findingsSpecificSubgroups}
 
-  This section is a presentation of the results focusing on different user types. Each section is being dedicated to one user type having one of the human properties stated in the research questions in Chapter \ref{}. Each section will include the same parts; pattern length, pattern creation time, and pattern strength. For some of the user types, extra pattern characteristics are included if some unexpected results were observed. 
+  This section is a presentation of the results focusing on different user types. Each section is being dedicated to one user type having one of the human properties stated in the research questions in Chapter \ref{chap:introduction}. Each section will include the same parts; pattern length, pattern creation time, and pattern strength. For some of the user types, extra pattern characteristics are included if some unexpected results were observed. 
+
+  This section includes the results from a two-tailed t-test for testing the statistical significance of the results, as well as including the mean, the standard deviation, and the P-value. The t-test are being conducted on the length and visual complexity for all subgroups. A statistical significant result tells that the patterns from two samples are different, e.g. the choice in patterns are different. All tests are using a significance level of 0.05. As a result of using a two-tailed test, results getting a p-value less than 0.025 are a statistical significant result. 
 
 	\subsection{Gender}
     Gender are being divided into the subgroups of male and female participants. For each of the parts in presented, the results will be presented with respect to pattern type and gender. 
@@ -41,6 +43,25 @@
     	\label{fig:avgpatternlengthgender}
     \end{figure}
 
+    Table \ref{tab:statsigLengthGender} summarizes the results when performing a two-tailed t-test for testing the difference in pattern length for patterns created by male and female respondents. The results reveal a significant difference in patterns created for shopping accounts and banking accounts. 
+
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{ c | c | c | c | c | c }
+      \hline
+        {\bf Pattern type} & {\bf Type} & {\bf Mean} & {\bf SD} & {\bf P-value} & {\bf Result} \\ \hline
+        \multirow{2}{*}{Shopping}   & Male    & 5.68 & 1.76 & \multirow{2}{*}{0.00048841} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Female  & 5.26 & 1.55 & & \\ \hline
+        \multirow{2}{*}{Smartphone} & Male    & 5.47 & 1.60 & \multirow{2}{*}{0.08616198} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                    & Female  & 5.27 & 1.49 & & \\ \hline
+        \multirow{2}{*}{Bank}       & Male    & 6.09 & 1.86 & \multirow{2}{*}{0.00009069} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Female  & 5.57 & 1.72 & & \\ \hline
+      \end{tabular}
+      \caption{Statistical significance for pattern length and gender}
+      \label{tab:statsigLengthGender}
+    \end{table}
+
+    \clearpage
     \subsubsection{Pattern length distribution}
     Figure \ref{fig:avgpatterndistgender} shows the pattern length distribution for both genders. The differences between the genders are noticeable in the endpoints, e.g. patterns with length 4 and 9. The male participants have a higher frequency of patterns with a longer length while the female participants have a higher frequency of patterns with a short length. The average number of patterns created with a length between 5 and 8 are about the same for both genders. 
 
@@ -58,6 +79,7 @@
     	\label{fig:avgpatterndistgender}
     \end{figure}
 
+    \clearpage
     \subsubsection{Pattern complexity}
     Table \ref{tab:gendertrength} summarizes the patterns strength for the three pattern types for both genders. Patterns created by female participants have the characteristics of infrequent use of both intersections and overlaps for all types. The patterns created for  smartphones by female respondents did not have a single pattern including an overlap, while only three patterns created by female respondents included an overlap.
 
@@ -82,6 +104,24 @@
       \end{tabular}
       \caption{Pattern strength and gender}
       \label{tab:gendertrength}
+    \end{table}
+
+    Table \ref{tab:statsigComplexityGender} summarizes the results when performing a two-tailed t-test for testing the difference in pattern strength for patterns created by male and female respondents. The results reveal a significant difference in patterns created for all pattern types.
+
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{ c | c | c | c | c | c }
+      \hline
+        {\bf Pattern type} & {\bf Type} & {\bf Mean} & {\bf SD} & {\bf P-value} & {\bf Result} \\ \hline
+        \multirow{2}{*}{Shopping}   & Male   & 14.13 & 8.02 & \multirow{2}{*}{0.00008596} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Female & 12.06 & 6.48 & & \\ \hline
+        \multirow{2}{*}{Smartphone} & Male   & 13.27 & 7.46 & \multirow{2}{*}{0.02153682} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Female & 12.12 & 6.31 & & \\ \hline
+        \multirow{2}{*}{Bank}       & Male   & 16.40 & 9.11 & \multirow{2}{*}{0.00001588} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Female & 13.74 & 7.74 & & \\ \hline
+      \end{tabular}
+      \caption{Statistical significance for visual complexity and gender}
+      \label{tab:statsigComplexityGender}
     \end{table}
 
 	\subsection{Age}
@@ -111,6 +151,25 @@
 	    \label{fig:patternlengthage}
   	\end{figure}
 
+    Table \ref{tab:statsigLengthAge} summarizes the results when performing a two-tailed t-test for testing the difference in pattern length for patterns created by respondents with an age under 25 and respondents with a age of 25 years or older. The results reveal a significant difference in patterns created for shopping accounts and banking accounts. 
+
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{ c | c | c | c | c | c }
+      \hline
+        {\bf Pattern type} & {\bf Type} & {\bf Mean} & {\bf SD} & {\bf P-value} & {\bf Result} \\ \hline
+        \multirow{2}{*}{Shopping}   & Under 25  & 5.74 & 1.76 & \multirow{2}{*}{0.00318325} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & 25+       & 5.38 & 1.64 & & \\ \hline
+        \multirow{2}{*}{Smartphone} & Under 25  & 5.43 & 1.56 & \multirow{2}{*}{0.496001184} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                    & 25+       & 5.36 & 1.56 & & \\ \hline
+        \multirow{2}{*}{Bank}       & Under 25  & 6.19 & 1.91 & \multirow{2}{*}{0.0001225} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & 25+       & 5.69 & 1.74 & & \\ \hline
+      \end{tabular}
+      \caption{Statistical significance for pattern length and age}
+      \label{tab:statsigLengthAge}
+    \end{table}
+
+    \clearpage
     \subsubsection{Pattern complexity}
     The visual complexity of the patterns created by the different age groups are found in Table \ref{fig:strengthagedist}. To be able to illustrate the pattern strength for all age groups the data are shorten down to just visualize the pattern strength of each pattern type created by the different age groups. As mentioned earlier, the younger age respondents the longer patterns are created. The same is with the strength. The youngest age group have about twice as hight average pattern strength than the oldest age group. As the age increases, the strength of the different age groups also evens out. In general, bank have the highest average strength score while patterns created for smartphones have the lowest average strength score across the different age groups.
 
@@ -122,6 +181,24 @@
       \label{fig:strengthagedist}
     \end{figure}
 
+    Table \ref{tab:statsigComplexityAge} summarizes the results when performing a two-tailed t-test for testing the difference in pattern strength for patterns created by respondents with an age under 25 and respondents with a age of 25 years or older. The results reveal a significant difference in patterns created for shopping accounts and banking accounts. 
+
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{ c | c | c | c | c | c }
+      \hline
+        {\bf Pattern type} & {\bf Type} & {\bf Mean} & {\bf SD} & {\bf P-value} & {\bf Result} \\ \hline
+        \multirow{2}{*}{Shopping}   & 14.43 & 8.14 & & \multirow{2}{*}{0.00089041} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & 12.61 & 7.00 & & & \\ \hline
+        \multirow{2}{*}{Smartphone} & 12.95 & 6.88 & & \multirow{2}{*}{0.59266007} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                    & 12.68 & 7.10 & & & \\ \hline
+        \multirow{2}{*}{Bank}       & 16.95 & 9.36 & & \multirow{2}{*}{0.00002946} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & 14.32 & 8.04 & & & \\ \hline
+      \end{tabular}
+      \caption{Statistical significance for visual complexity and age}
+      \label{tab:statsigComplexityAge}
+    \end{table}
+         
 	\subsection{Handedness}\label{sec:subgroupHandedness}
 		% Kan her dra inn noe om hvilken hånd og finger som er brukt. 
 
@@ -160,6 +237,24 @@
       	\caption{Average pattern length for handedness}
       	\label{fig:avgpatternlengthhandedness}
       \end{figure}
+
+    Table \ref{tab:statsigLengthHandedness} summarizes the results when performing a two-tailed t-test for testing the difference in pattern length for patterns created by left- and right-handed respondents. The results reveal no significant differences for any of the pattern types.
+
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{ c | c | c | c | c | c }
+      \hline
+        {\bf Pattern type} & {\bf Type} & {\bf Mean} & {\bf SD} & {\bf P-value} & {\bf Result} \\ \hline
+        \multirow{2}{*}{Shopping}   & Left  & 5.42 & 1.75 & \multirow{2}{*}{0.47066079} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                    & Right & 5.56 & 1.70 & & \\ \hline
+        \multirow{2}{*}{Smartphone} & Left  & 5.28 & 1.60 & \multirow{2}{*}{0.40381003} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                    & Right & 5.42 & 1.56 & & \\ \hline
+        \multirow{2}{*}{Bank}       & Left  & 5.90 & 1.99 & \multirow{2}{*}{0.86996995} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                    & Right & 6.93 & 1.81 & & \\ \hline
+      \end{tabular}
+      \caption{Statistical significance for pattern length and handedness}
+      \label{tab:statsigLengthHandedness}
+    \end{table}
 
     \subsubsection{Pattern length distribution}
     Figure \ref{fig:avgpatterndisthandedness} shows the pattern length distribution for both right- and left-handed respondents. The selection of pattern length seems to have no significant difference beside left-handed respondents having a tendency of having more patterns of length 4 than than right-handed respondents. It is also noticeable that the frequency of patterns tends to go down as the pattern length goes up. The only exception are patterns with length 8 where patterns with length 7 and 9 have a higher frequency.
@@ -212,6 +307,26 @@
         \label{tab:handednessstrength} 
       \end{table}
 
+      
+      Table \ref{tab:statsigComplexityHandedness} summarizes the results when performing a two-tailed t-test for testing the difference in pattern strength for patterns created by left- and right-handed respondents. The results reveal no significant differences for any of the pattern types. 
+
+      \begin{table}[H]
+      \centering
+        \begin{tabular}{ c | c | c | c | c | c }
+        \hline
+          {\bf Pattern type} & {\bf Type} & {\bf Mean} & {\bf SD} & {\bf P-value} & {\bf Result} \\ \hline
+          \multirow{2}{*}{Shopping}   & Left  & 13.36 & 8.64 & \multirow{2}{*}{0.9176142} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                      & Right & 13.46 & 7.46 & & \\ \hline
+          \multirow{2}{*}{Smartphone} & Left  & 12.34 & 7.29 & \multirow{2}{*}{0.4271685} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                      & Right & 12.97 & 7.03 & & \\ \hline
+          \multirow{2}{*}{Bank}       & Left  & 15.34 & 9.50 & \multirow{2}{*}{0.7970912} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                      & Right & 15.60 & 8.67 & & \\ \hline
+        \end{tabular}
+        \caption{Statistical significance for visual complexity and handedness}
+        \label{tab:statsigComplexityHandedness}
+      \end{table}
+
+    \clearpage
     \subsubsection{Typing habits}
     Handedness is a human characteristic influencing the physical interaction with a smartphone, hence might having an impact on the way a person create a pattern. The only way a person are interacting with a smartphone is by using their hands, making this an important behavior to study. The hand used are also being defined by handedness, making it interesting to look at the typing behavior of both. 
 
@@ -256,6 +371,7 @@
         }
       \end{table}
 
+    \clearpage
     \subsubsection{Bias in the Selection of Start Node}
     How a person are holding a smartphone might impact the nodes being reachable. It is defined two main types of typing a pattern, e.g. either use one or both hands. When using both hands, one hand are used to hold the phone while the other hand are used for interacting with the screen. When holding the smartphone in one hand, the same hand are used for both holding and interacting with the screen, whereas the thumb are the only finger available when using one hand. Figure \ref{fig:handednessstartingpoint} are showing likelihood of starting nodes from patterns created by respondents with different dominant hand, combined with the two ways of holding a smartphone and finger used. Figure \ref{fig:handednessstartingpoint1} and \ref{fig:handednessstartingpoin2} are looking at right-handed respondents' selection in starting node for patterns created by using either one or two hands, respectively. 
 
@@ -321,12 +437,9 @@
         \label{fig:avgcreationtimeexperience}
       \end{figure}
 
+    \clearpage
     \subsubsection{Average pattern length}
-    Figure \ref{fig:avgpatternlengthexperience} are showing the average pattern length for patterns created by both respondents experienced and inexperienced with IT and security.
-
-    Figure \ref{fig:avgpatternlengthyes} are showing the average pattern length for patterns created by respondents experienced with IT and security. The patterns with the highest average pattern length are being created for banking accounts with a total average pattern length of 6.11. The pattern type with the shortest average pattern length are patterns created for smartphones with an average pattern length of 5.48.
-
-    Figure \ref{fig:avgpatternlengthfeno} are showing the average pattern length for patterns created by respondents inexperienced with IT and security. The patterns with the highest average pattern length are being created for banking accounts with a total average pattern length of 5.61. The pattern type with the shortest average pattern length are patterns created for smartphones with an average pattern length of 5.27. 
+    Figure \ref{fig:avgpatternlengthyes} are showing the average pattern length for patterns created by respondents experienced with IT and security. The patterns with the highest average pattern length are being created for banking accounts with a total average pattern length of 6.11. The pattern type with the shortest average pattern length are patterns created for smartphones with an average pattern length of 5.48. Figure \ref{fig:avgpatternlengthfeno} are showing the average pattern length for patterns created by respondents inexperienced with IT and security. The patterns with the highest average pattern length are being created for banking accounts with a total average pattern length of 5.61. The pattern type with the shortest average pattern length are patterns created for smartphones with an average pattern length of 5.27. 
 
     The trends in the graphs show that respondents with experience in IT and security create longer patterns than people inexperienced with IT and security for all three pattern types. For both graphs, patterns created for banking accounts has the highest average length while patterns created for smartphones have the shortest average pattern length. 
 
@@ -345,12 +458,28 @@
         \label{fig:avgpatternlengthexperience}
       \end{figure}
 
-    \subsubsection{Pattern length distribution}
-    Figure \ref{fig:avgpatterndistexperience} is visualizing the distribution of pattern length based on the respondents experience with IT and Security for all pattern types. 
+    Table \ref{tab:statsigLengthExperience} summarizes the results when performing a two-tailed t-test for testing the difference in pattern length for patterns created by respondents being experienced and inexperienced with IT and security. The results reveal a significant difference in patterns created for banking accounts. 
 
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{ c | c | c | c | c | c }
+      \hline
+        {\bf Pattern type} & {\bf Type} & {\bf Mean} & {\bf SD} & {\bf P-value} & {\bf Result} \\ \hline
+        \multirow{2}{*}{Shopping}   & Experienced   & 5.64 & 1.72 & \multirow{2}{*}{0.038204664} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                    & Inexperienced & 5.39 & 1.66 & & \\ \hline
+        \multirow{2}{*}{Smartphone} & experienced   & 5.48 & 1.60 & \multirow{2}{*}{0.064560991} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                    & Inexperienced & 5.27 & 1.50 & & \\ \hline
+        \multirow{2}{*}{Bank}       & Experienced   & 6.11 & 1.86 & \multirow{2}{*}{0.000083188} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Inexperienced & 5.61 & 1.74 & & \\ \hline
+      \end{tabular}
+      \caption{Statistical significance for pattern length and experience with IT and security}
+      \label{tab:statsigLengthExperience}
+    \end{table}
+
+    \subsubsection{Pattern length distribution}
     Figure \ref{fig:avgpatternlengthdistyes} is the distribution of pattern length for patterns created by respondents experienced with IT and security. For the patterns created for smartphones, 70\% of the patterns constitutes of patterns with a lower length, e.g. patterns with a length between 4 and 6. For patterns created for banking accounts, 62\% of the patterns are created having a low length. The created patterns having a length of 9 nodes are the patterns created for banking accounts. Figure \ref{fig:avgpatternlengthdistno} is the pattern length distribution of patterns created by respondents inexperienced with IT and security. For the patterns created for smartphones, 79\% of the patterns are patterns having a low length.
 
-    By comparing the pattern length distribution for experienced and inexperienced respondents, the patterns created by inexperienced respondents have a higher frequency of patterns with lower pattern length than patterns created by experienced respondents. The most distinct difference is that experienced respondents create fewer patterns of low length for banking accounts compared to inexperienced respondents. Instead of having a high frequency of short patterns, patterns created by experienced respondents have a higher frequency of patterns with length 9 for banking accounts. Experienced users do only have 27\% of their patterns for banking accounts created with the length 4, while inexperienced users have 39\% of their patterns for banking accounts created with the length 4. Both graphs show that the lower the length a lower frequency of the pattern length occurs.
+    By comparing the pattern length distribution for experienced and inexperienced respondents, the patterns created by inexperienced respondents have a higher frequency of patterns with lower pattern length than patterns created by experienced respondents. The difference observed is that experienced respondents create fewer patterns of low length for banking accounts compared to inexperienced respondents. Instead of having a high frequency of short patterns, patterns created by experienced respondents have a higher frequency of patterns with length 9 for banking accounts. Experienced users do only have 27\% of their patterns for banking accounts created with the length 4, while inexperienced users have 39\% of their patterns for banking accounts created with the length 4. Both graphs show that the lower the length a lower frequency of the pattern length occurs.
 
       %Figure: Average pattern length distribution for experience
       \begin{figure}[H]
@@ -367,6 +496,7 @@
         \label{fig:avgpatterndistexperience}
       \end{figure}
 
+    \clearpage
     \subsubsection{Pattern complexity}
     Table \ref{tab:experiencestrength} is a summary of the parameters used for calculating the pattern strength for each pattern type with respect to the respondents experience with IT and security. 
 
@@ -394,14 +524,102 @@
         \end{tabular}
         \caption{Password strength and Experience with IT/Security}
         \label{tab:experiencestrength} 
-      \end{table}
+      \end{table} 
 
-  \subsection{Reading Orientation}
-    \todo[inline, color=red!80]{Kommentere på dette i introduksjonen, samt i seksjon for populasjonen}
+    Table \ref{tab:statsigComplexityExperience} summarizes the results when performing a two-tailed t-test for testing the difference in pattern strength for patterns created by respondents being experienced and inexperienced with IT and security. The results reveal a significant difference in patterns created for all three pattern types.
 
-  \subsection{Handsize}
+    \begin{table}[H]
+    \centering
+      \begin{tabular}{ c | c | c | c | c | c }
+      \hline
+        {\bf Pattern type} & {\bf Type} & {\bf Mean} & {\bf SD} & {\bf P-value} & {\bf Result} \\ \hline
+        \multirow{2}{*}{Shopping}   & Experienced   & 13.91 & 7.78 & \multirow{2}{*}{0.01699014} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Inexperienced & 12.64 & 7.19 & & \\ \hline
+        \multirow{2}{*}{Smartphone} & Experienced   & 13.32 & 7.40 & \multirow{2}{*}{0.02375298} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Inexperienced & 12.20 & 6.52 & & \\ \hline
+        \multirow{2}{*}{Bank}       & Experienced   & 16.42 & 8.94 & \multirow{2}{*}{0.00015740} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Inexperienced & 14.09 & 8.26 & & \\ \hline
+      \end{tabular}
+      \caption{Statistical significance for visual complexity and experience with IT and security}
+      \label{tab:statsigComplexityExperience}
+    \end{table}
 
-    Bruk data fra validate and preprocess. Konkludere med at dataene ikke kan brukes.
+  \subsection{Hand Size and Screen Size}\label{sec:classificationhandsizescreensize}
+    To be able to analyze if there is a correlation between hand size and choice of graphical patterns, the data collected needs to be validated due to the subjective form. Along with the hand size, the screen size and finger can also be an interesting factor to look at. When using a survey, there is no good way of asking respondents for their classification of their hand size, hence a need for validation to decide whether the data are reliable for further use. 
 
+    Figure \ref{fig:handsize} are visualizing the frequency of each hand size for all respondents. Table \ref{tab:HandsizeGender} are summarizing the respondents classification of the size of their hands with respect to the gender of the respondents. Based on own experiences, there is a difference in how the two genders will classify the size of their hand. In society, men are supposed to be masculine where big hands are often being associated with masculinity. The opposite of masculine, femininity, can be associated with smaller hands. It is therefore, believed that the majority of the male respondents will classify their hand as medium or large while the majority of the female respondents will classify their hand as small or medium. The question asked in the survey were asking the participants to classify the size of their hands based on their gender. Table \ref{tab:HandsizeGender} confirms that the majority of the male respondents classified their hand as a medium size or higher, while female respondents classified the size of their hand as medium or lower.
 
+    %Figure: Handsize
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\textwidth]{pics/analysis/handsize.png}
+      \caption{Handsize of all participants}
+      \label{fig:handsize}
+    \end{figure}
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{ c || c | c | c | c || c }
+        \hline
+        & {\bf Xtra Large} & {\bf Large} & {\bf Medium} & {\bf Small} & {\bf Total}\\ \hline
+        {\bf Male} & 45 (9\%) & 200 (38\%) & 246 (47\%) & 38 (7\%) & 529 \\
+        {\bf Female} & 3 (1\%) & 54 (19\%) & 157 (56\%) & 64 (23\%) & 278 \\ \hline
+      \end{tabular}
+      \caption{Handsize and gender}
+      \label{tab:HandsizeGender}
+    \end{table}
 
+    The problem with using data being a subjective classification by the respondents, it is not known if the classification is correct. On the other side, what is a correct classification? The hand size of the respondents are not used for further analysis because of the difficulties of comparing the size selected by both genders against each other. If used, any results can not be guaranteed to be correct if including the hand size. The hand size property will are not being used further in this research.
+
+    In the survey, both the subjective classification of the screen size as well as the height and width in pixels were collected. Classification of screen sizes is troublesome due to the various screen sizes and resolutions across different devices. Smartphones operating on Android are known to have a high variation in screen resolutions while Apple have created their devised with a smaller and fixed number of different screens. The physical size of a mobile screen is not correlated with the pixel size because a pixel is not a physical measure due to resolution, hence being troublesome to obtain the correct screen size. 
+
+    Besides screen size and pixels, the respondents were asked for the mobile operating system on the device used. As a result of {\it Apple} having standardized the screen of their devices makes it possible to obtain the physical size of the screen for respondents using a iPhone for answering the survey. Figure \ref{fig:iphonescreenresolutions} is the complete list of the devices provided by Apple and the corresponding size in inches. 
+
+    \begin{figure}[H]
+      \centering
+      \subfigure[iPhone 3.5"]{
+        \includegraphics[scale=0.45]{pics/analysis/iphone35.png}
+        \label{fig:iphone35}
+      }
+      \subfigure[iPhone 4"]{
+        \includegraphics[scale=0.45]{pics/analysis/iphone4.png}
+        \label{fig:iphone4}
+      }
+      \subfigure[iPhone 4.7'']{
+        \includegraphics[scale=0.45]{pics/analysis/iphone47.png}
+        \label{fig:iphone47}
+      }
+      \subfigure[iPhone 5.5'']{
+        \includegraphics[scale=0.45]{pics/analysis/iphone55.png}
+        \label{fig:iphone55}
+      }
+
+      \caption{iPhone screen resolutions}
+      \label{fig:iphonescreenresolutions}
+    \end{figure}
+
+    There are only four sized used by Apple mobile devices as illustrated in Figure \ref{fig:iphonescreenresolutions}. In the dataset, there are only obtained the pixel sizes of the devices. For the devices running on iOS, four different types were observed in the dataset. The respondents' classification of the screen sizes, as well as the pixel size, are summarized in table \ref{fig:iphoneScreenDist} for all respondents using an iPhone.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.75]{pics/analysis/IphoneScreenDist.png}
+      \caption{iPhone screensize distribution}
+      \label{fig:iphoneScreenDist}
+    \end{figure}
+
+    To be able to evaluate the provided classification from the respondents, the Apple devices are classified according to what this research defines as a small, medium and big screen. The classifications are listed in Table \ref{tab:iphonescreen} with the corresponding device and pixel sizes. To be able to evaluate the provided classification from the respondents, the Apple devices are classified according to what this research defines as a small, medium and big screen. The classifications are listed in Table \ref{tab:iphonescreen} with the corresponding device and pixel sizes. When comparing Figure and \ref{fig:iphoneScreenDist} and Table \ref{tab:iphonescreen}, the respondents agree on the size to some extent. When looking at the number of respondents, only 40\% of the respondents used an iPhone, making the provided data for each screen type hard to use for further analysis. 
+
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{ l | l | l | l }
+        \hline
+        {\bf Iphone Model}  & {\bf Resolution (px)} & {\bf Inches} & {\bf Size} \\ \hline
+        iPhone 2G, 3G, 3GS, 4, 4s  &  320 $\times$ 480  &  3.5'' & S\\
+        iPhone 5, 5s        &  320 $\times$ 568  &  4'' & M \\
+        iPhone 6            &  320 $\times$ 568, 375 $\times$ 667  &  4.7'' & M/L \\
+        iPhone 6 Plus       &  375 $\times$ 667, 414 $\times$ 736  &  5.5'' & L \\ \hline        
+      \end{tabular}
+      \caption{iPhone screensizes}
+      \label{tab:iphonescreen}
+    \end{table}
+
+    Based on the classification of the screen size on Apple devices, it can be used for evaluating respondent's ability to classify what this research defines as a small, medium or big screen. The problem with the rest of the respondents not using Apple products is that there is no fixed standard for screen sizes, making it impossible to predict the physical size by knowing the pixels. Since the majority of the respondents were using an Android device (58\%), making it unlikely of being able to classify the screen sizes correctly. The 40\% of the devices being an iPhone was possible with some uncertainty to classify, but the size of the dataset are too small for getting any results. Either being an Android or iOS device, it can neither be guaranteed to be correctly classified. It is therefore decided to not include any results using the screen size. 

@@ -1,0 +1,55 @@
+
+    \begin{table}[H]
+    \centering
+      \begin{tabular}{ c | c | c | c | c | c }
+      \hline
+        {\bf Pattern type} & {\bf Type} & {\bf Mean} & {\bf SD} & {\bf P-value} & {\bf Result} \\ \hline
+        \multirow{2}{*}{Shopping}   & & & & \multirow{2}{*}{} & \multirow{2}{*}{\bf} \\
+                                    & & & & & \\ \hline
+        \multirow{2}{*}{Smartphone} & & & & \multirow{2}{*}{} & \multirow{2}{*}{\bf} \\
+                                    & & & & & \\ \hline
+        \multirow{2}{*}{Bank}       & & & & \multirow{2}{*}{} & \multirow{2}{*}{\bf} \\
+                                    & & & & & \\ \hline
+      \end{tabular}
+      \caption{Statistical significance for visual complexity and experience with IT and security}
+      \label{tab:statsigComplexityExperience}
+    \end{table}
+
+
+
+
+    \color{olive}{Significant}
+    \color{red}{Not significant}
+
+
+    \begin{table}[H]
+    \centering
+      \begin{tabular}{ c | c | c | c | c | c }
+      \hline
+        {\bf Pattern type} & {\bf Type} & {\bf Mean} & {\bf SD} & {\bf P-value} & {\bf Result} \\ \hline
+        \multirow{2}{*}{Shopping}   & Male    & 5.68 & 1.76 & \multirow{2}{*}{0.00048841} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Female  & 5.26 & 1.55 & & \\ \hline
+        \multirow{2}{*}{Smartphone} & Male    & 5.47 & 1.60 & \multirow{2}{*}{0.08616198} & \multirow{2}{*}{\bf \color{red}{Not significant}} \\
+                                    & Female  & 5.27 & 1.49 & & \\ \hline
+        \multirow{2}{*}{Bank}       & Male    & 6.09 & 1.86 & \multirow{2}{*}{0.00009069} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Female  & 5.57 & 1.72 & & \\ \hline
+      \end{tabular}
+      \caption{Statistical significance for pattern length and gender}
+      \label{tab:statsigLengthGender}
+    \end{table}
+
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{ c | c | c | c | c | c }
+      \hline
+        {\bf Pattern type} & {\bf Type} & {\bf Mean} & {\bf SD} & {\bf P-value} & {\bf Result} \\ \hline
+        \multirow{2}{*}{Shopping}   & Male   & 14.13 & 8.02 & \multirow{2}{*}{0.00008596} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Female & 12.06 & 6.48 & & \\ \hline
+        \multirow{2}{*}{Smartphone} & Male   & 13.27 & 7.46 & \multirow{2}{*}{0.02153682} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Female & 12.12 & 6.31 & & \\ \hline
+        \multirow{2}{*}{Bank}       & Male   & 16.40 & 9.11 & \multirow{2}{*}{0.00001588} & \multirow{2}{*}{\bf \color{olive}{Significant}} \\
+                                    & Female & 13.74 & 7.74 & & \\ \hline
+      \end{tabular}
+      \caption{Statistical significance for visual complexity and gender}
+      \label{tab:statsigComplexityGender}
+    \end{table}

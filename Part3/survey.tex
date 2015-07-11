@@ -1,7 +1,7 @@
 % !TEX root = ../main.tex
 \chapter{A Detailed Description of the Survey}\label{sec:survey}
   
-  The challenge of analyzing user-selected passwords is that you need to have any passwords to analyze. The majority of published research on passwords are often conducted using passwords from leakages or passwords distributed from legal sources. Looking at the Android lock pattern lock there exists no distributed sources, and all patterns locks that people use are stored locally on each device. To be able to analyze user-selected patterns, all patterns are being collected from the survey described in this Chapter. 
+  The challenge of analysing user-selected passwords is that you need to have any passwords to analyze. The majority of the research on passwords are often conducted using passwords from leakages or passwords distributed from other sources. Looking at the Android Lock Pattern, there exist no distributed sources and all patterns locks being used by people are stored locally on each device. To be able to analyse user-selected patterns, all patterns are being collected from the survey described in this Chapter. 
 
   The survey is a custom designed and implemented specifically for this research. The survey will be described in detail throughout the chapter, starting with an elaboration of the requirements in Section \ref{sec:requirementstosurvey} and a detailed description of how the survey works in Section \ref{sec:layoutandstructure}. As described in Chapter \ref{chap:experiment}, when starting sending out the survey, there is no way back for changing the survey. Therefore, Section \ref{sec:usabilitytestingsurvey} contains a detailed description of how the survey was tested before being distributed. The last section of this survey is an elaboration of the ethical aspects of this research. 
 
@@ -195,7 +195,7 @@
 
   \clearpage 
 
-  \subsection{Background information}
+  \subsection{Background Information}
     After going through the pattern creation process for the three pattern types, the respondent will now be asked several questions about their mobile and personal characteristics. Figure \ref{fig:surveyquestoins} shows screenshots from the survey application and the questions asked. The views in Figure \ref{fig:surveyquestoins} is the final design used used for collecting data. The changes made during the design and implementation are described in Section \ref{sec:usabilitytestingsurvey}. 
 
     There are some core functionality implemented in these questions that is important to notice. {\it First}, the traditional list of alternatives are replaced by icons. As discussed in Section \ref{sec:requirementstosurvey}, it is important to customize the interface for easy interaction on a mobile touchscreen. The images used are easy to interact with because of its size, and it requires less text because of the semantic meaning of the icons used. The icons used in the survey has been tested in a own usability test that are described later in Section \ref{sec:usabilityicontest}. {\it Second}, to keep the user motivated, a progress bar is added to the views. The questions are listed after their appearance in the survey. Not all the questions are visualized in figure \ref{fig:surveyquestoins}, but all will be described in in detail in this section. 

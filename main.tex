@@ -32,8 +32,9 @@
 \usepackage{tocbibind}
 \usepackage{booktabs}
 \usepackage{stackengine}
+\usepackage{multirow}
 
-
+\definecolor{olive}{rgb}{0.0, 0.5, 0.0}
 
 
 %-------- Chapter Styling -----------
@@ -54,6 +55,7 @@
 	\thispagestyle{empty}
 	\include{frontpage} \thispagestyle{empty}
 	\include{abstract} \thispagestyle{empty}
+	\include{acknowledgments} \thispagestyle{empty}
 	\tableofcontents \thispagestyle{empty}
 	\listoffigures \thispagestyle{empty}
 	
@@ -67,9 +69,6 @@
 	\listoftables
 	\cleardoublepage
 	\endgroup
-
-	\listoftodos
-	\include{todos}
 
 	\include{abbrevations}
 
