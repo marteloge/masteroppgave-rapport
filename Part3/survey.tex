@@ -8,57 +8,57 @@
   \clearpage
   \section{Requirements}\label{sec:requirementstosurvey}
 
-    When coping with the difficulties of collecting patterns, it is important to define requirements for the survey application. This section will walk through a list of requirements specified for the survey. Each requirement are being described in detail. 
+    When addressing the difficulties of collecting patterns, it is important to define requirements for the survey application. This section will walk through a list of requirements specified for the survey. Each requirement are being described in detail below.
 
     \begin{table}[H]
       \centering
       \begin{tabular}{ p{1cm} | p{9cm} }
         \hline
-        {\bf RQ1:} & The survey should be able to stand for all commutation to the respondents \\ \hline
-        {\bf RQ2:} & The survey should be considered as trustworthy \\ \hline
-        {\bf RQ3:} & The survey should be implemented on a technical device reflecting the environment of the Android Lock Pattern \\ \hline
-        {\bf RQ4:} & The survey should be easy to understand and easy to complete \\ \hline
-        {\bf RQ5:} & The survey should be visual appealing \\ \hline
-        {\bf RQ6:} & The survey should be provide easy navigation between the questions \\ \hline
-        {\bf RQ7:} & The survey should provide high security \\ \hline
+        {\bf R1:} & The survey should be able to stand for all commutation to the respondents \\ \hline
+        {\bf R2:} & The survey should be considered as trustworthy \\ \hline
+        {\bf R3:} & The survey should be implemented on a technical device reflecting the environment of the Android Lock Pattern \\ \hline
+        {\bf R4:} & The survey should be easy to understand and easy to complete \\ \hline
+        {\bf R5:} & The survey should be visual appealing \\ \hline
+        {\bf R6:} & The survey should be provide easy navigation between the questions \\ \hline
+        {\bf R7:} & The survey should provide high security \\ \hline
       \end{tabular}
       \caption{Survey requirements}
       \label{tab:requirements}
     \end{table}
 
-    \subsection*{RQ1 - One way communication}
+    \subsection*{R1 - One way communication}
     The survey will be an online application, meaning that the user interface of the survey application is the only way being able to communicate with the respondents. The respondents will not be able to directly talk to me during the survey, hence important how designing the application for communicating with the respondents.
 
     When sending out the survey, there are no record of who will receive the survey.  The respondents might come from different cultures and countries, hence requiring a universal way of communicating with the respondents. The survey are being written in English, but there is a chance that there persons entering the survey not being able to understand English properly. Instead of using too much words, it is preferable to use icons and illustrations. The use of icons instead of text is not just beneficial for English-speaking respondents, rather a design choice making the whole application easier to understand for all respondents.
 
     Besides the language used, the words used for formulating the questions need to be carefully selected considering all respondents having a different background. The use of academic and technical words are required being avoided, hence ensuring everyone being able to understand the purpose of the question. It should also be considered that some respondents do not know what Android, locking mechanism, or pattern lock is. It should be visualized, explained, as well as provide practice for the respondents needing it. None of the respondents should leave the survey feeling stupid or insecure as a cause of a poorly designed application. The participant should leave the survey with a positive experience. 
 
-    \subsection*{RQ2 - Trustworthiness}
+    \subsection*{R2 - Trustworthiness}
     Gaining trust is important for getting people to wanting to participate. When being asked to take part in a study, respondents might ask several questions regarding the reliability of the source. For example, are the data being used for the right reasons and handled according to what are being specified in the survey? 
 
     When respondents open the survey, a description of the research and the researcher should be provided. It is reasonable to provide contact information, as well as information about myself so participants able to read about the person asking them to participate. The survey should being placed on a sub-domain on my personal domain for gaining trust from the respondents. My personal domain is {\it marteloge.no}, containing the sub-domain {\it survey.marteloge.no} for the survey.  The contact information is also important in terms of ownership of data. When linking to my web page, the respondents can see who are in the possession of the collected data. Who are reading the data and how is it handled? It should be clearly stated that the information collected are only available to the research group containing myself, my supervisor, and my co-supervisor. It should be clearly stated that the data gathered only will be used for research purposes.
 
     The visual appearance is an important part of gaining trust from the respondents. This is explained as an own requirement. 
 
-    \subsection*{RQ3 - Environment of use}
+    \subsection*{R3 - Environment of use}
     When collecting data, the environment should be considered because it can impact the data in terms of introducing bias. When looking at the Android Unlock Pattern, the scheme is best known for being used on mobile devices like smartphones and tablets. When looking at different characteristics of mobile devices, tablets and smartphones should be defined as two separate environments of use. {\it First}, the tablet are often used in various settings than a smartphone that a user carry and use every day. {\it Second}, the physical interaction are often different. A smartphone are smaller than a tablet and can be interacted with by using one hand. When collecting data, it is desired to capture specific characteristics of the environment a pattern were created. As a cause of different characteristics with the interaction on smartphones and tablet, it is desirable only to collect data from one the environments. The Android Lock Pattern are most commonly used on smartphones, making this study only collecting data for this particular environment.
 
-    \subsection*{RQ4 - Complexity and length}
+    \subsection*{R4 - Complexity and length}
     Since the only option for answering the survey are by using a smartphone, the time used for complete the survey, as well as the complexity, needs to be configured. The smartphone have a limited ability for interaction where the small touch screen are the only interaction available. 
 
     For ensuring that people completes the survey, the questions needs to be short and concise formulated, as well as being easy to answer. As a cause of using smartphones for data collection, the number of questions might need to be reduced. The questions should also be prioritized according to their importance in case some respondents leave the survey before completion. It is better to get some data than nothing at all; each provided answer to a question should directly be stored after submission. 
 
-    \subsection*{RQ5 - Visual appearance}
+    \subsection*{R5 - Visual appearance}
     The visual appearance of a system is not only being related to a design preference but are also related to other aspects like psychology. To be asked to create patterns can for some respondents be a daunting task as it is related to security. 
 
     To avoid respondents having a bad experience by visiting the survey, several design requirements should be used for ensuring a pleasant experience while answering the survey. {\it Firstly}, use bright colors that are calming. The use of colors is not related something friendly. {\it Secondly}, the use of icons can be welcoming. The use of icons, especially icons of a childish touch should be used for giving a good experience, hence avoid scaring off potential respondents. 
 
-    \subsection*{RQ6 - Navigation}
+    \subsection*{R6 - Navigation}
     The use of a smartphone as a platform requires navigation to be easy and intuitive to use. When evaluating the usability of a system, the number of clicks used for reaching a goal can be used. The navigation should in some way be automatic when the participant selects their answer to avoid too much of a time used for navigating. However, when sending the respondent to a new state, the transformation should be intuitive without the respondent losing track of the state. As well as being fast, the navigation should clearly visualize the selected answer before changing any content. 
 
     The number of questions and the scope of a survey are essential information when deciding to participate or not. To signalize the number of questions, a progess bar of some extent should be included in the survey.
 
-    \subsection*{RQ7 - Security}
+    \subsection*{R7 - Security}
     Since the survey is required to be anonymous for ethical concerns, the communication should be transferred over an encrypted channel using SSL. Using SSL avoid the probability of someone monitoring the traffic. The use of SSL does also provide the requirement for anonymity, as well as a visual appearance of the implemented security mechanisms. The use of SSL provides the secure HTTP (HTTPS) flag in the navigation bar, helping to build upon the trustworthiness of the survey. Security is also a part of being trustworthy. 
 
     On the backed of the application, all logging and traces of the users should not be stored. An IP address is a piece of information that can be used to trace the position of the user, hence should not be stored in any terms. The only data stored form the survey should be the answers provided by the participants. Besides turning off any logging as well as using SSL, other security measures should be implemented to obtain a secure application. The application should be reviewed by someone with a high competence in information security before starting the data collection. It is not desired to lose any data, or a situation where someone can steal the data in any terms. If any cookies are used, it should be clearly stated in the introduction. The introduction should also include a description of any security related information concerning a respondent.
