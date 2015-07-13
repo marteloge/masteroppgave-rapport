@@ -53,10 +53,13 @@
 \begin{document}
 	\pagenumbering{gobble}
 	\thispagestyle{empty}
-	\include{frontpage} \thispagestyle{empty}
 	\include{abstract} \thispagestyle{empty}
 	\include{acknowledgments} \thispagestyle{empty}
 	\tableofcontents \thispagestyle{empty}
+	\clearpage
+\mbox{}
+\thispagestyle{empty}
+\newpage
 	\listoffigures \thispagestyle{empty}
 	
 	\cleardoublepage
@@ -99,6 +102,8 @@
 	\include{Part5/conclusion}
 
 	%Bibtex
+\mbox{}
+\newpage
 
 	\bibliographystyle{plain}
 	\bibliography{myBib}
